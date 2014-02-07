@@ -1,0 +1,15 @@
+# Instance-specific settings we copy from their .sample templates
+docroot/lib/Febe/settings.json
+docroot/.htaccess
+docroot/resources/robol.config.json
+
+# Logs, trash, development support files, etc
+.DS_Store
+.*.swp
+tags
+VIMSESSION
+*.espressostorage
+docroot/log.txt
+docroot/resources/c/
+docroot/media
+docroot/resources/js/admin/tinymce3.4/plugins/moxiemanager/data/storage/user.anonymous.json
