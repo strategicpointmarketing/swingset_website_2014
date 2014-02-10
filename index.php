@@ -1,5 +1,5 @@
 <!-- Global Head -->
-<?php include('views/partials/globalHead.php'); ?>
+<?php include('views/partials/global-head.php'); ?>
 <!-- End Global Head -->
 
 <body>
@@ -7,7 +7,7 @@
 	<header>
 		
 		<!-- Main Navigation -->
-		<?php include('viws/partials/mainNavigation.php'); ?>
+		<?php include('views/partials/main-nav.php'); ?>
 		<!-- End Main Navigation -->
 
 	</header>
