@@ -7,7 +7,7 @@
 	<header>
 		
 		<!-- Main Navigation -->
-		<?php include('views/partials/main-nav.php'); ?>
+		<?php include('views/partials/global-navigation.php'); ?>
 		<!-- End Main Navigation -->
 
 	</header>
@@ -16,7 +16,7 @@
 		
 		<div class="wrapper">
 			
-			<h1 class="primary-heading canon-text">Swingset Warehouse</h1>
+	
 
 		</div>
 
@@ -25,7 +25,7 @@
 	<footer>
 
 		<!-- Footer -->
-		<?php // include('viws/partials/footer.php'); ?>
+		<?php // include('views/partials/footer.php'); ?>
 		<!-- End Footer -->
 
 	</footer>
