@@ -59,13 +59,33 @@ Style Guide 0.1.0
 @blue: 						#3399FF;
 @light-blue: 				lighten(@blue, 15%);
 @dark-blue: 				darken(@blue, 15%);
+@salmon:					#fa6851;
+@aqua-blue:					#339bbb;
+@creme:						#fff4e4;
+@plum:						#613c4f;
 
 // Client Specific Colors
 
+@primary-color:				@salmon;
+@primary-color-light:		lighten(@primary-color, 15%);
+@primary-color-dark:		darken(@primary-color, 15%);
+
+@secondary-color:			@aqua-blue;
+@secondary-color-light:		lighten(@secondary-color, 15%);
+@secondary-color-dark:		darken(@secondary-color, 15%);
+
+@tertiary-color:			@plum;
+@tertiary-color-light:		lighten(@tertiary-color, 15%);
+@tertiary-color-dark:		darken(@tertiary-color, 15%);
+
+@quarternary-color:			@creme;
+@quarternary-color-light:	lighten(@quarternary-color, 15%);
+@quarternary-color-dark:	darken(@quarternary-color, 15%);
+
 
 // Text Colors
-@primary-text-color: 		@light-grey;
-@secondary-text-color: 		@dark-grey;
+@primary-text-color: 		@dark-grey;
+@secondary-text-color: 		@light-grey;
 @inverse-text-color: 		@white;
 @button-text-color: 		@inverse-text-color;
 
@@ -74,9 +94,9 @@ Style Guide 0.1.0
 @primary-link-hover: 		@light-blue;
 
 // Heading Colors
-@primary-heading-color: 	@light-blue;
-@secondary-heading-color: 	@dark-grey;
-@tertiary-heading-color: 	@dark-blue;
+@primary-heading-color: 	@primary-color;
+@secondary-heading-color: 	@secondary-color;
+@tertiary-heading-color: 	@tertiary-color;
 
 // Font Declarations
 @museo-slab-700:			"Museo Slab 700", Helvetica, Arial, Verdana, serif;
@@ -84,9 +104,22 @@ Style Guide 0.1.0
 @source-sans-bold:			"Source Sans Pro Bold", Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", Arial, sans-serif;
 @source-sans-italic:		"Source Sans Pro Italic", Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", Arial, sans-serif;
 @source-sans-bold-italic:	"Source Sans Pro Bold Italic", Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", Arial, sans-serif;
+@proxima-nova-soft:			"proxima-nova-soft", Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", Arial, sans-serif;
+@pt-serif:					"pt-serif", "Times New Roman", Georgia, serif;
+
+@primary-font-family: 		@pt-serif;
+@heading-font-family:		@proxima-nova-soft;
+
+// Font Weights
+
+@thin-weight:				100;
+@normal-weight:				400;
+@medium-weight:				500;
+@semibold-weight:			600;
+@bold-weight:				700;
+
 
 // @symbolset:					"Symbolset";
-@primary-font-family: 		@source-sans-regular;
 
 @text-font:					@source-sans-regular;
 @text-font-bold:			@source-sans-bold;
@@ -94,7 +127,7 @@ Style Guide 0.1.0
 @text-font-bold-italic:		@source-sans-bold-italic;
 
 // @text-font-icons:			@symbolset;
-@primary-heading-font:		@museo-slab-700;
+@primary-heading-font:		@heading-font-family;
 @secondary-heading-font:	@primary-heading-font;
 
 // Form Variables

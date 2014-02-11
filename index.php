@@ -13,12 +13,15 @@
 	</header>
 
 	<main role="main">
-		
-		<div class="wrapper">
-			
-	
 
-		</div>
+	<section class="products-specials">	
+
+		<!-- Product Grid -->
+		<?php include('views/partials/home-products.php'); ?>
+		<!-- End Product Grid -->
+		
+	</section>
+		
 
 	</main>
 

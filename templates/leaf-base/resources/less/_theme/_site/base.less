@@ -6,9 +6,97 @@
 @import "@{base-path-less}_theme/_helpers/t-presentational.less";
 @import "@{base-path-less}_theme/_layout/_grid/t-grid-base.less";
 
+// Background Colors
+
+.primary-bg {
+	background: @primary-color;
+}
+
+.secondary-bg {
+	background: @secondary-color;
+}
+
+.tertiary-bg {
+	background: @tertiary-color;
+}
+
+.quarternary-bg {
+	background: @quarternary-color;
+}
+
+.white-bg {
+	background: @white;
+}
+
+// Global Containers & Wrappers
+
 .wrapper {
 	width: 80%;
 	max-width: 63em;
 	margin-left: auto;
 	margin-right: auto;
 }
+
+.top-container {
+	background: @secondary-color-dark;
+	.padding-vertical(-5);
+	.padding-horizontal(-5);
+}
+
+// Navigation
+
+.eyebrow-nav {
+	color: @secondary-color-light;
+}
+
+.main-nav {
+
+	a {
+		.padding-vertical(5);
+		.padding-horizontal(10);
+		color:@white;
+
+		&:hover {
+			background: @secondary-color-dark;
+		}
+
+	}
+}
+
+.secondary-nav {
+
+	a {
+		.padding-vertical(2);
+		.padding-horizontal(5);
+		color: @dark-grey;		
+
+			&.cart {
+				.primary-bg;
+				color:@white;
+			}
+		
+	}
+}
+
+.nav {
+	.unstyled-list;
+	.align-right;
+	.heading-font;
+	margin:0;
+
+	li {
+		display:inline-block;
+		
+		a {
+			text-decoration: none;
+			display:block;
+		}
+	}
+}
+
+// Home Product Listing
+
+.products-specials {
+	background: @quarternary-color;
+}
+

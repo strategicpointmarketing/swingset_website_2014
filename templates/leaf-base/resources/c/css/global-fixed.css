@@ -388,20 +388,12 @@ Typography
 Font Face declarations to load in custom fonts.
 
 */
-.mueso-slab {
-  font-family: "Museo Slab 700", Helvetica, Arial, Verdana, serif;
+.primary-font {
+  font-family: "pt-serif", "Times New Roman", Georgia, serif;
 }
-.source-sans-regular {
-  font-family: "Source Sans Pro", Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", sans-serif;
-}
-.source-sans-bold {
-  font-family: "Source Sans Pro Bold", Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", Arial, sans-serif;
-}
-.source-sans-italic {
-  font-family: "Source Sans Pro Italic", Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", Arial, sans-serif;
-}
-.source-sans-bold-italic {
-  font-family: "Source Sans Pro Bold Italic", Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", Arial, sans-serif;
+.secondary-font,
+.heading-font {
+  font-family: "proxima-nova-soft", Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", Arial, sans-serif;
 }
 /*
 
@@ -457,15 +449,18 @@ manageable.
 
 */
 .primary-heading {
-  color: #80bfff;
-  font-family: "Museo Slab 700", Helvetica, Arial, Verdana, serif;
+  color: #fa6851;
+  font-family: "proxima-nova-soft", Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", Arial, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 .secondary-heading {
-  color: #595959;
-  font-family: "Museo Slab 700", Helvetica, Arial, Verdana, serif;
+  color: #339bbb;
+  font-family: "proxima-nova-soft", Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", Arial, sans-serif;
 }
 .tertiary-heading {
-  color: #0073e5;
+  color: #613c4f;
 }
 h1,
 h2,
@@ -535,7 +530,7 @@ Body Text
 html,
 body {
   font-size: 100%;
-  font-family: "Source Sans Pro", Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", sans-serif;
+  font-family: "pt-serif", "Times New Roman", Georgia, serif;
 }
 /*
 
@@ -545,6 +540,11 @@ Paragraph Defaults
 p {
   line-height: 1.5em;
 }
+/*
+
+Cases
+
+*/
 /*
 
 Text Align
@@ -724,8 +724,327 @@ body:hover .simple-reveal-container.is-current button {
   display: inline;
   zoom: 1;
 }
-.relative {
+.relative,
+.relative-container {
   position: relative;
+}
+/* 
+Margin Removal
+*/
+.mn {
+  margin: 0;
+}
+.mtn {
+  margin-top: 0;
+}
+.mrn {
+  margin-right: 0;
+}
+.mbn {
+  margin-bottom: 0;
+}
+.mln {
+  margin-left: 0;
+}
+/*
+Margin All
+*/
+.mxs {
+  margin: 1.3125em;
+}
+.ms {
+  margin: 1.3125em;
+}
+.mm {
+  margin: 1.3125em;
+}
+.ml {
+  margin: 1.3125em;
+}
+.mxl {
+  margin: 1.3125em;
+}
+/*
+Margin Top
+*/
+.mtxs {
+  margin-top: 1.3125em;
+}
+.mts {
+  margin-top: 1.9375em;
+}
+.mtm {
+  margin-top: 2.5625em;
+}
+.mtl {
+  margin-top: 3.1875em;
+}
+.mtxl {
+  margin-top: 3.8125em;
+}
+/*
+Margin Right
+*/
+.mrxs {
+  margin-right: 1.3125em;
+}
+.mrs {
+  margin-right: 1.9375em;
+}
+.mrm {
+  margin-right: 2.5625em;
+}
+.mrl {
+  margin-right: 3.1875em;
+}
+.mrxl {
+  margin-right: 3.8125em;
+}
+/*
+Margin Bottom
+*/
+.mbxs {
+  margin-bottom: 1.3125em;
+}
+.mbs {
+  margin-bottom: 1.9375em;
+}
+.mbm {
+  margin-bottom: 2.5625em;
+}
+.mbl {
+  margin-bottom: 3.1875em;
+}
+.mbxl {
+  margin-bottom: 3.8125em;
+}
+/*
+Margin Left
+*/
+.mlxs {
+  margin-left: 1.3125em;
+}
+.mls {
+  margin-left: 1.9375em;
+}
+.mlm {
+  margin-left: 2.5625em;
+}
+.mll {
+  margin-left: 3.1875em;
+}
+.mlxl {
+  margin-left: 3.8125em;
+}
+/*
+Margin Vertical (Top & Bottom)
+*/
+.mvxs {
+  margin-top: 1.3125em;
+  margin-bottom: 1.3125em;
+}
+.mvs {
+  margin-top: 1.9375em;
+  margin-bottom: 1.9375em;
+}
+.mvm {
+  margin-top: 2.5625em;
+  margin-bottom: 2.5625em;
+}
+.mvl {
+  margin-top: 3.1875em;
+  margin-bottom: 3.1875em;
+}
+.mvxl {
+  margin-top: 3.8125em;
+  margin-bottom: 3.8125em;
+}
+/*
+Margin Horizontal (Left & Right)
+*/
+.mhxs {
+  margin-left: 1.3125em;
+  margin-right: 1.3125em;
+}
+.mhs {
+  margin-left: 1.9375em;
+  margin-right: 1.9375em;
+}
+.mhm {
+  margin-left: 2.5625em;
+  margin-right: 2.5625em;
+}
+.mhl {
+  margin-left: 3.1875em;
+  margin-right: 3.1875em;
+}
+.mhxl {
+  margin-left: 3.8125em;
+  margin-right: 3.8125em;
+}
+/* 
+Padding Removal
+*/
+.pn {
+  padding: 0;
+}
+.ptn {
+  padding-top: 0;
+}
+.prn {
+  padding-right: 0;
+}
+.pbn {
+  padding-bottom: 0;
+}
+.pln {
+  padding-left: 0;
+}
+/*
+Padding All
+*/
+.pxs {
+  padding: 1.3125em;
+}
+.ps {
+  padding: 1.3125em;
+}
+.pm {
+  padding: 1.3125em;
+}
+.pl {
+  padding: 1.3125em;
+}
+.pxl {
+  padding: 1.3125em;
+}
+/*
+Padding Top
+*/
+.ptxs {
+  padding-top: 1.3125em;
+}
+.pts {
+  padding-top: 1.9375em;
+}
+.ptm {
+  padding-top: 2.5625em;
+}
+.ptl {
+  padding-top: 3.1875em;
+}
+.ptxl {
+  padding-top: 3.8125em;
+}
+/*
+Padding Right
+*/
+.prxs {
+  padding-right: 1.3125em;
+}
+.prs {
+  padding-right: 1.9375em;
+}
+.prm {
+  padding-right: 2.5625em;
+}
+.prl {
+  padding-right: 3.1875em;
+}
+.prxl {
+  padding-right: 3.8125em;
+}
+/*
+Padding Bottom
+*/
+.pbxs {
+  padding-bottom: 1.3125em;
+}
+.pbs {
+  padding-bottom: 1.9375em;
+}
+.pbm {
+  padding-bottom: 2.5625em;
+}
+.pbl {
+  padding-bottom: 3.1875em;
+}
+.pbxl {
+  padding-bottom: 3.8125em;
+}
+/*
+Padding Left
+*/
+.plxs {
+  padding-left: 1.3125em;
+}
+.pls {
+  padding-left: 1.9375em;
+}
+.plm {
+  padding-left: 2.5625em;
+}
+.pll {
+  padding-left: 3.1875em;
+}
+.plxl {
+  padding-left: 3.8125em;
+}
+/*
+Padding Vertical (Top & Bottom)
+*/
+.pvxs {
+  padding-top: 1.3125em;
+  padding-bottom: 1.3125em;
+}
+.pvs {
+  padding-top: 1.9375em;
+  padding-bottom: 1.9375em;
+}
+.pvm {
+  padding-top: 2.5625em;
+  padding-bottom: 2.5625em;
+}
+.pvl {
+  padding-top: 3.1875em;
+  padding-bottom: 3.1875em;
+}
+.pvxl {
+  padding-top: 3.8125em;
+  padding-bottom: 3.8125em;
+}
+/*
+Padding Horizontal (Left & Right)
+*/
+.phxs {
+  padding-left: 1.3125em;
+  padding-right: 1.3125em;
+}
+.phs {
+  padding-left: 1.9375em;
+  padding-right: 1.9375em;
+}
+.phm {
+  padding-left: 2.5625em;
+  padding-right: 2.5625em;
+}
+.phl {
+  padding-left: 3.1875em;
+  padding-right: 3.1875em;
+}
+.phxl {
+  padding-left: 3.8125em;
+  padding-right: 3.8125em;
+}
+/*
+Border Radius 
+*/
+.rounded {
+  -webkit-border-radius: 0.9375rem;
+  -moz-border-radius: 0.9375rem;
+  -o-border-radius: 0.9375rem;
+  -ms-border-radius: 0.9375rem;
+  border-radius: 0.9375rem;
 }
 .media-grid {
   margin-top: 0;
@@ -756,11 +1075,74 @@ body:hover .simple-reveal-container.is-current button {
 .media-grid .object.gd-columns {
   float: none;
 }
+.primary-bg {
+  background: #fa6851;
+}
+.secondary-bg {
+  background: #339bbb;
+}
+.tertiary-bg {
+  background: #613c4f;
+}
+.quarternary-bg {
+  background: #fff4e4;
+}
+.white-bg {
+  background: #ffffff;
+}
 .wrapper {
   width: 80%;
   max-width: 63em;
   margin-left: auto;
   margin-right: auto;
+}
+.top-container {
+  background: #23697f;
+  padding-top: 0.6875em;
+  padding-bottom: 0.6875em;
+  padding-left: 0.6875em;
+  padding-right: 0.6875em;
+}
+.eyebrow-nav {
+  color: #65bbd5;
+}
+.main-nav a {
+  padding-top: 1.3125em;
+  padding-bottom: 1.3125em;
+  padding-left: 1.625em;
+  padding-right: 1.625em;
+  color: #ffffff;
+}
+.main-nav a:hover {
+  background: #23697f;
+}
+.secondary-nav a {
+  padding-top: 1.125em;
+  padding-bottom: 1.125em;
+  padding-left: 1.3125em;
+  padding-right: 1.3125em;
+  color: #595959;
+}
+.secondary-nav a.cart {
+  background: #fa6851;
+  color: #ffffff;
+}
+.nav {
+  padding-left: 0;
+  list-style: none outside none;
+  text-align: right;
+  font-family: "proxima-nova-soft", Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", Arial, sans-serif;
+  margin: 0;
+}
+.nav li {
+  display: inline-block;
+}
+.nav li a {
+  text-decoration: none;
+  display: block;
+}
+.products-specials {
+  background: #fff4e4;
 }
 /*
 
