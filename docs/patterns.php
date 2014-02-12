@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<?php include('../views/partials/globalHead.php'); ?>
+<?php include('../views/partials/global-head.php'); ?>
 
 <body>
 	<div class="wrapper">	

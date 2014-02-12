@@ -389,7 +389,7 @@ Font Face declarations to load in custom fonts.
 
 */
 .primary-font {
-  font-family: "pt-serif", "Times New Roman", Georgia, serif;
+  font-family: "proxima-nova-soft", Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", Arial, sans-serif;
 }
 .secondary-font,
 .heading-font {
@@ -1107,32 +1107,32 @@ Border Radius
   color: #65bbd5;
 }
 .main-nav a {
+  color: #ffffff;
   padding-top: 0.3125em;
   padding-bottom: 0.3125em;
   padding-left: 0.625em;
   padding-right: 0.625em;
-  color: #ffffff;
 }
 .main-nav a:hover {
   background: #23697f;
 }
 .secondary-nav a {
+  color: #595959;
   padding-top: 0.125em;
   padding-bottom: 0.125em;
   padding-left: 0.3125em;
   padding-right: 0.3125em;
-  color: #595959;
 }
 .secondary-nav a.cart {
-  background: #fa6851;
   color: #ffffff;
+  background: #fa6851;
 }
 .nav {
+  margin: 0;
   padding-left: 0;
   list-style: none outside none;
   text-align: right;
   font-family: "proxima-nova-soft", Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", Arial, sans-serif;
-  margin: 0;
 }
 .nav li {
   display: inline-block;
@@ -1143,6 +1143,9 @@ Border Radius
 }
 .products-specials {
   background: #fff4e4;
+}
+.product_listing--box {
+  padding: 0.9375em;
 }
 /*
 
