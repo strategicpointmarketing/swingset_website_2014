@@ -39,6 +39,7 @@ Style Guide 0.1.0
 @mq-widescreen-width:		1240;
 
 // Typographic Scale
+@great-text-size:			48;
 @canon-text-size: 			32;
 @paragon-text-size: 		24;
 @primer-text-size: 			18;
@@ -54,8 +55,8 @@ Style Guide 0.1.0
 @white: 					#fff;
 @black: 					#000;
 @grey: 						#999;
-@light-grey: 				lighten(@grey, 25%);
-@dark-grey: 				darken(@grey, 25%);
+@light-grey: 				lighten(@grey, 20%);
+@dark-grey: 				darken(@grey, 20%);
 @blue: 						#3399FF;
 @light-blue: 				lighten(@blue, 15%);
 @dark-blue: 				darken(@blue, 15%);
@@ -68,12 +69,12 @@ Style Guide 0.1.0
 @primary-color:				@salmon;
 @primary-color-light:		lighten(@primary-color, 15%);
 @primary-color-dark:		darken(@primary-color, 15%);
-@primary-color-hover:		darken(@primary-color,5%);
+@primary-color-alt:			darken(@primary-color,5%);
 
 @secondary-color:			@aqua-blue;
 @secondary-color-light:		lighten(@secondary-color, 15%);
 @secondary-color-dark:		darken(@secondary-color, 15%);
-@secondary-color-hover:		darken(@secondary-color,5%);
+@secondary-color-alt:		lighten(@secondary-color, 30%);
 
 @tertiary-color:			@plum;
 @tertiary-color-light:		lighten(@tertiary-color, 15%);
@@ -98,6 +99,15 @@ Style Guide 0.1.0
 @primary-heading-color: 	@primary-color;
 @secondary-heading-color: 	@secondary-color;
 @tertiary-heading-color: 	@tertiary-color;
+
+// Button Colors
+@primary-button-color:		@primary-color;
+@primary-button-hover:		lighten(@primary-button-color, 3%);
+@primary-button-border:		@primary-color-dark;
+
+@secondary-button-color:	@secondary-color;
+@secondary-button-hover:	lighten(@secondary-button-color, 3%);
+@secondary-button-border:	@secondary-color-dark;
 
 // Font Declarations
 @proxima-nova-soft:			"proxima-nova-soft", Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", Arial, sans-serif;

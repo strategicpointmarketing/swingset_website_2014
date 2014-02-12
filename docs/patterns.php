@@ -55,6 +55,7 @@
 
 						<!-- Typographic Scale -->
 						<div>
+							<p class="great-text">Great Text</p>
 							<p class="canon-text">Canon Text</p>
 							<p class="paragon-text">Paragon Text</p>
 							<p class="primer-text">Primer Text</p>

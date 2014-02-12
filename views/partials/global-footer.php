@@ -1,5 +1,5 @@
 <div class="relative-container">
-	<div class="wrapper pvm">
+	<div class="wrapper pts pbxl">
 		<div class="gd-row gt-row">
 			<section class="gd-quarter gd-columns gt-half gt-columns">
 				<nav role="navigation">

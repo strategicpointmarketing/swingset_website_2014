@@ -82,7 +82,7 @@
 				.primary-bg;
 
 				&:hover {
-					background: @primary-color-hover;
+					background: @primary-color-alt;
 				}
 			}
 		
@@ -115,10 +115,71 @@
 
 .product_listing {
 	&--box {
-		.padding-all(15);
+		.padding-all(25);
 	}
 }
 
+// Home Featured Item
+
+.featured-item {
+	background: @secondary-color url("@{base-path-images}/pattern-diamond.png");
+
+	// Mixins
+	.padding-vertical(45);
+
+	.featured-heading {
+		color: @secondary-color-alt;
+		font-weight: @semibold-weight;
+
+		// Mixins
+		.secondary-font;
+	}
+
+}
+
+
+// Product Listing Page
+
+.product-navigation {
+
+	font-weight: @semibold-weight;
+
+	// Mixins
+	.unstyled-list;
+	.minion-text;
+	.secondary-font;
+
+	li {
+		line-height:1.75;
+	}
+
+	.active {
+		font-weight: @thin-weight;
+
+		// Mixins
+		list-style-type: none;
+
+		a {
+			border-top: solid 2px;
+
+			&:first-child {
+				border: 0;
+			}
+		}
+	}
+}
+
+.product-listing {
+
+	.item-price {
+		color: @secondary-text-color;
+
+		// Mixins
+		.secondary-font;
+		.petite-text;
+		.margin(bottom,10);
+	}
+}
 
 // Footer
 

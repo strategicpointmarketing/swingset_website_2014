@@ -404,6 +404,7 @@ Description:
 Type defined in config is being applied.
 
 Markup Examples:
+<p class="great-text">The cow jumped over the moon</p>
 <p class="canon-text">The cow jumped over the moon</p>
 <p class="paragon-text">The cow jumped over the moon</p>
 <p class="primer-text">The cow jumped over the moon</p>
@@ -412,6 +413,10 @@ Markup Examples:
 <p class="minion-text">The cow jumped over the moon</p>
 
 */
+.great-text {
+  font-size: 48px;
+  font-size: 3rem;
+}
 .canon-text {
   font-size: 32px;
   font-size: 2rem;
@@ -542,6 +547,22 @@ p {
   line-height: 1.5em;
 }
 /*
+Colors
+*/
+.white,
+.inverse-text {
+  color: #ffffff;
+}
+.primary-color {
+  color: #fa6851;
+}
+.secondary-color {
+  color: #339bbb;
+}
+.tertiary-color {
+  color: #613c4f;
+}
+/*
 
 Weights
 
@@ -561,10 +582,24 @@ Weights
 .bold {
   font-weight: 700;
 }
+/* 
+Cases
+*/
+.uppercase {
+  text-transform: uppercase;
+}
+.lowercase {
+  text-transform: lowercase;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+a {
+  text-decoration: none;
+}
 [class*='button'] {
   font-family: "proxima-nova-soft", Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", Arial, sans-serif;
   color: #ffffff;
-  text-decoration: none;
   text-align: center;
   display: inline-block;
   -webkit-border-radius: 0.3125rem;
@@ -583,7 +618,17 @@ Weights
   border-bottom: solid 3px #f72807;
 }
 .button--primary:hover {
-  background: #f95238;
+  background: #fa7560;
+}
+.button--secondary {
+  text-transform: lowercase;
+  background: #339bbb;
+  border-bottom: solid 3px #23697f;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+.button--secondary:hover {
+  background: #36a5c7;
 }
 /*
 
@@ -1155,7 +1200,7 @@ Border Radius
   background: #23697f;
 }
 .secondary-nav a {
-  color: #595959;
+  color: #666666;
   padding-top: 0.75em;
   padding-bottom: 0.75em;
   padding-left: 0.9375em;
@@ -1186,7 +1231,45 @@ Border Radius
   background: #fff4e4;
 }
 .product_listing--box {
-  padding: 0.9375em;
+  padding: 1.5625em;
+}
+.featured-item {
+  background: #339bbb url("/templates/leaf-base/resources/images//pattern-diamond.png");
+  padding-top: 2.8125em;
+  padding-bottom: 2.8125em;
+}
+.featured-item .featured-heading {
+  color: #a2d5e5;
+  font-weight: 600;
+  font-family: "proxima-nova-soft", Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", Arial, sans-serif;
+}
+.product-navigation {
+  font-weight: 600;
+  padding-left: 0;
+  list-style: none outside none;
+  font-size: 12px;
+  font-size: 0.75rem;
+  font-family: "proxima-nova-soft", Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", Arial, sans-serif;
+}
+.product-navigation li {
+  line-height: 1.75;
+}
+.product-navigation .active {
+  font-weight: 100;
+  list-style-type: none;
+}
+.product-navigation .active a {
+  border-top: solid 2px;
+}
+.product-navigation .active a:first-child {
+  border: 0;
+}
+.product-listing .item-price {
+  color: #cccccc;
+  font-family: "proxima-nova-soft", Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", Arial, sans-serif;
+  font-size: 14px;
+  font-size: 0.875rem;
+  margin-bottom: 0.625em;
 }
 .main-footer {
   background: #fff4e4;
@@ -1212,7 +1295,7 @@ Border Radius
 .footer-links a {
   text-decoration: none;
   line-height: 2;
-  color: #595959;
+  color: #666666;
   margin-top: 0.9375em;
 }
 .footer-links a:hover {

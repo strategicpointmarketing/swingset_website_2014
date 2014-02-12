@@ -1,7 +1,6 @@
 [class*='button'] {
 	font-family: @primary-heading-font;
-	color: @white;
-	text-decoration: none;
+	color: @button-text-color;
 	text-align: center;
 	display: inline-block;
 
@@ -16,12 +15,25 @@
 
 	&--primary {
 		text-transform: uppercase;
-		background: @primary-color;
-		border-bottom: solid 3px @primary-color-dark;
+		background: @primary-button-color;
+		border-bottom: solid 3px @primary-button-border;
 
 		&:hover {
-			background: @primary-color-hover;
+			background: @primary-button-hover;
 		}
 
+	}
+
+	&--secondary {
+		text-transform: lowercase;
+		background: @secondary-button-color;
+		border-bottom: solid 3px @secondary-button-border;
+
+		// Mixins
+		.petite-text;
+		
+		&:hover {
+			background: @secondary-button-hover;
+		}
 	}
 }

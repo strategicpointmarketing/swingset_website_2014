@@ -6,6 +6,7 @@ Description:
 Type defined in config is being applied.
 
 Markup Examples:
+<p class="great-text">The cow jumped over the moon</p>
 <p class="canon-text">The cow jumped over the moon</p>
 <p class="paragon-text">The cow jumped over the moon</p>
 <p class="primer-text">The cow jumped over the moon</p>
@@ -14,6 +15,11 @@ Markup Examples:
 <p class="minion-text">The cow jumped over the moon</p>
 
 */
+
+// Great Text
+.great-text {
+	.size-for-font(@great-text-size);
+}
 
 // Canon Text
 .canon-text {
@@ -170,6 +176,26 @@ p {
 }
 
 /*
+Colors
+*/
+
+.white, .inverse-text {
+	color:@white;
+}
+
+.primary-color {
+	color:@primary-color;
+}
+
+.secondary-color {
+	color:@secondary-color;
+}
+
+.tertiary-color {
+	color:@tertiary-color;
+}
+
+/*
 
 Weights
 
@@ -193,3 +219,19 @@ Weights
 .bold {
 	font-weight: @bold-weight;
 	}
+
+/* 
+Cases
+*/
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.lowercase {
+	text-transform: lowercase;
+}
+
+.capitalize {
+	text-transform: capitalize;
+}

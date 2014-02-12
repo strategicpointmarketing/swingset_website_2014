@@ -14,7 +14,7 @@
 	<div class="wrapper">
 		<nav class="main-nav" role="navigation">
 			<ul class="nav paragon-text white">
-				<li><a href="#">Products</a></li>
+				<li><a href="product-listing.php">Products</a></li>
 				<li><a href="#">Locations</a></li>
 				<li><a href="#">About</a></li>
 				<li><a href="#">Gallery</a></li>

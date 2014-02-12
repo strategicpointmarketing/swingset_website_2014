@@ -1,5 +1,5 @@
 <div class="relative-container">
-	<div class="wrapper">
+	<div class="wrapper pbxl">
 		<ul class="gd-row gt-row media-grid unstyled mtn">
 			<li class="object gd-third gd-columns gt-half gt-columns">
 				<figure class="white-bg">

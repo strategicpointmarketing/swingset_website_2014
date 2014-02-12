@@ -13,22 +13,28 @@
 	</header>
 
 	<main role="main">
+		<div class="wrapper">
+			<div class="gd-row gt-row">
+				<div class="gd-quarter gd-columns gt-quarter gt-columns">
 
-	<section class="products-specials">	
+					<!-- Product Navigation -->
+					<?php include('views/partials/product-navigation.php'); ?>
+					<!-- End Product Navigation -->
 
-		<!-- Product Grid -->
-		<?php include('views/partials/home-products.php'); ?>
-		<!-- End Product Grid -->
+					
+				</div>
+				<div class="gd-three-quarters gd-columns gt-three-quarters gt-columns product-listing">
 
-	</section>
-		
-	<section class="featured-section">
+					<!-- Product Listing -->
+					<?php include('views/partials/product-listing.php'); ?>
+					<!-- End Product Listing -->
 
-		<!-- Featured -->
-		<?php include('views/partials/home-featured.php'); ?>
-		<!-- Featured -->
+					
+				</div>
+				
+			</div>
 
-	</section>
+		</div>
 
 
 	</main>
