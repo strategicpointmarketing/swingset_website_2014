@@ -1,7 +1,7 @@
 <div class="relative-container">
 	<div class="wrapper">
 		<ul class="gd-row gt-row media-grid unstyled mtn">
-			<li class="object gd-third gd-columns gt-half gt-columns pts">
+			<li class="object gd-third gd-columns gt-half gt-columns">
 				<figure class="white-bg">
 					<img src="http://placehold.it/600x320">
 					<figcaption class="product_listing--box">
@@ -10,7 +10,7 @@
 					</figcaption>
 				</figure>
 			</li>
-			<li class="object gd-third gd-columns gt-half gt-columns pts">
+			<li class="object gd-third gd-columns gt-half gt-columns">
 				<figure class="white-bg">
 					<img src="http://placehold.it/600x320">
 					<figcaption class="product_listing--box">
@@ -19,7 +19,7 @@
 					</figcaption>
 				</figure>
 			</li>
-			<li class="object gd-third gd-columns gt-half gt-columns pts">
+			<li class="object gd-third gd-columns gt-half gt-columns">
 				<figure class="white-bg">
 					<img src="http://placehold.it/600x320">
 					<figcaption class="product_listing--box">
@@ -28,7 +28,7 @@
 					</figcaption>
 				</figure>
 			</li>
-			<li class="object gd-third gd-columns gt-half gt-columns pvs">
+			<li class="object gd-third gd-columns gt-half gt-columns">
 				<figure class="white-bg">
 					<img src="http://placehold.it/600x320">
 					<figcaption class="product_listing--box">
@@ -37,7 +37,7 @@
 					</figcaption>
 				</figure>
 			</li>
-			<li class="object gd-third gd-columns gt-half gt-columns pvs">
+			<li class="object gd-third gd-columns gt-half gt-columns">
 				<figure class="white-bg">
 					<img src="http://placehold.it/600x320">
 					<figcaption class="product_listing--box">
@@ -46,7 +46,7 @@
 					</figcaption>
 				</figure>
 			</li>
-			<li class="object gd-third gd-columns gt-half gt-columns pvs">
+			<li class="object gd-third gd-columns gt-half gt-columns">
 				<figure class="white-bg">
 					<img src="http://placehold.it/600x320">
 					<figcaption class="product_listing--box">
