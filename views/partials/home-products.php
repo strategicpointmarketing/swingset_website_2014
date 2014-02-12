@@ -1,7 +1,7 @@
 <div class="relative-container">
 	<div class="wrapper">
 		<ul class="gd-row gt-row unstyled mtn">
-				<li class="gd-third gd-columns gt-half gt-columns mts">
+				<li class="gd-third gd-columns gt-half gt-columns pts">
 					<div class="white-bg">
 						<img src="http://placehold.it/600x320">
 
@@ -12,7 +12,7 @@
 						</div>
 					</div>
 				</li>
-				<li class="gd-third gd-columns gt-half gt-columns mts">
+				<li class="gd-third gd-columns gt-half gt-columns pts">
 					<div class="white-bg">
 						<img src="http://placehold.it/600x320">
 
@@ -23,7 +23,7 @@
 						</div>
 					</div>
 				</li>
-				<li class="gd-third gd-columns gt-half gt-columns mts">
+				<li class="gd-third gd-columns gt-half gt-columns pts">
 					<div class="white-bg">
 						<img src="http://placehold.it/600x320">
 
@@ -34,7 +34,7 @@
 						</div>
 					</div>
 				</li>
-				<li class="gd-third gd-columns gt-half gt-columns mvs">
+				<li class="gd-third gd-columns gt-half gt-columns pvs">
 					<div class="white-bg">
 						<img src="http://placehold.it/600x320">
 
@@ -45,7 +45,7 @@
 						</div>
 					</div>
 				</li>
-				<li class="gd-third gd-columns gt-half gt-columns mvs">
+				<li class="gd-third gd-columns gt-half gt-columns pvs">
 					<div class="white-bg">
 						<img src="http://placehold.it/600x320">
 
@@ -56,7 +56,7 @@
 						</div>
 					</div>
 				</li>
-				<li class="gd-third gd-columns gt-half gt-columns mvs">
+				<li class="gd-third gd-columns gt-half gt-columns pvs">
 					<div class="white-bg">
 						<img src="http://placehold.it/600x320">
 
