@@ -750,137 +750,137 @@ Margin Removal
 Margin All
 */
 .mxs {
-  margin: 1.3125em;
+  margin: 0.3125em;
 }
 .ms {
-  margin: 1.3125em;
+  margin: 0.3125em;
 }
 .mm {
-  margin: 1.3125em;
+  margin: 0.3125em;
 }
 .ml {
-  margin: 1.3125em;
+  margin: 0.3125em;
 }
 .mxl {
-  margin: 1.3125em;
+  margin: 0.3125em;
 }
 /*
 Margin Top
 */
 .mtxs {
-  margin-top: 1.3125em;
+  margin-top: 0.3125em;
 }
 .mts {
-  margin-top: 1.9375em;
+  margin-top: 0.9375em;
 }
 .mtm {
-  margin-top: 2.5625em;
+  margin-top: 1.5625em;
 }
 .mtl {
-  margin-top: 3.1875em;
+  margin-top: 2.1875em;
 }
 .mtxl {
-  margin-top: 3.8125em;
+  margin-top: 2.8125em;
 }
 /*
 Margin Right
 */
 .mrxs {
-  margin-right: 1.3125em;
+  margin-right: 0.3125em;
 }
 .mrs {
-  margin-right: 1.9375em;
+  margin-right: 0.9375em;
 }
 .mrm {
-  margin-right: 2.5625em;
+  margin-right: 1.5625em;
 }
 .mrl {
-  margin-right: 3.1875em;
+  margin-right: 2.1875em;
 }
 .mrxl {
-  margin-right: 3.8125em;
+  margin-right: 2.8125em;
 }
 /*
 Margin Bottom
 */
 .mbxs {
-  margin-bottom: 1.3125em;
+  margin-bottom: 0.3125em;
 }
 .mbs {
-  margin-bottom: 1.9375em;
+  margin-bottom: 0.9375em;
 }
 .mbm {
-  margin-bottom: 2.5625em;
+  margin-bottom: 1.5625em;
 }
 .mbl {
-  margin-bottom: 3.1875em;
+  margin-bottom: 2.1875em;
 }
 .mbxl {
-  margin-bottom: 3.8125em;
+  margin-bottom: 2.8125em;
 }
 /*
 Margin Left
 */
 .mlxs {
-  margin-left: 1.3125em;
+  margin-left: 0.3125em;
 }
 .mls {
-  margin-left: 1.9375em;
+  margin-left: 0.9375em;
 }
 .mlm {
-  margin-left: 2.5625em;
+  margin-left: 1.5625em;
 }
 .mll {
-  margin-left: 3.1875em;
+  margin-left: 2.1875em;
 }
 .mlxl {
-  margin-left: 3.8125em;
+  margin-left: 2.8125em;
 }
 /*
 Margin Vertical (Top & Bottom)
 */
 .mvxs {
-  margin-top: 1.3125em;
-  margin-bottom: 1.3125em;
+  margin-top: 0.3125em;
+  margin-bottom: 0.3125em;
 }
 .mvs {
-  margin-top: 1.9375em;
-  margin-bottom: 1.9375em;
+  margin-top: 0.9375em;
+  margin-bottom: 0.9375em;
 }
 .mvm {
-  margin-top: 2.5625em;
-  margin-bottom: 2.5625em;
+  margin-top: 1.5625em;
+  margin-bottom: 1.5625em;
 }
 .mvl {
-  margin-top: 3.1875em;
-  margin-bottom: 3.1875em;
+  margin-top: 2.1875em;
+  margin-bottom: 2.1875em;
 }
 .mvxl {
-  margin-top: 3.8125em;
-  margin-bottom: 3.8125em;
+  margin-top: 2.8125em;
+  margin-bottom: 2.8125em;
 }
 /*
 Margin Horizontal (Left & Right)
 */
 .mhxs {
-  margin-left: 1.3125em;
-  margin-right: 1.3125em;
+  margin-left: 0.3125em;
+  margin-right: 0.3125em;
 }
 .mhs {
-  margin-left: 1.9375em;
-  margin-right: 1.9375em;
+  margin-left: 0.9375em;
+  margin-right: 0.9375em;
 }
 .mhm {
-  margin-left: 2.5625em;
-  margin-right: 2.5625em;
+  margin-left: 1.5625em;
+  margin-right: 1.5625em;
 }
 .mhl {
-  margin-left: 3.1875em;
-  margin-right: 3.1875em;
+  margin-left: 2.1875em;
+  margin-right: 2.1875em;
 }
 .mhxl {
-  margin-left: 3.8125em;
-  margin-right: 3.8125em;
+  margin-left: 2.8125em;
+  margin-right: 2.8125em;
 }
 /* 
 Padding Removal
@@ -904,137 +904,137 @@ Padding Removal
 Padding All
 */
 .pxs {
-  padding: 1.3125em;
+  padding: 0.3125em;
 }
 .ps {
-  padding: 1.3125em;
+  padding: 0.3125em;
 }
 .pm {
-  padding: 1.3125em;
+  padding: 0.3125em;
 }
 .pl {
-  padding: 1.3125em;
+  padding: 0.3125em;
 }
 .pxl {
-  padding: 1.3125em;
+  padding: 0.3125em;
 }
 /*
 Padding Top
 */
 .ptxs {
-  padding-top: 1.3125em;
+  padding-top: 0.3125em;
 }
 .pts {
-  padding-top: 1.9375em;
+  padding-top: 0.9375em;
 }
 .ptm {
-  padding-top: 2.5625em;
+  padding-top: 1.5625em;
 }
 .ptl {
-  padding-top: 3.1875em;
+  padding-top: 2.1875em;
 }
 .ptxl {
-  padding-top: 3.8125em;
+  padding-top: 2.8125em;
 }
 /*
 Padding Right
 */
 .prxs {
-  padding-right: 1.3125em;
+  padding-right: 0.3125em;
 }
 .prs {
-  padding-right: 1.9375em;
+  padding-right: 0.9375em;
 }
 .prm {
-  padding-right: 2.5625em;
+  padding-right: 1.5625em;
 }
 .prl {
-  padding-right: 3.1875em;
+  padding-right: 2.1875em;
 }
 .prxl {
-  padding-right: 3.8125em;
+  padding-right: 2.8125em;
 }
 /*
 Padding Bottom
 */
 .pbxs {
-  padding-bottom: 1.3125em;
+  padding-bottom: 0.3125em;
 }
 .pbs {
-  padding-bottom: 1.9375em;
+  padding-bottom: 0.9375em;
 }
 .pbm {
-  padding-bottom: 2.5625em;
+  padding-bottom: 1.5625em;
 }
 .pbl {
-  padding-bottom: 3.1875em;
+  padding-bottom: 2.1875em;
 }
 .pbxl {
-  padding-bottom: 3.8125em;
+  padding-bottom: 2.8125em;
 }
 /*
 Padding Left
 */
 .plxs {
-  padding-left: 1.3125em;
+  padding-left: 0.3125em;
 }
 .pls {
-  padding-left: 1.9375em;
+  padding-left: 0.9375em;
 }
 .plm {
-  padding-left: 2.5625em;
+  padding-left: 1.5625em;
 }
 .pll {
-  padding-left: 3.1875em;
+  padding-left: 2.1875em;
 }
 .plxl {
-  padding-left: 3.8125em;
+  padding-left: 2.8125em;
 }
 /*
 Padding Vertical (Top & Bottom)
 */
 .pvxs {
-  padding-top: 1.3125em;
-  padding-bottom: 1.3125em;
+  padding-top: 0.3125em;
+  padding-bottom: 0.3125em;
 }
 .pvs {
-  padding-top: 1.9375em;
-  padding-bottom: 1.9375em;
+  padding-top: 0.9375em;
+  padding-bottom: 0.9375em;
 }
 .pvm {
-  padding-top: 2.5625em;
-  padding-bottom: 2.5625em;
+  padding-top: 1.5625em;
+  padding-bottom: 1.5625em;
 }
 .pvl {
-  padding-top: 3.1875em;
-  padding-bottom: 3.1875em;
+  padding-top: 2.1875em;
+  padding-bottom: 2.1875em;
 }
 .pvxl {
-  padding-top: 3.8125em;
-  padding-bottom: 3.8125em;
+  padding-top: 2.8125em;
+  padding-bottom: 2.8125em;
 }
 /*
 Padding Horizontal (Left & Right)
 */
 .phxs {
-  padding-left: 1.3125em;
-  padding-right: 1.3125em;
+  padding-left: 0.3125em;
+  padding-right: 0.3125em;
 }
 .phs {
-  padding-left: 1.9375em;
-  padding-right: 1.9375em;
+  padding-left: 0.9375em;
+  padding-right: 0.9375em;
 }
 .phm {
-  padding-left: 2.5625em;
-  padding-right: 2.5625em;
+  padding-left: 1.5625em;
+  padding-right: 1.5625em;
 }
 .phl {
-  padding-left: 3.1875em;
-  padding-right: 3.1875em;
+  padding-left: 2.1875em;
+  padding-right: 2.1875em;
 }
 .phxl {
-  padding-left: 3.8125em;
-  padding-right: 3.8125em;
+  padding-left: 2.8125em;
+  padding-right: 2.8125em;
 }
 /*
 Border Radius 
@@ -1098,29 +1098,29 @@ Border Radius
 }
 .top-container {
   background: #23697f;
-  padding-top: 0.6875em;
-  padding-bottom: 0.6875em;
-  padding-left: 0.6875em;
-  padding-right: 0.6875em;
+  padding-top: -0.3125em;
+  padding-bottom: -0.3125em;
+  padding-left: -0.3125em;
+  padding-right: -0.3125em;
 }
 .eyebrow-nav {
   color: #65bbd5;
 }
 .main-nav a {
-  padding-top: 1.3125em;
-  padding-bottom: 1.3125em;
-  padding-left: 1.625em;
-  padding-right: 1.625em;
+  padding-top: 0.3125em;
+  padding-bottom: 0.3125em;
+  padding-left: 0.625em;
+  padding-right: 0.625em;
   color: #ffffff;
 }
 .main-nav a:hover {
   background: #23697f;
 }
 .secondary-nav a {
-  padding-top: 1.125em;
-  padding-bottom: 1.125em;
-  padding-left: 1.3125em;
-  padding-right: 1.3125em;
+  padding-top: 0.125em;
+  padding-bottom: 0.125em;
+  padding-left: 0.3125em;
+  padding-right: 0.3125em;
   color: #595959;
 }
 .secondary-nav a.cart {
