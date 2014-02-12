@@ -19,16 +19,16 @@
 		<!-- Product Grid -->
 		<?php include('views/partials/home-products.php'); ?>
 		<!-- End Product Grid -->
-		
+
 	</section>
 		
 
 	</main>
 
-	<footer>
+	<footer class="main-footer" id="main-footer" role="contentinfo">
 
 		<!-- Footer -->
-		<?php // include('views/partials/footer.php'); ?>
+		<?php include('views/partials/global-footer.php'); ?>
 		<!-- End Footer -->
 
 	</footer>

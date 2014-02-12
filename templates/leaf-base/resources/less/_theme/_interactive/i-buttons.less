@@ -1,0 +1,27 @@
+[class*='button'] {
+	font-family: @primary-heading-font;
+	color: @white;
+	text-decoration: none;
+	text-align: center;
+	display: inline-block;
+
+	//Mixins
+
+	.border-radius(5);
+	.padding-horizontal(15);
+	.padding-vertical(10);
+}
+
+.button {
+
+	&--primary {
+		text-transform: uppercase;
+		background: @primary-color;
+		border-bottom: solid 3px @primary-color-dark;
+
+		&:hover {
+			background: @primary-color-hover;
+		}
+
+	}
+}

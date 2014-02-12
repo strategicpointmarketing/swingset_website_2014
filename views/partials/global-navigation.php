@@ -1,7 +1,10 @@
 <div class="relative-container top-container">
 	<div class="wrapper">
 		<div class="eyebrow-nav">
-			<span class="new-line heading-font align-right">1-800-794-6473</span>
+			<div class="align-right">
+				<i class="icon--phone"></i>
+				<span class="secondary-font align-right">1-800-794-6473</span>
+			</div>
 		</div>
 	</div>
 

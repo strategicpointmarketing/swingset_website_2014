@@ -388,11 +388,12 @@ Typography
 Font Face declarations to load in custom fonts.
 
 */
-.primary-font {
-  font-family: "proxima-nova-soft", Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", Arial, sans-serif;
+.primary-font,
+.pt-serif {
+  font-family: "pt-serif", "Times New Roman", Georgia, serif;
 }
 .secondary-font,
-.heading-font {
+.proxima-nova-soft {
   font-family: "proxima-nova-soft", Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", Arial, sans-serif;
 }
 /*
@@ -542,9 +543,48 @@ p {
 }
 /*
 
-Cases
+Weights
 
 */
+.thin {
+  font-weight: 100;
+}
+.normal {
+  font-weight: 400;
+}
+.medium {
+  font-weight: 500;
+}
+.semibold {
+  font-weight: 600;
+}
+.bold {
+  font-weight: 700;
+}
+[class*='button'] {
+  font-family: "proxima-nova-soft", Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", Arial, sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  -webkit-border-radius: 0.3125rem;
+  -moz-border-radius: 0.3125rem;
+  -o-border-radius: 0.3125rem;
+  -ms-border-radius: 0.3125rem;
+  border-radius: 0.3125rem;
+  padding-left: 0.9375em;
+  padding-right: 0.9375em;
+  padding-top: 0.625em;
+  padding-bottom: 0.625em;
+}
+.button--primary {
+  text-transform: uppercase;
+  background: #fa6851;
+  border-bottom: solid 3px #f72807;
+}
+.button--primary:hover {
+  background: #f95238;
+}
 /*
 
 Text Align
@@ -1098,34 +1138,35 @@ Border Radius
 }
 .top-container {
   background: #23697f;
-  padding-top: -0.3125em;
-  padding-bottom: -0.3125em;
-  padding-left: -0.3125em;
-  padding-right: -0.3125em;
+  padding-top: 0.3125em;
+  padding-bottom: 0.3125em;
 }
 .eyebrow-nav {
   color: #65bbd5;
 }
 .main-nav a {
   color: #ffffff;
-  padding-top: 0.3125em;
-  padding-bottom: 0.3125em;
-  padding-left: 0.625em;
-  padding-right: 0.625em;
+  padding-top: 0.9375em;
+  padding-bottom: 0.9375em;
+  padding-left: 1.25em;
+  padding-right: 1.25em;
 }
 .main-nav a:hover {
   background: #23697f;
 }
 .secondary-nav a {
   color: #595959;
-  padding-top: 0.125em;
-  padding-bottom: 0.125em;
-  padding-left: 0.3125em;
-  padding-right: 0.3125em;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+  padding-left: 0.9375em;
+  padding-right: 0.9375em;
 }
 .secondary-nav a.cart {
   color: #ffffff;
   background: #fa6851;
+}
+.secondary-nav a.cart:hover {
+  background: #f95238;
 }
 .nav {
   margin: 0;
@@ -1146,6 +1187,46 @@ Border Radius
 }
 .product_listing--box {
   padding: 0.9375em;
+}
+.main-footer {
+  background: #fff4e4;
+}
+.bottom-footer {
+  background: #fa6851;
+  color: #ffffff;
+  font-weight: 100;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-family: "proxima-nova-soft", Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", Arial, sans-serif;
+  padding-top: 0.9375em;
+  padding-bottom: 0.9375em;
+}
+.bottom-footer a {
+  text-decoration: none;
+  color: #fca99b;
+}
+.footer-links {
+  font-family: "proxima-nova-soft", Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", Arial, sans-serif;
+  font-weight: 100;
+}
+.footer-links a {
+  text-decoration: none;
+  line-height: 2;
+  color: #595959;
+  margin-top: 0.9375em;
+}
+.footer-links a:hover {
+  color: #339bbb;
+}
+[class*='icon'] {
+  display: inline-block;
+}
+.icon--phone {
+  width: 20px;
+  height: 20px;
+  background-image: url("/templates/leaf-base/resources/images//global-sprite.png");
+  background-position: 0px 0px;
+  margin-right: 0.3125em;
 }
 /*
 
