@@ -1,10 +1,10 @@
-<div class="relative-container flex-container">
+<div id="simple-slider" class="relative-container flex-container">
 	<div class="flexslider">
 	
  
 			  <ul class="slides">
 			    <li>
-			      <img src="http://placehold.it/1440x600" />
+			      <img src="http://placehold.it/1440x600">
 
 
 					<!--<h2 class="great-text secondary-font semibold align-center">Make them smile this time.</h2>
@@ -14,10 +14,10 @@
 
 			    </li>
 			    <li>
-			      <img src="http://placehold.it/1440x600" />
+			      <img src="http://placehold.it/1440x600">
 			    </li>
 			    <li>
-			      <img src="http://placehold.it/1440x600" />
+			      <img src="http://placehold.it/1440x600">
 			    </li>
 			  </ul>
 
