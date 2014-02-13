@@ -6,13 +6,20 @@
 	
 	<header>
 		
-		<!-- Main Navigation -->
+		
 		<?php include('views/partials/global-navigation.php'); ?>
-		<!-- End Main Navigation -->
+
+		
 
 	</header>
 
 	<main role="main">
+
+	<section class="home-slider">
+		<!-- Home Slider -->
+		<?php include('views/partials/home-slider.php'); ?>
+		<!-- End Home Slider -->
+	</section>
 
 	<section class="products-specials">	
 

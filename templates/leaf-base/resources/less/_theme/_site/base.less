@@ -38,13 +38,33 @@
 	margin-right: auto;
 }
 
-.top-container {
+.inner-content {
+	.padding(top,55);
+	.padding(bottom,75);
+}
+
+// Header
+
+.top-header {
 	background: @secondary-color-dark;
 
 	.padding-vertical(5);
 }
 
+.middle-header {
+
+	//Mixins
+	.secondary-bg;
+}
+
+.bottom-header {
+
+	border-bottom: solid 1px @light-grey;
+}
+
+
 // Navigation
+
 
 .eyebrow-nav {
 	color: @secondary-color-light;
@@ -153,6 +173,15 @@
 		line-height:1.75;
 	}
 
+	> li {
+		border-bottom: dotted 1px;
+
+	}
+
+	a {
+		color: @primary-text-color;
+	}
+
 	.active {
 		font-weight: @thin-weight;
 
@@ -170,6 +199,10 @@
 }
 
 .product-listing {
+
+	// Mixins
+
+	.margin(bottom,30);
 
 	.item-price {
 		color: @secondary-text-color;

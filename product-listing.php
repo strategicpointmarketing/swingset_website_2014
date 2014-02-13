@@ -6,14 +6,14 @@
 	
 	<header>
 		
-		<!-- Main Navigation -->
+		
 		<?php include('views/partials/global-navigation.php'); ?>
-		<!-- End Main Navigation -->
+		
 
 	</header>
 
 	<main role="main">
-		<div class="wrapper">
+		<div class="wrapper inner-content">
 			<div class="gd-row gt-row">
 				<div class="gd-quarter gd-columns gt-quarter gt-columns">
 
@@ -23,7 +23,7 @@
 
 					
 				</div>
-				<div class="gd-three-quarters gd-columns gt-three-quarters gt-columns product-listing">
+				<div class="gd-three-quarters gd-columns gt-three-quarters gt-columns">
 
 					<!-- Product Listing -->
 					<?php include('views/partials/product-listing.php'); ?>
