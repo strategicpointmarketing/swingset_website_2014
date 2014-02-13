@@ -1,5 +1,5 @@
 <nav role="navigation">
-	<ul class="product-navigation">
+	<ul class="product-navigation mbxl">
 		<li><a href="#">Swingsets</a>
 			<ul class="active">
 				<li><a href="#">Cedar Playgrounds</a>

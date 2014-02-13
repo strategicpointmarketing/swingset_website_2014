@@ -28,7 +28,7 @@ $(document).ready(function() {
 
     function simpleSlider() {
         $(window).load(function() {
-          var slider = $(".js-flex");
+          var slider = $(".flex-js");
 
           if ( slider.length ) {
             

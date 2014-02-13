@@ -17,7 +17,26 @@
 
 	<section class="home-slider">
 		<!-- Home Slider -->
-		<?php include('views/partials/home-slider.php'); ?>
+		<div class="relative-container flex-js">
+			<div class="flexslider">
+				 
+				  <ul class="slides">
+				    <li class="flex-slide--1">
+				      
+				      	<div class="align-center">
+							<h2 class="great-text white secondary-font semibold">Make them smile this time.</h2>
+							<h2 class="great-text white secondary-font bold mtn">And every time.</h2>
+							<p class="flex-caption white mbl">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+							<a class="semibold paragon-text button--primary" href="#">View Now</a>
+						</div>
+				    </li>
+				    <li>
+				    </li>
+				    <li>
+				    </li>
+				  </ul>
+			</div>
+	</div>
 		<!-- End Home Slider -->
 	</section>
 

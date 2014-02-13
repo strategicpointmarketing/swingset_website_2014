@@ -1,3 +1,5 @@
+
+<!--Product Listing-->
 <ul class="gd-row gt-row unstyled">
 
 	<li class="gd-third gd-columns gt-half gt-columns product-listing">
@@ -37,5 +39,5 @@
 		<a class="button--secondary" href="#">View More</a>
 	</li>
 
-
 </ul>
+<!--End Product Listing-->
