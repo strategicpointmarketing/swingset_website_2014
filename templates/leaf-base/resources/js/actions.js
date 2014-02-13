@@ -28,7 +28,14 @@ $(document).ready(function() {
 
     function simpleSlider() {
         $(window).load(function() {
-          $('#simple-slider').flexslider();
+          var slider = $(".js-flex");
+
+          if ( slider.length ) {
+            
+            slider.flexslider();
+
+          }
+          
         });
     }
 

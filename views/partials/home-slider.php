@@ -1,4 +1,4 @@
-<div id="simple-slider" class="relative-container flex-container">
+<div class="relative-container flex-container js-flex">
 	<div class="flexslider">
 	
  
