@@ -602,13 +602,13 @@ a {
   color: #ffffff;
   text-align: center;
   display: inline-block;
-  -webkit-border-radius: 0.3125rem;
-  -moz-border-radius: 0.3125rem;
-  -o-border-radius: 0.3125rem;
-  -ms-border-radius: 0.3125rem;
-  border-radius: 0.3125rem;
-  padding-left: 0.9375em;
-  padding-right: 0.9375em;
+  -webkit-border-radius: 0.4375rem;
+  -moz-border-radius: 0.4375rem;
+  -o-border-radius: 0.4375rem;
+  -ms-border-radius: 0.4375rem;
+  border-radius: 0.4375rem;
+  padding-left: 1.25em;
+  padding-right: 1.25em;
   padding-top: 0.625em;
   padding-bottom: 0.625em;
 }
@@ -629,6 +629,100 @@ a {
 }
 .button--secondary:hover {
   background: #36a5c7;
+}
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus {
+  outline: none;
+}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.flexslider .slides {
+  zoom: 1;
+}
+.slides:after {
+  content: "\0020";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+html[xmlns] .slides {
+  display: block;
+}
+* html .slides {
+  height: 1%;
+}
+.no-js .slides > li:first-child {
+  display: block;
+}
+.flexslider {
+  margin: 0;
+  padding: 0;
+}
+.flexslider .slides > li {
+  display: none;
+  -webkit-backface-visibility: hidden;
+}
+.flexslider .slides img {
+  width: 100%;
+  display: block;
+}
+@media only screen and (min-width: 48em) {
+  .flex-caption {
+    padding-left: 6.25em;
+    padding-right: 6.25em;
+  }
+}
+.flex-control-nav {
+  width: 100%;
+  position: absolute;
+  z-index: 3;
+  bottom: 2%;
+  text-align: center;
+}
+.flex-control-nav li {
+  margin: 0 6px;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+.flex-control-paging li a {
+  width: 11px;
+  height: 11px;
+  display: block;
+  background: #999999;
+  cursor: pointer;
+  text-indent: -9999px;
+  -webkit-border-radius: 3.125rem;
+  -moz-border-radius: 3.125rem;
+  -o-border-radius: 3.125rem;
+  -ms-border-radius: 3.125rem;
+  border-radius: 3.125rem;
+}
+.flex-control-paging li a:hover {
+  background: #666666;
+}
+.flex-control-paging li a.flex-active {
+  background: #000000;
+}
+[class*='flex-slide'] {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-top: 7.5em;
+  padding-bottom: 8.75em;
+}
+.flex-slide--1 {
+  background-image: url("/templates/leaf-base/resources/images//slides/swingset-warehouse-hero.jpg");
 }
 /*
 
@@ -1181,10 +1275,20 @@ Border Radius
   margin-left: auto;
   margin-right: auto;
 }
-.top-container {
+.inner-content {
+  padding-top: 3.4375em;
+  padding-bottom: 4.6875em;
+}
+.top-header {
   background: #23697f;
   padding-top: 0.3125em;
   padding-bottom: 0.3125em;
+}
+.middle-header {
+  background: #339bbb;
+}
+.bottom-header {
+  border-bottom: solid 1px #e0e0e0;
 }
 .eyebrow-nav {
   color: #65bbd5;
@@ -1254,6 +1358,12 @@ Border Radius
 .product-navigation li {
   line-height: 1.75;
 }
+.product-navigation > li {
+  border-bottom: dotted 1px;
+}
+.product-navigation a {
+  color: #666666;
+}
 .product-navigation .active {
   font-weight: 100;
   list-style-type: none;
@@ -1264,8 +1374,11 @@ Border Radius
 .product-navigation .active a:first-child {
   border: 0;
 }
+.product-listing {
+  margin-bottom: 1.875em;
+}
 .product-listing .item-price {
-  color: #cccccc;
+  color: #999999;
   font-family: "proxima-nova-soft", Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", Arial, sans-serif;
   font-size: 14px;
   font-size: 0.875rem;

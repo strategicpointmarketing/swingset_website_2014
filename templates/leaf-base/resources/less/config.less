@@ -55,7 +55,7 @@ Style Guide 0.1.0
 @white: 					#fff;
 @black: 					#000;
 @grey: 						#999;
-@light-grey: 				lighten(@grey, 20%);
+@light-grey: 				#E0E0E0;
 @dark-grey: 				darken(@grey, 20%);
 @blue: 						#3399FF;
 @light-blue: 				lighten(@blue, 15%);
@@ -87,7 +87,7 @@ Style Guide 0.1.0
 
 // Text Colors
 @primary-text-color: 		@dark-grey;
-@secondary-text-color: 		@light-grey;
+@secondary-text-color: 		@grey;
 @inverse-text-color: 		@white;
 @button-text-color: 		@inverse-text-color;
 
@@ -103,11 +103,11 @@ Style Guide 0.1.0
 // Button Colors
 @primary-button-color:		@primary-color;
 @primary-button-hover:		lighten(@primary-button-color, 3%);
-@primary-button-border:		@primary-color-dark;
+@primary-button-border:		darken(@primary-button-color, 15%);
 
 @secondary-button-color:	@secondary-color;
 @secondary-button-hover:	lighten(@secondary-button-color, 3%);
-@secondary-button-border:	@secondary-color-dark;
+@secondary-button-border:	darken(@secondary-button-color, 15%);
 
 // Font Declarations
 @proxima-nova-soft:			"proxima-nova-soft", Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", Arial, sans-serif;

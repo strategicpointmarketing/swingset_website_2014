@@ -26,6 +26,20 @@ $(document).ready(function() {
 
     }
 
+    function simpleSlider() {
+        $(window).load(function() {
+          var slider = $(".flex-js");
+
+          if ( slider.length ) {
+            
+            slider.flexslider();
+
+          }
+          
+        });
+    }
+
     windowScroll();
+    simpleSlider();
 
 });

@@ -1,4 +1,4 @@
-<div class="relative-container top-container">
+<div class="relative-container top-header">
 	<div class="wrapper">
 		<div class="eyebrow-nav">
 			<div class="align-right">
@@ -10,7 +10,9 @@
 
 </div>
 
-<div class="relative-container secondary-bg">
+<!-- Main Navigation -->
+
+<div class="relative-container middle-header">
 	<div class="wrapper">
 		<nav class="main-nav" role="navigation">
 			<ul class="nav paragon-text white">
@@ -23,7 +25,9 @@
 	</div>
 </div>
 
-<div class="relative-container">
+
+
+<div class="relative-container bottom-header">
 	<div class="wrapper">
 		<nav class="secondary-nav" role="navigation">
 			<ul class="nav normal-text">
@@ -34,3 +38,5 @@
 		</nav>
 	</div>
 </div>
+
+<!-- End Main Navigation -->
