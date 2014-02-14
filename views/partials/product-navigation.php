@@ -1,4 +1,5 @@
 <nav>
+	<h5 class="tertiary-heading uppercase mtn mbs">Product Navigation</h5>
 	<ul class="product-navigation">
 		<li><a href="#">Swingsets</a>
 			<ul class="active">

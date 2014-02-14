@@ -467,6 +467,7 @@ manageable.
 }
 .tertiary-heading {
   color: #613c4f;
+  font-family: "proxima-nova-soft", Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", Arial, sans-serif;
 }
 h1,
 h2,
@@ -630,6 +631,48 @@ a {
 .button--secondary:hover {
   background: #36a5c7;
 }
+.button--add {
+  text-transform: uppercase;
+  background: #339bbb;
+  border-bottom: solid 3px #23697f;
+}
+.button--add:hover {
+  background: #36a5c7;
+}
+.tabs {
+  padding-left: 0;
+  list-style: none outside none;
+  padding: 0;
+}
+.tabs .tab-content {
+  display: none;
+}
+.tabs .tab-heading {
+  cursor: pointer;
+  float: left;
+  background: #e9e9e9;
+  font-family: "proxima-nova-soft", Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", Arial, sans-serif;
+  padding-left: 0.625em;
+  padding-right: 0.625em;
+  padding-top: 0.3125em;
+  padding-bottom: 0.3125em;
+  margin-right: 0.3125em;
+  margin-bottom: 0.9375em;
+  -webkit-border-radius: 0.9375rem;
+  -moz-border-radius: 0.9375rem;
+  -o-border-radius: 0.9375rem;
+  -ms-border-radius: 0.9375rem;
+  border-radius: 0.9375rem;
+}
+.tabs .tab-heading.active {
+  background: #613c4f;
+  color: #ffffff;
+}
+.tabs-container {
+  clear: both;
+  display: block;
+  padding: 0.3125em;
+}
 .flex-container a:active,
 .flexslider a:active,
 .flex-container a:focus,
@@ -675,10 +718,6 @@ html[xmlns] .slides {
   width: 100%;
   display: block;
 }
-.flex-caption {
-  padding-left: 6.25em;
-  padding-right: 6.25em;
-}
 .flex-control-nav {
   width: 100%;
   position: absolute;
@@ -709,7 +748,7 @@ html[xmlns] .slides {
   background: #666666;
 }
 .flex-control-paging li a.flex-active {
-  background: #000000;
+  background: #ffffff;
 }
 [class*='flex-slide'] {
   position: relative;
@@ -721,6 +760,12 @@ html[xmlns] .slides {
 }
 .flex-slide--1 {
   background-image: url("/templates/leaf-base/resources/images//slides/swingset-warehouse-hero.jpg");
+}
+.flex-slide--2 {
+  background-image: url("http://instasrc.com/1440/536");
+}
+.flex-slide--3 {
+  background-image: url("http://instasrc.com/1440/536");
 }
 /*
 
@@ -1274,8 +1319,8 @@ Border Radius
   margin-right: auto;
 }
 .inner-content {
-  padding-top: 3.4375em;
-  padding-bottom: 4.6875em;
+  padding-top: 3.75em;
+  padding-bottom: 5.3125em;
 }
 .top-header {
   background: #23697f;
@@ -1286,7 +1331,7 @@ Border Radius
   background: #339bbb;
 }
 .bottom-header {
-  border-bottom: solid 1px #e0e0e0;
+  border-bottom: solid 1px #e9e9e9;
 }
 .eyebrow-nav {
   color: #65bbd5;
@@ -1347,6 +1392,7 @@ Border Radius
 }
 .product-navigation {
   font-weight: 600;
+  margin-top: 0;
   padding-left: 0;
   list-style: none outside none;
   font-size: 12px;
@@ -1381,6 +1427,61 @@ Border Radius
   font-size: 14px;
   font-size: 0.875rem;
   margin-bottom: 0.625em;
+}
+.product-stock {
+  margin-top: 0.9375em;
+  margin-bottom: 0.9375em;
+  font-family: "proxima-nova-soft", Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", Arial, sans-serif;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+.product-stock .in-stock {
+  color: #019026;
+  font-weight: 600;
+  margin-right: 0.3125em;
+}
+.product-price {
+  font-family: "proxima-nova-soft", Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", Arial, sans-serif;
+  color: #fa6851;
+  font-size: 32px;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0.3125em;
+}
+.product-options {
+  background: #e9e9e9;
+  margin-top: 0.9375em;
+  margin-bottom: 0.9375em;
+  padding: 1.25em;
+  -webkit-border-radius: 0.4375rem;
+  -moz-border-radius: 0.4375rem;
+  -o-border-radius: 0.4375rem;
+  -ms-border-radius: 0.4375rem;
+  border-radius: 0.4375rem;
+}
+.product-options .option-label {
+  margin-top: 0;
+  margin-bottom: 0.9375em;
+}
+.product-actions .quantity-container {
+  display: inline-block;
+  margin-right: 0.625em;
+}
+.product-actions .quantity-label {
+  display: inline-block;
+  font-family: "proxima-nova-soft", Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", Arial, sans-serif;
+  float: left;
+  margin-right: 0.625em;
+}
+.product-actions .quantity-value {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+}
+.product-actions .add-cart-container {
+  display: inline-block;
+  vertical-align: top;
 }
 .main-footer {
   background: #fff4e4;

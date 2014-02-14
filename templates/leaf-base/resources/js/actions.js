@@ -1,3 +1,28 @@
+$.fn.productTabs = function() {
+
+  return this.each(function() {
+    var el = $(this),
+        tabs = el.find('.tab-heading'),
+        content = el.find('.tab-content'),
+        container = $('<div class="tabs-container"></div>').insertAfter(el);
+
+    tabs.on('click', function() {
+      var tab = $(this);
+
+      tabs.not(tab).removeClass('active');
+      tab.addClass('active');
+
+      container.html( tab.next().html() );
+    });
+
+    tabs.filter(':first').trigger('click');
+  });
+
+}
+
+$('.tabs').productTabs();
+
+
 $(document).ready(function() {
     
     function windowScroll() {
@@ -36,10 +61,13 @@ $(document).ready(function() {
 
           }
           
+          
         });
+      
     }
 
     windowScroll();
     simpleSlider();
 
+    
 });

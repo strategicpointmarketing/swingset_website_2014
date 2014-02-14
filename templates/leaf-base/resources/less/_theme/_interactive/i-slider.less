@@ -54,13 +54,7 @@ html[xmlns] .slides {
 
 .flex-caption {
 
-	@media only screen and (min-width: @mq-tablet-min) {
-		
-		// Mixins
-		.padding-horizontal(100);
-	}
 }
-
 
 .flex-control-nav {
 	width: 100%; 
@@ -97,7 +91,7 @@ html[xmlns] .slides {
 		}
 
 		&.flex-active {
-			background: @black;
+			background: @white;
 		}
 	}
 
@@ -121,5 +115,13 @@ html[xmlns] .slides {
 
 	&--1 {
 		background-image:url("@{base-path-images}/slides/swingset-warehouse-hero.jpg");
+	}
+
+	&--2 {
+		background-image:url("http://instasrc.com/1440/536");
+	}
+
+	&--3 {
+		background-image:url("http://instasrc.com/1440/536");
 	}
 }
