@@ -755,17 +755,17 @@ html[xmlns] .slides {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  padding-top: 7.5em;
-  padding-bottom: 8.75em;
+  padding-top: 8.4375em;
+  padding-bottom: 8.125em;
 }
 .flex-slide--1 {
   background-image: url("/templates/leaf-base/resources/images//slides/swingset-warehouse-hero.jpg");
 }
 .flex-slide--2 {
-  background-image: url("http://instasrc.com/1440/536");
+  background-image: url("http://placeimg.com/1440/536/nature");
 }
 .flex-slide--3 {
-  background-image: url("http://instasrc.com/1440/536");
+  background-image: url("http://placeimg.com/1440/536/nature");
 }
 /*
 
@@ -1522,6 +1522,39 @@ Border Radius
   background-image: url("/templates/leaf-base/resources/images//global-sprite.png");
   background-position: 0px 0px;
   margin-right: 0.3125em;
+}
+.icon--facebook {
+  background-image: url("/templates/leaf-base/resources/images//global-sprite.png");
+  background-position: -100px 0px;
+}
+.icon--twitter {
+  background-image: url("/templates/leaf-base/resources/images//global-sprite.png");
+  background-position: -150px 0px;
+}
+.icon--pinterest {
+  width: 12px;
+  height: 10px;
+  background-image: url("/templates/leaf-base/resources/images//global-sprite.png");
+  background-position: -200px 0px;
+  margin-right: 0.625em;
+}
+.share {
+  color: #ffffff;
+  font-size: 12px;
+  font-size: 0.75rem;
+  font-family: "proxima-nova-soft", Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", Arial, sans-serif;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  padding-top: 0.375em;
+  padding-bottom: 0.375em;
+  -webkit-border-radius: 0.3125rem;
+  -moz-border-radius: 0.3125rem;
+  -o-border-radius: 0.3125rem;
+  -ms-border-radius: 0.3125rem;
+  border-radius: 0.3125rem;
+}
+.share.pinterest {
+  background: #cb2027;
 }
 /*
 

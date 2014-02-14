@@ -373,4 +373,45 @@
 		.margin(right,5);
 
 		}
+	
+	&--facebook {
+
+		// Mixins
+		.global-sprite(2,0);
+	}
+
+	&--twitter {
+
+		// Mixins
+		.global-sprite(3,0);
+	}
+
+	&--pinterest {
+
+		width:12px;
+		height:10px;
+
+		// Mixins
+		.global-sprite(4,0);
+		.margin(right,10);
+
+	}
 }
+
+// Social
+
+	.share {
+
+		color: @white;
+
+		// Mixins
+		.minion-text;
+		.secondary-font;
+		.padding-horizontal(12);
+		.padding-vertical(6);
+		.border-radius(5);
+
+		&.pinterest {
+			background: @red;
+		}
+	}

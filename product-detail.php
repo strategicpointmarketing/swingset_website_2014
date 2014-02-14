@@ -28,9 +28,17 @@
 					<!--Product Detail-->
 					
 					<div class="gd-row gt-row">
+						<!--Product Image-->
 						<div class="gd-half gd-columns gt-full gt-columns">
-							<img class="mbm "src="images/featured/featured-swingset-photo.jpg">
+							<img class="mbs "src="images/featured/featured-swingset-photo.jpg">
+						
+							<!--<div class="social-share">
+								<a class="share pinterest" href="#"><i class="icon--pinterest"></i>Pin It</a>
+							</div>-->
+
+							
 						</div>
+						<!--End Product Image-->
 						<div class="gd-half gd-columns gt-full gt-columns">
 							<h3 class="tertiary-heading paragon-text mtn">Adventure Treehouse Swingset</h3>
 							<div class="product-stock"><span class="in-stock">In Stock.</span><span class="items-available">35 available.</span></div>
