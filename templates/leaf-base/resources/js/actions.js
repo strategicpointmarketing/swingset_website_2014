@@ -18,7 +18,7 @@ $.fn.productTabs = function() {
     tabs.filter(':first').trigger('click');
   });
 
-}
+};
 
 $('.tabs').productTabs();
 

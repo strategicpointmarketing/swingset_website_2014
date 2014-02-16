@@ -1313,8 +1313,7 @@ Border Radius
   background: #ffffff;
 }
 .wrapper {
-  width: 80%;
-  max-width: 63em;
+  width: 92%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1338,20 +1337,24 @@ Border Radius
 }
 .main-nav a {
   color: #ffffff;
-  padding-top: 0.9375em;
-  padding-bottom: 0.9375em;
-  padding-left: 1.25em;
-  padding-right: 1.25em;
+  padding-top: 1.66666667em;
+  padding-bottom: 1.66666667em;
+  padding-left: 0.83333333em;
+  padding-right: 0.83333333em;
+  font-size: 12px;
+  font-size: 0.75rem;
 }
 .main-nav a:hover {
   background: #23697f;
 }
 .secondary-nav a {
   color: #666666;
-  padding-top: 0.75em;
-  padding-bottom: 0.75em;
-  padding-left: 0.9375em;
-  padding-right: 0.9375em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 0.83333333em;
+  padding-right: 0.83333333em;
+  font-size: 12px;
+  font-size: 0.75rem;
 }
 .secondary-nav a.cart {
   color: #ffffff;
@@ -1927,6 +1930,20 @@ Example Markup:
 }
 .gd-1of12 {
   width: 8.33333333%;
+}
+.wrapper {
+  width: 80%;
+  max-width: 63em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main-nav a {
+  padding-top: 0.83333333em;
+  padding-bottom: 0.83333333em;
+  padding-left: 0.83333333em;
+  padding-right: 0.83333333em;
+  font-size: 24px;
+  font-size: 1.5rem;
 }
 html,
 body {

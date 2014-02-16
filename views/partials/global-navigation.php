@@ -15,7 +15,7 @@
 <div class="relative-container middle-header">
 	<div class="wrapper">
 		<nav class="main-nav" role="navigation">
-			<ul class="nav paragon-text white">
+			<ul class="nav white">
 				<li><a href="product-listing.php">Products</a></li>
 				<li><a href="#">Locations</a></li>
 				<li><a href="#">About</a></li>

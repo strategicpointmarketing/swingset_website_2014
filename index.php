@@ -6,10 +6,9 @@
 	
 	<header>
 		
-		
+		<!-- Main Navigaiton -->
 		<?php include('views/partials/global-navigation.php'); ?>
-
-		
+		<!-- End Main Navigaiton -->
 
 	</header>
 

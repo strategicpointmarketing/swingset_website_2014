@@ -32,8 +32,7 @@
 // Global Containers & Wrappers
 
 .wrapper {
-	width: 80%;
-	max-width: 63em;
+	width: 92%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -76,8 +75,9 @@
 		color:@white;
 		
 		// Mixins
-		.padding-vertical(15);
-		.padding-horizontal(20);
+		.padding-vertical(20, @minion-text-size);
+		.padding-horizontal(10, @minion-text-size);
+		.size-for-font(@minion-text-size);
 
 		&:hover {
 			background: @secondary-color-dark;
@@ -89,22 +89,23 @@
 .secondary-nav {
 
 	a {
-		color: @dark-grey;		
+		color: @dark-grey;
 		
 		// Mixins
-		.padding-vertical(12);
-		.padding-horizontal(15);
+		.padding-vertical(12, @minion-text-size);
+		.padding-horizontal(10, @minion-text-size);
+		.size-for-font(@minion-text-size);
 
-			&.cart {
-				color:@white;
-				
-				// Mixins
-				.primary-bg;
+		&.cart {
+			color:@white;
+			
+			// Mixins
+			.primary-bg;
 
-				&:hover {
-					background: @primary-color-alt;
-				}
+			&:hover {
+				background: @primary-color-alt;
 			}
+		}
 		
 	}
 }
@@ -122,9 +123,9 @@
 	}
 	
 	// Mixins
-	.unstyled-list;
+	.unstyled-list; // To Specific
 	.align-right;
-	.secondary-font;
+	.secondary-font; // To specific
 }
 
 // Home Product Listing
