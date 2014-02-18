@@ -1347,6 +1347,9 @@ Border Radius
 .main-nav .main-nav__link:hover {
   background: #23697f;
 }
+.secondary-nav {
+  display: none;
+}
 .tertiary-nav a {
   color: #666666;
   padding-top: 1em;
