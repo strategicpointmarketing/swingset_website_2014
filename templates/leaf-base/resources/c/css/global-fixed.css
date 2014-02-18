@@ -1335,7 +1335,7 @@ Border Radius
 .eyebrow-nav {
   color: #65bbd5;
 }
-.main-nav a {
+.main-nav .main-nav__link {
   color: #ffffff;
   padding-top: 1.66666667em;
   padding-bottom: 1.66666667em;
@@ -1344,10 +1344,10 @@ Border Radius
   font-size: 12px;
   font-size: 0.75rem;
 }
-.main-nav a:hover {
+.main-nav .main-nav__link:hover {
   background: #23697f;
 }
-.secondary-nav a {
+.tertiary-nav a {
   color: #666666;
   padding-top: 1em;
   padding-bottom: 1em;
@@ -1356,11 +1356,11 @@ Border Radius
   font-size: 12px;
   font-size: 0.75rem;
 }
-.secondary-nav a.cart {
+.tertiary-nav a.cart {
   color: #ffffff;
   background: #fa6851;
 }
-.secondary-nav a.cart:hover {
+.tertiary-nav a.cart:hover {
   background: #f95238;
 }
 .nav {
@@ -1937,7 +1937,7 @@ Example Markup:
   margin-left: auto;
   margin-right: auto;
 }
-.main-nav a {
+.main-nav .main-nav__link {
   padding-top: 0.83333333em;
   padding-bottom: 0.83333333em;
   padding-left: 0.83333333em;

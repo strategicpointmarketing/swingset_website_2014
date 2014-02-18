@@ -16,10 +16,28 @@
 	<div class="wrapper">
 		<nav class="main-nav" role="navigation">
 			<ul class="nav white">
-				<li><a href="product-listing.php">Products</a></li>
-				<li><a href="#">Locations</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Gallery</a></li>
+				<li class="sub-nav">
+					<a class="main-nav__link" href="product-listing.php">Products</a>
+					<div class="secondary-nav">
+						<div class="group">
+							<ul class="gd-columns gt-columns gd-half gt-half">
+								<li><a href="#">Item 1</a></li>
+								<li><a href="#">Item 2</a></li>
+								<li><a href="#">Item 3</a></li>
+								<li><a href="#">Item 4</a></li>
+							</ul>
+							<ul class="gd-columns gt-columns gd-half gt-half">
+								<li><a href="#">Item 5</a></li>
+								<li><a href="#">Item 6</a></li>
+								<li><a href="#">Item 7</a></li>
+								<li><a href="#">Item 8</a></li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li><a class="main-nav__link" href="#">Locations</a></li>
+				<li><a class="main-nav__link" href="#">About</a></li>
+				<li><a class="main-nav__link" href="#">Gallery</a></li>
 			</ul>
 		</nav>
 	</div>
@@ -29,13 +47,14 @@
 
 <div class="relative-container bottom-header">
 	<div class="wrapper">
-		<nav class="secondary-nav" role="navigation">
+		<div class="tertiary-nav" role="navigation">
 			<ul class="nav normal-text">
 				<li><a href="#">Warranty</a></li>
 				<li><a href="#">Blog</a></li>
 				<li><a href="#">My Account</a></li>
 				<li><a class="cart" href="#">Cart (0)</a></li>
-		</nav>
+			</ul>
+		</div>
 	</div>
 </div>
 

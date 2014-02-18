@@ -1335,7 +1335,7 @@ Border Radius
 .eyebrow-nav {
   color: #65bbd5;
 }
-.main-nav a {
+.main-nav .main-nav__link {
   color: #ffffff;
   padding-top: 1.66666667em;
   padding-bottom: 1.66666667em;
@@ -1344,10 +1344,10 @@ Border Radius
   font-size: 12px;
   font-size: 0.75rem;
 }
-.main-nav a:hover {
+.main-nav .main-nav__link:hover {
   background: #23697f;
 }
-.secondary-nav a {
+.tertiary-nav a {
   color: #666666;
   padding-top: 1em;
   padding-bottom: 1em;
@@ -1356,11 +1356,11 @@ Border Radius
   font-size: 12px;
   font-size: 0.75rem;
 }
-.secondary-nav a.cart {
+.tertiary-nav a.cart {
   color: #ffffff;
   background: #fa6851;
 }
-.secondary-nav a.cart:hover {
+.tertiary-nav a.cart:hover {
   background: #f95238;
 }
 .nav {
@@ -1772,7 +1772,7 @@ Example Markup:
   }
 }
 @media only screen and (min-width: 48em) {
-  .main-nav a {
+  .main-nav .main-nav__link {
     padding-top: 0.83333333em;
     padding-bottom: 0.83333333em;
     padding-left: 1.11111111em;
@@ -1780,7 +1780,44 @@ Example Markup:
     font-size: 18px;
     font-size: 1.125rem;
   }
+  .sub-nav {
+    position: relative;
+  }
+  .sub-nav:hover .main-nav__link,
+  .sub-nav:focus .main-nav__link {
+    background: #23697f;
+  }
+  .sub-nav:hover .secondary-nav,
+  .sub-nav:focus .secondary-nav {
+    top: 100%;
+    z-index: 50;
+    opacity: 1;
+  }
+  .secondary-nav {
+    width: 250%;
+    position: absolute;
+    top: 120%;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    text-align: left;
+    background-color: #fa6851;
+    -webkit-transition: top 0.25s ease-in-out, opacity 0.25s ease-in-out;
+    -moz-transition: top 0.25s ease-in-out, opacity 0.25s ease-in-out;
+    -o-transition: top 0.25s ease-in-out, opacity 0.25s ease-in-out;
+    transition: top 0.25s ease-in-out, opacity 0.25s ease-in-out;
+  }
+  .secondary-nav li {
+    display: block;
+  }
   .secondary-nav a {
+    color: #ffffff;
+    padding-top: 0.625em;
+    padding-bottom: 0.625em;
+    font-size: 16px;
+    font-size: 1rem;
+  }
+  .tertiary-nav a {
     padding-top: 0.85714286em;
     padding-bottom: 0.85714286em;
     padding-left: 1.07142857em;
@@ -2021,7 +2058,7 @@ Example Markup:
     margin-left: auto;
     margin-right: auto;
   }
-  .main-nav a {
+  .main-nav .main-nav__link {
     padding-top: 0.83333333em;
     padding-bottom: 0.83333333em;
     padding-left: 0.83333333em;
