@@ -10,23 +10,27 @@
 // Background Colors
 
 .primary-bg {
-	background: @primary-color;
+	background-color: @primary-color;
 }
 
 .secondary-bg {
-	background: @secondary-color;
+	background-color: @secondary-color;
+}
+
+.secondary-bg-dark {
+	background-color: @secondary-color-dark;
 }
 
 .tertiary-bg {
-	background: @tertiary-color;
+	background-color: @tertiary-color;
 }
 
 .quarternary-bg {
-	background: @quarternary-color;
+	background-color: @quarternary-color;
 }
 
 .white-bg {
-	background: @white;
+	background-color: @white;
 }
 
 // Global Containers & Wrappers
@@ -45,8 +49,6 @@
 // Header
 
 .top-header {
-	background: @secondary-color-dark;
-
 	.padding-vertical(5);
 }
 
@@ -84,6 +86,19 @@
 		}
 
 	}
+}
+
+.logo {
+	// Variables
+	@5px: 1em * (5 / @base-text-size);
+
+	position: relative;
+	top: -@5px;
+	left: 0;
+}
+
+.link--phone {
+	color: @secondary-color;
 }
 
 .secondary-nav {

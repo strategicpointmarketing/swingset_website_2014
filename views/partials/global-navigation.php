@@ -1,9 +1,12 @@
-<div class="relative-container top-header">
-	<div class="wrapper">
-		<div class="eyebrow-nav">
-			<div class="align-right">
-				<i class="icon--phone"></i>
-				<span class="secondary-font align-right">1-800-794-6473</span>
+<div class="secondary-bg-dark">
+	<div class="top-header relative-container wrapper">
+		<div class="eyebrow-nav group">
+			<div class="gm-columns gm-half">
+				<a href="/"><img class="logo" src="/images/logo.png" alt="Swingset Toys Logo"></a>
+			</div>
+			<div class="gm-columns gm-half align-right">
+				<i class="mobile-none icon--phone"></i>
+				<a class="link--phone secondary-font" href="tel:800-794-6473">1-800-794-6473</a>
 			</div>
 		</div>
 	</div>
