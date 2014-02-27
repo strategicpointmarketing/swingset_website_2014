@@ -1,0 +1,293 @@
+
+# View Cart
+
+Redirect 301 /cart.aspx
+
+# Photo Gallery
+
+Redirect 301 /rubbermulchgallery.aspx
+Redirect 301 /photogallery.aspx
+Redirect 301 /videos.aspx
+
+# Front Page
+
+Redirect 301 /informationrequest.aspx
+Redirect 301 /demosalesevent.aspx
+
+# About
+
+Redirect 301 /about-us.aspx
+
+# Contact
+
+Redirect 301 /contact-us.aspx
+
+# My Account
+
+Redirect 301 /account.aspx
+
+# Policies
+
+Redirect 301 /shipping-policy.aspx
+Redirect 301 /return-policy.aspx
+Redirect 301 /privacy-policy.aspx
+
+# Sitemap 
+
+Redirect 301 /sitemap.aspx
+
+# Cart Help
+
+Redirect 301 /help.aspx
+
+# Swingsets
+
+Redirect 301 /swingsets.aspx
+
+# Cedar
+Redirect 301 /cedarplaygrounds.aspx
+
+Redirect 301 /adventuretreehouse.aspx
+Redirect 301 /magellan.aspx
+Redirect 301 /backyardadventuresolympiantreehouse.aspx
+Redirect 301 /backyardadventures-titantreehouse.aspx
+Redirect 301 /backyardadventures-mountaineer.aspx
+Redirect 301 /backyardadventures-olympianpeak.aspx
+Redirect 301 /backyardadventures-titanpeak.aspx
+Redirect 301 /thebrook.aspx
+Redirect 301 /backyardadventuresacadia.aspx
+Redirect 301 /trekplayset.aspx
+Redirect 301 /thehawk.aspx
+Redirect 301 /liberty.aspx
+Redirect 301 /compassplayset.aspx
+Redirect 301 /backyardadventuresglacier.aspx
+Redirect 301 /windsorii.aspx
+Redirect 301 /woodridge.aspx
+Redirect 301 /outingplayset.aspx
+Redirect 301 /backyardadventuresavalanche.aspx
+Redirect 301 /dreamscapeplayset.aspx
+Redirect 301 /backyardadventuresyosemite.aspx
+Redirect 301 /questplayset.aspx
+Redirect 301 /supremescape.aspx
+Redirect 301 /journeyplayset.aspx
+Redirect 301 /dream.aspx
+Redirect 301 /wandererplayset.aspx
+Redirect 301 /vistaplayset.aspx
+Redirect 301 /excursionplayset.aspx
+Redirect 301 /ultimate.aspx
+Redirect 301 /extremeplayset.aspx
+Redirect 301 /skyplayset.aspx
+Redirect 301 /backyardodysseytraverseplayset.aspx
+Redirect 301 /fantasyplayset.aspx
+Redirect 301 /fantasytreehouseplayset.aspx
+Redirect 301 /safariplayset.aspx
+Redirect 301 /imaginationplayset.aspx
+
+# Promotional
+Redirect 301 /promotionalplayhousesets-2-2.aspx
+
+# Redwood
+Redirect 301 /redwoodplaygrounds.aspx
+
+Redirect 301 /redwoodfunshack.aspx
+Redirect 301 /redwoodmaverick.aspx
+Redirect 301 /redwoodfortstockton.aspx
+Redirect 301 /fortdavisplayset.aspx
+Redirect 301 /conchoredwoodset.aspx
+Redirect 301 /ranchero.aspx
+Redirect 301 /fortranger.aspx
+Redirect 301 /redwood-double-porch-swing.aspx
+
+
+# Space Saver
+
+Redirect 301 /spacesaverswingsets.aspx
+
+Redirect 301 /ftdavisredwoodspacesaver.aspx
+Redirect 301 /adventurespacesaver.aspx
+Redirect 301 /acadiaspacesaver.aspx
+Redirect 301 /classicplayset.aspx
+Redirect 301 /freestandingcedarset.aspx
+Redirect 301 /freestandingredwoodset.aspx
+
+# Vinyl Swingsets
+
+Redirect 301 /vinylswingsets.aspx
+
+Redirect 301 /a-1standardclimber.aspx
+Redirect 301 /a-4special.aspx
+Redirect 301 /a-5whitetower.aspx
+Redirect 301 /kc-1clubhouse.aspx
+Redirect 301 /kc-2deluxe.aspx
+Redirect 301 /kc-5deluxe.aspx
+Redirect 301 /kc-10economyturbo.aspx
+Redirect 301 /ktb-2turbotower.aspx
+Redirect 301 /a-7deluxe.aspx
+Redirect 301 /rl-2turbotower.aspx
+Redirect 301 /rl-5combotower.aspx
+Redirect 301 /rl-10clifflookout.aspx
+Redirect 301 /krcextreme.aspx
+Redirect 301 /sk-2juniormountainclimber.aspx
+Redirect 301 /sk-5mountainclimber.aspx
+Redirect 301 /sk-10mountainclimber.aspx
+Redirect 301 /sk-18turbomountainclimber.aspx
+Redirect 301 /sk-30megamountainclimber.aspx
+Redirect 301 /sk-40rockymountainclimber.aspx
+Redirect 301 /sk-50retreat.aspx
+Redirect 301 /c-1hideout.aspx
+Redirect 301 /c-2turboescape.aspx
+Redirect 301 /c-3hideout.aspx
+Redirect 301 /c-4hideout.aspx
+Redirect 301 /c-5castle.aspx
+Redirect 301 /c-8bridgeescape.aspx
+Redirect 301 /c-3tunnelescape.aspx
+Redirect 301 /sk-60cottageescape.aspx
+
+# Accessories
+
+Redirect 301 /accessories-2.aspx
+
+Redirect 301 /periscope.aspx
+Redirect 301 /telescope.aspx
+Redirect 301 /steeringwheel.aspx
+Redirect 301 /molded-high-back-toddler-swing.aspx
+Redirect 301 /binoculars.aspx
+Redirect 301 /cycloneswing.aspx
+Redirect 301 /shipswheel.aspx
+Redirect 301 /trapezebar.aspx
+Redirect 301 /standnswing.aspx
+Redirect 301 /beltswings.aspx
+Redirect 301 /firemanspole.aspx
+Redirect 301 /funride.aspx
+Redirect 301 /infantbucketswing.aspx
+Redirect 301 /toddlerbeltswing.aspx
+Redirect 301 /play-set-name-plate.aspx
+Redirect 301 /2-in-1-infant-toddler-swing.aspx
+Redirect 301 /chain-baby-swing.aspx
+Redirect 301 /buoyball.aspx
+Redirect 301 /childworks20commercialseat.aspx
+Redirect 301 /leveldry.aspx
+Redirect 301 /funridedeluxe.aspx
+Redirect 301 /tireswingseat.aspx
+Redirect 301 /chainglider.aspx
+Redirect 301 /softgripglider.aspx
+Redirect 301 /airpogo.aspx
+Redirect 301 /lemonadestand.aspx
+Redirect 301 /superzfunride.aspx
+Redirect 301 /picnictable.aspx
+Redirect 301 /megarider.aspx
+Redirect 301 /tireswivelswing.aspx
+Redirect 301 /woodenswingseat.aspx
+Redirect 301 /rockwall.aspx
+Redirect 301 /rocketslide.aspx
+Redirect 301 /gangplank.aspx
+Redirect 301 /porch.aspx
+Redirect 301 /cabinpackage.aspx
+Redirect 301 /redwood-double-porch-swing.aspx
+Redirect 301 /lowerpackage.aspx
+Redirect 301 /adventurebridge.aspx
+Redirect 301 /sundeck.aspx
+Redirect 301 /backyardloft.aspx
+Redirect 301 /playhouse.aspx
+Redirect 301 /tower.aspx
+Redirect 301 /redwood-playhouse-with-porch.aspx
+
+Redirect 301 /leveldry.aspx
+Redirect 301 /leveldry-2.aspx
+Redirect 301 /leveldry-3.aspx
+
+
+# Trampolines
+
+Redirect 301 /trampolines.aspx
+
+Redirect 301 /alleyoopsportspower-bouncetrampolinesystem.aspx
+Redirect 301 /alleyoopdoublebouncetrampolinesystem.aspx
+Redirect 301 /14ftpowerdoublebouncetrampolinesystem.aspx
+Redirect 301 /10x17rectangulartrampolinesystems.aspx
+Redirect 301 /alleyoopproflextrampolinebasketballset.aspx
+Redirect 301 /jumpsportproflextrampolinebasketballset.aspx
+Redirect 301 /jumpsporttrampolinegameandpartypak.aspx
+Redirect 301 /jumpsportsuresteptrampolineladders.aspx
+Redirect 301 /jumpsporttrampolineanchorkit.aspx
+Redirect 301 /jumpsportstagedbouncetrampoline.aspx
+Redirect 301 /jumpsportpowerbouncetrampoline.aspx
+Redirect 301 /trampolinemistsystem.aspx
+Redirect 301 /jumpsportsafetytrampolineskirt.aspx
+Redirect 301 /alleyoopsports14ftvariable-bouncetrampolinesystem.aspx
+Redirect 301 /10x17powerbouncerectangulartrampoline.aspx
+
+
+# Playground Surfacing
+
+Redirect 301 /playgroundsurfacing.aspx
+
+Redirect 301 /brownmulch.aspx
+Redirect 301 /greenmulch.aspx
+Redirect 301 /redmulch.aspx
+Redirect 301 /bluemulch.aspx
+Redirect 301 /playrunners.aspx
+Redirect 301 /crwcurbendablebordertimbers.aspx
+
+
+# Basketball
+
+Redirect 301 /goalsettersystems.aspx
+
+Redirect 301 /goalsetter54contenderbasketballsystem.aspx
+Redirect 301 /goalsetter54allstarbasketballsystem.aspx
+Redirect 301 /goalsetter60inchacrylicallamericaninternalingroundbasketballsystem.aspx
+Redirect 301 /goalsetter72inchacrylicmvpinternalingroundbasketballsystem.aspx
+
+
+# Sheds
+
+Redirect 301 /sheds.aspx
+
+Redirect 301 /dutchbarnshed.aspx
+Redirect 301 /a-frameshed.aspx
+Redirect 301 /quakershed.aspx
+Redirect 301 /standardbarnshed.aspx
+Redirect 301 /gardenquakershed.aspx
+Redirect 301 /eliteshed.aspx
+Redirect 301 /capeshed.aspx
+Redirect 301 /theeconomicshed.aspx
+Redirect 301 /victorian-heart-playhouse.aspx
+
+
+# Drop Ship Playsets
+
+Redirect 301 /dropshipplaysets.aspx
+
+
+# Outdoor Furniture
+
+Redirect 301 /outdoorfurniture.aspx
+
+Redirect 301 /6residentialpicnictable.aspx
+Redirect 301 /redwood-playhouse-with-porch.aspx
+
+# Playhouses
+
+Redirect 301 /playhouses.aspx
+
+Redirect 301 /scenicplayhouse.aspx
+Redirect 301 /winchesterplayhouse.aspx
+Redirect 301 /cedarcottageplayhouse.aspx
+Redirect 301 /redwood-playhouse-with-porch.aspx
+
+# Products
+
+Redirect 301 /products.aspx
+
+# Locations
+
+Redirect 301 /contact-us.aspx
+
+# About Us
+
+Redirect 301 /about-us.aspx
+
+# Articles
+
+Redirect 301 /articles.aspx
