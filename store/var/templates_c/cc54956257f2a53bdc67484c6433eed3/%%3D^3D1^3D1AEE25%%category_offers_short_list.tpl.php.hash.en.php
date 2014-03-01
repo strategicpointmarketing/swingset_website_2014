@@ -1,0 +1,1 @@
+e4d1db7723d668b38a1e40c2abd940c8a:1:{s:23:"lbl_sp_category_generic";s:63:"Special offers for the products in this category are available!";}

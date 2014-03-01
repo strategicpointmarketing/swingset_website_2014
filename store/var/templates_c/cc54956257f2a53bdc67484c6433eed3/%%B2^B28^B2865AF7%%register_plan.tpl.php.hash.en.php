@@ -1,0 +1,1 @@
+5ded8b164b1cf58c86fde9e798b48b8ea:4:{s:18:"lbl_affiliate_plan";s:14:"Affiliate plan";s:19:"lbl_affiliate_plans";s:15:"Affiliate plans";s:8:"lbl_none";s:4:"None";s:27:"lbl_signup_for_partner_plan";s:20:"Pending partner plan";}

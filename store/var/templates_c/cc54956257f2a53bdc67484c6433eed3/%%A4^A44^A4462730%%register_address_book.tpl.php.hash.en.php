@@ -1,0 +1,1 @@
+9e2be8f5fbda0da901a795d4be9e103ca:6:{s:16:"lbl_address_book";s:12:"Address book";s:19:"lbl_add_new_address";s:15:"Add new address";s:11:"lbl_billing";s:7:"Billing";s:10:"lbl_delete";s:6:"Delete";s:26:"lbl_set_address_as_default";s:22:"Set address as default";s:12:"lbl_shipping";s:8:"Shipping";}

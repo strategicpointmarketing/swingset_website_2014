@@ -1,0 +1,1 @@
+078fb280f8192873bc9f8c4f820d0624a:4:{s:28:"lbl_product_quantity_from_to";s:70:"(from {{min}} to <span class="product-quantity-number">{{max}}</span>)";s:7:"lbl_qty";s:3:"Qty";s:19:"txt_need_min_amount";s:45:"Note: you must order at least {{items}} items";s:16:"txt_out_of_stock";s:12:"Out of stock";}

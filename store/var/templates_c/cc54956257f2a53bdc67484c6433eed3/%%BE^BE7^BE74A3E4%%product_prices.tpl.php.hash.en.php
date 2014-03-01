@@ -1,0 +1,1 @@
+ef709fb14ae98fd5ee429340af9b3ea3a:6:{s:8:"lbl_item";s:4:"Item";s:9:"lbl_items";s:5:"Items";s:9:"lbl_price";s:5:"Price";s:12:"lbl_quantity";s:8:"Quantity";s:20:"lbl_wholesale_prices";s:16:"Wholesale prices";s:8:"txt_note";s:4:"Note";}

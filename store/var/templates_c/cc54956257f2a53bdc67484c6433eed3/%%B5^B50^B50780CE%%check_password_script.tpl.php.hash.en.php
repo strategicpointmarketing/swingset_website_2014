@@ -1,0 +1,1 @@
+931ccc04f898482ac2ba21696104f1e5a:2:{s:24:"txt_password_match_error";s:46:"Password confirmation does not match password.";s:19:"txt_simple_password";s:154:"The password must be at least 7 characters long and must contain both alphabetic and numeric characters. It should not be the same as your username/email.";}

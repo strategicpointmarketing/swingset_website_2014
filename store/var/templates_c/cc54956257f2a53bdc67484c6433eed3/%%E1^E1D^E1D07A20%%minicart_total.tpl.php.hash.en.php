@@ -1,0 +1,1 @@
+03883ba2c149e506987eb9ae4602d185a:5:{s:17:"lbl_cart_is_empty";s:13:"Cart is empty";s:14:"lbl_cart_items";s:5:"Items";s:12:"lbl_checkout";s:8:"Checkout";s:13:"lbl_your_cart";s:9:"Your cart";s:23:"txt_minicart_total_note";s:152:"Order subtotal does not cover discounts and extra costs like shipping charges, etc. The final cost of the order will be calculated at the checkout page.";}
