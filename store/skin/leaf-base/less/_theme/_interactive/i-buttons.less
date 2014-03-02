@@ -1,0 +1,51 @@
+[class*='button'] {
+	font-family: @primary-heading-font;
+	color: @button-text-color;
+	text-align: center;
+	display: inline-block;
+
+	//Mixins
+
+	.border-radius(7);
+	.padding-horizontal(20);
+	.padding-vertical(10);
+}
+
+.button {
+
+	&--primary {
+		text-transform: uppercase;
+		background: @primary-button-color;
+		border-bottom: solid 3px @primary-button-border;
+
+		&:hover {
+			background: @primary-button-hover;
+		}
+
+	}
+
+	&--secondary {
+		text-transform: lowercase;
+		background: @secondary-button-color;
+		border-bottom: solid 3px @secondary-button-border;
+
+		// Mixins
+		.petite-text;
+		
+		&:hover {
+			background: @secondary-button-hover;
+		}
+	}
+
+	// E-commerce
+
+	&--add {
+		text-transform: uppercase;
+		background: @secondary-button-color;
+		border-bottom: solid 3px @secondary-button-border;
+
+		&:hover {
+			background: @secondary-button-hover;
+		}
+	}
+}

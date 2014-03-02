@@ -1,0 +1,127 @@
+// Browser Resets
+.flex-container a:active,.flexslider a:active,.flex-container a:focus,.flexslider a:focus  {
+	outline: none;
+}
+
+.slides,.flex-control-nav,.flex-direction-nav {
+	margin: 0; padding: 0; list-style: none;
+}
+
+.flexslider .slides { zoom: 1; }
+
+
+// Cleearfix
+.slides:after {
+	content: "\0020"; 
+	display: block; 
+	clear: both; 
+	visibility: hidden; 
+	line-height: 0; 
+	height: 0;
+}
+
+html[xmlns] .slides {
+	display: block;
+}
+* html .slides {
+	height: 1%;
+}
+
+// No JS Fallback
+
+.no-js .slides > li:first-child {display: block;}
+
+// Flex Slider
+
+.flexslider {
+	margin: 0;
+	padding: 0;
+
+	.slides {
+
+		> li {
+			display:none;
+			-webkit-backface-visibility: hidden;
+		}
+
+		img {
+			width: 100%; 
+			display: block;
+		}
+	}
+}
+
+
+.flex-caption {
+
+}
+
+.flex-control-nav {
+	width: 100%; 
+	position: absolute; 
+	z-index: 3;
+	bottom: 2%; 
+	text-align: center;	
+
+	li {
+		margin: 0 6px; 
+		display: inline-block; 
+		zoom: 1; 
+		*display: inline;
+	}
+		
+
+}
+
+.flex-control-paging  {
+
+	li a{
+		width: 11px; 
+		height: 11px; 
+		display: block;
+		background: @grey;
+		cursor: pointer; 
+		text-indent: -9999px; 
+
+		// Mixins
+		.border-radius(50);
+
+		&:hover {
+			background: @dark-grey;
+		}
+
+		&.flex-active {
+			background: @white;
+		}
+	}
+
+}
+
+
+// Slide Background Images
+
+[class*='flex-slide'] {
+	position:relative;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+
+	// Mixins
+	.padding(top,135);
+	.padding(bottom,130);
+}
+
+.flex-slide {
+
+	&--1 {
+		background-image:url("@{base-path-images}/slides/swingset-warehouse-hero.jpg");
+	}
+
+	&--2 {
+		background-image:url("http://placeimg.com/1440/536/nature");
+	}
+
+	&--3 {
+		background-image:url("http://placeimg.com/1440/536/nature");
+	}
+}
