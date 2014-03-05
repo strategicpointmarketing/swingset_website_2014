@@ -1,5 +1,5 @@
 {*
-8ec8b858917c921a726e2197071ce74d020e5ead, v1 (xcart_4_6_0), 2013-04-02 16:43:59, product_thumbnail.tpl, random
+e756c491ca9c6f5e4d5f6a7f8d0dc247655660da, v2 (xcart_4_5_3), 2012-08-03 10:21:40, product_thumbnail.tpl, aim
 vim: set ts=2 sw=2 sts=2 et:
 *}
 {strip}
@@ -16,5 +16,6 @@ vim: set ts=2 sw=2 sts=2 et:
 /image.php?type={$type|default:"T"}&amp;id={$productid}
 {/if}
 "
-alt="{$product|escape}" title="{$product|escape}" />
+{if $image_x ne 0} width="{$image_x}"{/if}
+{if $image_y ne 0} height="{$image_y}"{/if} alt="{$product|escape}" title="{$product|escape}" />
 {/strip}

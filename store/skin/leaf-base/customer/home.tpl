@@ -3,55 +3,51 @@ cd2402877146f8f0a3dd69df0079c47b4dd1ae81, v5 (xcart_4_6_2), 2014-01-14 16:43:51,
 vim: set ts=2 sw=2 sts=2 et:
 *}
 <?xml version="1.0" encoding="{$default_charset|default:"utf-8"}"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 {config_load file="$skin_config"}
 <html xmlns="http://www.w3.org/1999/xhtml"{if $active_modules.Socialize} xmlns:g="http://base.google.com/ns/1.0" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#"{/if}>
 <head>
-  {include file="customer/service_head.tpl"}
+  {include file="customer/global_head.tpl"}
 
-    <link rel="stylesheet" type="text/css" href="http://69.175.29.125/store/skin/leaf-base/css/global.css" />
 </head>
-<body{if $body_onload ne ''} onload="javascript: {$body_onload}"{/if}{if $container_classes} class="{foreach from=$container_classes item=c}{$c} {/foreach}"{/if}>
+<body>
 {if $active_modules.EU_Cookie_Law ne ""}
 {include file="modules/EU_Cookie_Law/info_panel.tpl"}
 {/if}
 {if $main eq 'product' and $is_admin_preview}
   {include file="customer/main/product_admin_preview_top.tpl"}
 {/if}
-<div id="page-container"{if $page_container_class} class="{$page_container_class}"{/if}>
-  <div id="page-container2">
-    <div id="content-container">
-      <div id="content-container2">
 
-        {if $active_modules.Socialize
-            and ($config.Socialize.soc_fb_like_enabled eq "Y" or $config.Socialize.soc_fb_send_enabled eq "Y")
-        }
-          <div id="fb-root"></div>
-        {/if}
+<header>
+    {include file="customer/global_nav.tpl"}
+</header>
 
-        {include file="customer/content.tpl"}
 
-      </div>
-    </div>
+{if $main eq "catalog" AND $current_category eq ""}
+    {include file="customer/home_only.tpl"}
+{else}
 
-    <div class="clearing">&nbsp;</div>
+    <main role="main">
 
-    <div id="header">
-      {include file="customer/head.tpl"}
-    </div>
+        <div class="wrapper inner-content">
+            <div class="gd-row gt-row">
 
-    <div id="footer">
+                    <!--Featured Offers-->
+                    {include file="customer/content.tpl"}
+                    <!--End Featured Offers-->
+            </div>
+        </div>
 
-      {include file="customer/bottom.tpl"}
+    </main>
 
-    </div>
+{/else}
+{/if}
 
-    {if $active_modules.Google_Analytics and $config.Google_Analytics.ganalytics_version eq 'Traditional'}
-      {include file="modules/Google_Analytics/ga_code.tpl"}
-    {/if}
+<footer class="main-footer" id="main-footer" role="contentinfo">
+    {include file="customer/global_footer.tpl"}
+</footer>
 
-  </div>
-</div>
+
+{include file="customer/global_footer_scripts.tpl"}
 {load_defer_code type="js"}
 {load_defer_code type="css"}
 </body>

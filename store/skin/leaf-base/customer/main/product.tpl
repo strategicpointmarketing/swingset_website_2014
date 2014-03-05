@@ -41,7 +41,7 @@ $(ajax).bind(
     
     <div class="product-details">
 
-      <div class="image"{if $max_image_width gt 0} style="width: {$max_image_width+12}px;"{/if}>
+      <div class="image">
 
         {if $active_modules.Detailed_Product_Images and $config.Detailed_Product_Images.det_image_popup eq 'Y' and $images ne ''}
 

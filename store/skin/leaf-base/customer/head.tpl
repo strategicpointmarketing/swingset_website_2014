@@ -2,6 +2,9 @@
 5e8f6f027e43ad9baf5123185777a0ce3103aea3, v2 (xcart_4_6_2), 2013-10-21 10:44:47, head.tpl, random
 vim: set ts=2 sw=2 sts=2 et:
 *}
+
+
+
 <div class="line1">
   <div class="logo">
     <a href="{$catalogs.customer}/home.php"><img src="{$AltImagesDir}/custom/logo.png" alt="{$config.Company.company_name}" /></a>
