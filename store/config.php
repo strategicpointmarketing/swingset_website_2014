@@ -248,7 +248,7 @@ $mysql_autorepair = true;
  * (for example, if you get some kind of error regarding a file in the /var/cache
  * directory of your X-Cart installation).
  */
-define('USE_DATA_CACHE', true);
+define('USE_DATA_CACHE', false);
 
 define('DATA_CACHE_TTL', 24*3600);
 

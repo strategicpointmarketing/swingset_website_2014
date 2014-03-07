@@ -70,6 +70,8 @@ vim: set ts=2 sw=2 sts=2 et:
 
 {include file="poweredby.tpl"}*}
 
+{*start new code/revised*}
+
 
 {if $active_modules.Feature_Comparison && $comparison_products ne ''}
     {include file="modules/Feature_Comparison/product_list.tpl" }
@@ -94,6 +96,7 @@ vim: set ts=2 sw=2 sts=2 et:
 {if $active_modules.New_Arrivals}
     {include file="modules/New_Arrivals/menu_new_arrivals.tpl"}
 {/if}
+
 
 {if $active_modules.Manufacturers ne "" and $config.Manufacturers.manufacturers_menu eq "Y"}
     {include file="modules/Manufacturers/menu_manufacturers.tpl"}

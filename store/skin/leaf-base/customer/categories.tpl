@@ -28,7 +28,7 @@ vim: set ts=2 sw=2 sts=2 et:
 {include file="customer/menu_dialog.tpl" title=$lng.lbl_categories content=$smarty.capture.menu}
 {/if}*}
 
-
+<!-- Begin store/skin/leaf-base/customer/categories.tpl -->
 {if $categories_menu_list ne '' or $fancy_use_cache}
     {capture name=menu}
 
@@ -52,3 +52,5 @@ vim: set ts=2 sw=2 sts=2 et:
     {/capture}
     {include file="customer/menu_dialog.tpl" title=$lng.lbl_categories content=$smarty.capture.menu}
 {/if}
+
+<!-- End store/skin/leaf-base/customer/categories.tpl -->

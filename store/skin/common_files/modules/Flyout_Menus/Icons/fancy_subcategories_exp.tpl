@@ -2,6 +2,7 @@
 8355e62f7385059f9e967e5f1aa41e6ef2123e90, v2 (xcart_4_4_0_beta_2), 2010-07-05 12:40:19, fancy_subcategories_exp.tpl, igoryan
 vim: set ts=2 sw=2 sts=2 et:
 *}
+<!-- Begin store/skin/common_files/modules/Flyout_Menus/Icons/fancy_subcategories_exp.tpl -->
 <ul class="fancycat-icons-level-{$level}">
 
   {assign var="loop_name" value="subcat`$parentid`"}
@@ -39,3 +40,5 @@ vim: set ts=2 sw=2 sts=2 et:
   {/foreach}
 
 </ul>
+
+<!-- End store/skin/common_files/modules/Flyout_Menus/Icons/fancy_subcategories_exp.tpl -->

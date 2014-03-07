@@ -33,7 +33,8 @@ vim: set ts=2 sw=2 sts=2 et:
 
 </ul>*}
 
-
+<!-- Begin store/skin/leaf-base/modules/Flyout_Menus/Icons/fancy_subcategories.tpl -->
+{*
 <ul class="fancycat-icons-level-{$level} hey-there">
 
     {assign var="loop_name" value="subcat`$parentid`"}
@@ -62,3 +63,36 @@ vim: set ts=2 sw=2 sts=2 et:
     {/foreach}
 
 </ul>
+*}
+
+
+<ul {if $level eq '0'}class = "product-navigation"{/if}{if $level gte '1'}class = "active "{/if} >
+
+    {assign var="loop_name" value="subcat`$parentid`"}
+    {foreach from=$categories_menu_list item=c key=catid name=$loop_name}
+
+        <li>
+            {strip}
+                <a href="home.php?cat={$catid}" >
+                    {if $config.Flyout_Menus.icons_icons_in_categories gte $level+1 and $c.is_icon}
+                        <img src="{$c.thumb_url|amp}" alt="" width="{$c.thumb_x}" height="{$c.thumb_y}" />
+                    {else}
+
+                    {/if}
+                    {$c.category|amp}
+                    {if $config.Flyout_Menus.icons_display_products_cnt eq 'Y' and $c.top_product_count gt 0}
+                        &#32;({$c.top_product_count})
+                    {/if}
+                </a>
+            {/strip}
+
+            {if $c.childs and $c.subcategory_count gt 0 and ($config.Flyout_Menus.icons_levels_limit eq 0 or $config.Flyout_Menus.icons_levels_limit gt $level)}
+                {include file="`$fc_skin_path`/fancy_subcategories.tpl" categories_menu_list=$c.childs parentid=$catid level=$level+1}
+            {/if}
+        </li>
+
+    {/foreach}
+
+</ul>
+
+<!-- End store/skin/leaf-base/modules/Flyout_Menus/Icons/fancy_subcategories.tpl -->
