@@ -1,0 +1,520 @@
+// Typography
+@import "@{base-path-less}_core/_normalize/normalize.less";
+@import "@{base-path-less}_theme/_type/t-font-face.less";
+@import "@{base-path-less}_theme/_type/t-font-face-applied.less";
+@import "@{base-path-less}_theme/_type/t-type.less";
+@import "@{base-path-less}_theme/_interactive/interactive.less";
+@import "@{base-path-less}_theme/_helpers/t-presentational.less";
+@import "@{base-path-less}_theme/_layout/_grid/t-grid-base.less";
+
+// Background Colors
+
+.primary-bg {
+	background-color: @primary-color;
+}
+
+.secondary-bg {
+	background-color: @secondary-color;
+}
+
+.secondary-bg-dark {
+	background-color: @secondary-color-dark;
+}
+
+.tertiary-bg {
+	background-color: @tertiary-color;
+}
+
+.quarternary-bg {
+	background-color: @quarternary-color;
+}
+
+.white-bg {
+	background-color: @white;
+}
+
+// Global Containers & Wrappers
+
+.wrapper {
+	width: 92%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.inner-content {
+	.padding(top,60);
+	.padding(bottom,85);
+}
+
+// Header
+
+.top-header {
+	.padding-vertical(5);
+}
+
+.middle-header {
+
+	//Mixins
+	.secondary-bg;
+}
+
+.bottom-header {
+
+	border-bottom: solid 1px @light-grey;
+}
+
+
+// Navigation
+
+
+.eyebrow-nav {
+	color: @secondary-color-light;
+}
+
+.main-nav {
+
+	.main-nav__link {
+		color:@white;
+		
+		// Mixins
+		.padding-vertical(20, @minion-text-size);
+		.padding-horizontal(10, @minion-text-size);
+		.size-for-font(@minion-text-size);
+
+		&:hover {
+			background: @secondary-color-dark;
+		}
+
+	}
+}
+
+.logo {
+	// Variables
+	@5px: 1em * (5 / @base-text-size);
+
+	position: relative;
+	top: -@5px;
+	left: 0;
+}
+
+.link--phone {
+	color: @secondary-color;
+}
+
+.secondary-nav {
+	display: none;
+}
+
+.tertiary-nav {
+
+	a {
+		color: @dark-grey;
+		
+		// Mixins
+		.padding-vertical(12, @minion-text-size);
+		.padding-horizontal(10, @minion-text-size);
+		.size-for-font(@minion-text-size);
+
+		&.cart {
+			color:@white;
+			
+			// Mixins
+			.primary-bg;
+
+			&:hover {
+				background: @primary-color-alt;
+			}
+		}
+		
+	}
+}
+
+.nav {
+	margin:0;
+
+	li {
+		display:inline-block;
+		
+		a {
+			text-decoration: none;
+			display:block;
+		}
+	}
+	
+	// Mixins
+	.unstyled-list; // To Specific
+	.align-right;
+	.secondary-font; // To specific
+}
+
+// Home Product Listing
+
+.products-specials {
+	background: @quarternary-color;
+}
+
+.product_listing {
+	&--box {
+		.padding-all(25);
+	}
+}
+
+// Home Featured Item
+
+.featured-item {
+	background: @secondary-color url("@{base-path-images}/pattern-diamond.png");
+
+	// Mixins
+	.padding-vertical(45);
+
+	.featured-heading {
+		color: @secondary-color-alt;
+		font-weight: @semibold-weight;
+
+		// Mixins
+		.secondary-font;
+	}
+
+}
+
+
+// Product Listing Page
+
+.product-navigation {
+
+	font-weight: @semibold-weight;
+
+	// Mixins
+	.mtn;
+	.unstyled-list;
+	.minion-text;
+	.secondary-font;
+
+	li {
+		line-height:1.75;
+	}
+
+	> li {
+		border-bottom: dotted 1px;
+
+	}
+
+	a {
+		color: @primary-text-color;
+	}
+
+	.active {
+		font-weight: @thin-weight;
+
+		// Mixins
+		list-style-type: none;
+
+		a {
+			border-top: solid 2px;
+
+			&:first-child {
+				border: 0;
+			}
+		}
+	}
+}
+
+.product-listing {
+
+	// Mixins
+
+	.margin(bottom,30);
+
+	.item-price {
+		color: @secondary-text-color;
+
+		// Mixins
+		.secondary-font;
+		.petite-text;
+		.margin(bottom,10);
+	}
+}
+
+// Product Detail
+
+.product-stock {
+
+	// Mixins
+	.margin-vertical(15);
+	.secondary-font;
+	.petite-text;
+
+	.in-stock {
+
+		color: @green;
+		font-weight: @semibold-weight;
+
+		// Mixins
+		.margin(right,5);
+	}
+
+	.items-available {
+	}
+
+}	
+
+.product-price {
+
+	// Mixins	
+	.secondary-font;
+	.primary-color;
+	.canon-text;
+	.semibold;
+	.mtn;
+	.margin(bottom,5);
+
+}
+
+
+.product-options {
+
+	background: @light-grey;
+
+	// Mixins
+	.margin-vertical(15);
+	.padding-all(20);
+	.border-radius(7);
+
+	.option-label {
+
+	// Mixins
+	.mtn;
+	.margin(bottom,15);
+	}
+
+	.option-select {
+			
+	}
+}
+
+
+
+
+
+.product-actions {
+
+
+	// Quantity
+	
+	.quantity-container {
+		display:inline-block;
+
+		// Mixins
+		.margin(right,10);
+	}
+
+	.quantity-label {
+		display:inline-block;
+		
+		// Mixins
+		.secondary-font;
+		.float-left;
+		.margin(right,10);
+	}
+
+	.quantity-value {
+		display:inline-block;
+		width:25px;
+		height:25px;
+	}
+
+
+	// Add To Cart
+
+	.add-cart-container {
+		display:inline-block;
+		vertical-align: top;
+	}
+	
+}
+
+
+// Form Styles
+
+
+
+.input-label {
+	
+	// Mixins
+	.secondary-font;
+	.semibold;
+
+	input, select {
+		width:100%;
+
+		// Mixins
+		.margin-vertical(15);
+
+		}
+
+	input {
+		// Mixins
+		.secondary-font;
+		.border-radius(7);
+		.padding-vertical(5);
+		.padding-horizontal(10);
+
+		&::-webkit-input-placeholder{
+			.secondary-font;
+		}
+
+		&:-moz-placeholder {
+			.secondary-font;
+		}
+
+		&::-moz-placeholder {
+			.secondary-font;
+		}
+
+		&:-ms-input-placeholder {
+			.secondary-font;
+		}
+		
+	}
+
+}
+
+.form-container {
+
+	&.colored {
+
+		background:@light-grey;
+
+		// Mixins
+		.padding-all(20);
+		.border-radius(7);
+
+	}
+}
+
+.inline-selector {
+display:inline-block;
+
+// Mixins
+.margin-all(5);		
+
+}
+
+.is-hidden {
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	position: absolute;
+	position: relative\9; 
+	clip: rect(1px 1px 1px 1px);
+	clip: rect(1px,1px,1px,1px);
+	border: 0;
+	overflow: hidden;
+}
+
+
+
+
+// Footer
+
+.main-footer {
+	background: @quarternary-color;
+}
+
+.bottom-footer {
+	background: @primary-color;
+	color:@inverse-text-color;
+	font-weight: @thin-weight;
+
+
+	// Mixins
+	.petite-text;
+	.proxima-nova-soft;
+	.padding-vertical(15);
+
+		a {
+			text-decoration: none;
+			color: @primary-color-light;
+		}
+}
+
+.footer-links {
+	font-family: @primary-heading-font;
+	font-weight: @thin-weight;
+
+	a {
+		text-decoration: none;
+		line-height: 2;
+		color: @primary-text-color;
+
+		// Mixins
+		.margin(top,15);
+
+		&:hover {
+			color: @secondary-color;
+		}
+	}
+}
+
+
+// Icons
+
+[class*='icon'] {
+	
+	display:inline-block;
+
+}
+
+.icon {
+
+	&--phone {
+		width:20px;
+		height:20px;
+
+		// Mixins
+		.global-sprite(0,0);
+		.margin(right,5);
+
+		}
+	
+	&--facebook {
+
+		// Mixins
+		.global-sprite(2,0);
+	}
+
+	&--twitter {
+
+		// Mixins
+		.global-sprite(3,0);
+	}
+
+	&--pinterest {
+
+		width:12px;
+		height:10px;
+
+		// Mixins
+		.global-sprite(4,0);
+		.margin(right,10);
+
+	}
+}
+
+// Social
+
+	.share {
+
+		color: @white;
+
+		// Mixins
+		.minion-text;
+		.secondary-font;
+		.padding-horizontal(12);
+		.padding-vertical(6);
+		.border-radius(5);
+
+		&.pinterest {
+			background: @red;
+		}
+	}

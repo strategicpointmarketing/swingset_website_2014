@@ -1,0 +1,1 @@
+f52a8b56384910730212052ca94c5df2a:7:{s:21:"lbl_cb_current_format";s:20:"{current} of {total}";s:22:"lbl_cb_start_slideshow";s:15:"Start slideshow";s:21:"lbl_cb_stop_slideshow";s:14:"Stop slideshow";s:9:"lbl_close";s:5:"Close";s:8:"lbl_next";s:4:"Next";s:12:"lbl_previous";s:8:"Previous";s:24:"lbl_view_detailed_images";s:34:"View detailed images ({{counter}})";}

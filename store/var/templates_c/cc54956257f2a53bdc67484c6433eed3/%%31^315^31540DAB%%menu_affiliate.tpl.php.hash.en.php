@@ -1,0 +1,1 @@
+18422e8e1a4297329c9a0150517bd733a:2:{s:22:"lbl_partner_affiliates";s:10:"Affiliates";s:29:"lbl_partner_click_to_register";s:38:"Click here to register as an affiliate";}

@@ -1,0 +1,163 @@
+/*
+
+LESS Configuration File
+
+Description:
+This file is a list of commonly used variables
+in the Leaf framework and is used to customize
+the client's build.
+
+Warning: 
+Making changes to this file will impact the framework.
+
+Style Guide 0.1.0
+
+*/
+
+// Grid Columns
+@desktop-total-cols: 		12;
+@tablet-total-cols: 		9;
+@mobile-total-cols: 		3;
+
+// Grid Margins
+@base-margin: 				36;
+@tablet-margin: 			32;
+@mobile-margin: 			24;
+
+// Vertical Rhythm
+@base-vertical:				20;
+
+// Grid Class Prefix
+@desktop-prefix: 			~"gd";
+@tablet-prefix: 			~"gt";
+@mobile-prefix: 			~"gm";
+
+// Responsive Breakpoints
+@mq-mobile-width:			480;
+@mq-tablet-width:			768;
+@mq-desktop-width:			992;
+@mq-widescreen-width:		1240;
+
+// Typographic Scale
+@great-text-size:			48;
+@canon-text-size: 			32;
+@paragon-text-size: 		24;
+@primer-text-size: 			18;
+@normal-text-size: 			16;
+@petite-text-size: 			14;
+@minion-text-size: 			12;
+
+// Baseline Typography
+@base-text-size: 			@normal-text-size;
+@body-percentage: 			100%;
+
+// Base Colors
+@white: 					#fff;
+@black: 					#000;
+@grey: 						#999;
+@light-grey: 				#E9E9E9;
+@dark-grey: 				darken(@grey, 20%);
+@blue: 						#3399FF;
+@light-blue: 				lighten(@blue, 15%);
+@dark-blue: 				darken(@blue, 15%);
+@red:						#cb2027;
+@salmon:					#fa6851;
+@aqua-blue:					#339bbb;
+@creme:						#fff4e4;
+@plum:						#613c4f;
+@green:						#019026;
+
+// Client Specific Colors
+@primary-color:				@salmon;
+@primary-color-light:		lighten(@primary-color, 15%);
+@primary-color-dark:		darken(@primary-color, 15%);
+@primary-color-alt:			darken(@primary-color,5%);
+
+@secondary-color:			@aqua-blue;
+@secondary-color-light:		lighten(@secondary-color, 15%);
+@secondary-color-dark:		darken(@secondary-color, 15%);
+@secondary-color-alt:		lighten(@secondary-color, 30%);
+
+@tertiary-color:			@plum;
+@tertiary-color-light:		lighten(@tertiary-color, 15%);
+@tertiary-color-dark:		darken(@tertiary-color, 15%);
+
+@quarternary-color:			@creme;
+@quarternary-color-light:	lighten(@quarternary-color, 15%);
+@quarternary-color-dark:	darken(@quarternary-color, 15%);
+
+
+// Text Colors
+@primary-text-color: 		@dark-grey;
+@secondary-text-color: 		@grey;
+@inverse-text-color: 		@white;
+@button-text-color: 		@inverse-text-color;
+
+// Link Colors
+@primary-link-color: 		@secondary-color;
+@primary-link-hover: 		@secondary-color-dark;
+
+// Heading Colors
+@primary-heading-color: 	@primary-color;
+@secondary-heading-color: 	@secondary-color;
+@tertiary-heading-color: 	@tertiary-color;
+
+// Button Colors
+@primary-button-color:		@primary-color;
+@primary-button-hover:		lighten(@primary-button-color, 3%);
+@primary-button-border:		darken(@primary-button-color, 15%);
+
+@secondary-button-color:	@secondary-color;
+@secondary-button-hover:	lighten(@secondary-button-color, 3%);
+@secondary-button-border:	darken(@secondary-button-color, 15%);
+
+// Font Declarations
+@proxima-nova-soft:			"proxima-nova-soft", Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", Arial, sans-serif;
+@pt-serif:					"pt-serif", "Times New Roman", Georgia, serif;
+
+@primary-font-family: 		@pt-serif;
+
+// Font Weights
+@thin-weight:				100;
+@normal-weight:				400;
+@medium-weight:				500;
+@semibold-weight:			600;
+@bold-weight:				700;
+
+@primary-heading-font:		@proxima-nova-soft;
+@secondary-heading-font:	@primary-heading-font;
+
+// Form Variables
+@field-focus-color:			@blue;
+
+// Tables
+@table-border-color: 		@light-grey;
+
+// Sprite Variables
+@sprite-grid:				50px;
+
+@base-path-images: ~"/store/skin/leaf-base/images/";
+
+
+// TODO: Horizontal Margins and Vertical Margins need to live somewhere else.
+
+// Horizontal Margins
+// 
+// Take the base grid margin, divide it (if necessary), then divide 
+// the result by the `body`'s base text size. Convert to ems.
+
+@full-side: 1em * ((@base-margin / 2) / @base-text-size);
+@half-side: 1em * ((@base-margin / 4) / @base-text-size);
+@quarter-side: 1em * ((@base-margin / 8) / @base-text-size);
+@double-side: 1em * (@base-margin / @base-text-size);
+
+// Vertical Margins
+// 
+// Take the base vertical unit, divide it (if necessary), then divide 
+// the result by the `body`'s base text size. Convert to ems.
+
+@full-vertical: 1em * (@base-vertical / @base-text-size);
+@half-vertical: 1em * ((@base-vertical / 2) / @base-text-size);
+@quarter-vertical: 1em * ((@base-vertical / 4) / @base-text-size);
+@eighth-vertical: 1em * ((@base-vertical / 8) / @base-text-size);
+@double-vertical: 1em * ((@base-vertical * 2) / @base-text-size);

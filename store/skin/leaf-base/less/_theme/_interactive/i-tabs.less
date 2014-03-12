@@ -1,0 +1,40 @@
+.tabs {
+    
+    // Mixins
+    .unstyled-list;
+    .pn;
+  
+     .tab-content {
+      display:none;
+    }
+
+    .tab-heading {
+      cursor: pointer;
+      float: left;
+      background: @light-grey;
+
+      // Mixins
+      .secondary-font;
+      .padding-horizontal(10);
+      .padding-vertical(5);
+      .margin(right,5);
+      .margin(bottom,15);
+      .border-radius(15);
+
+      
+      &.active {
+        background: @tertiary-color; 
+        color: @white;     
+      }
+
+    }   
+
+  }
+  
+.tabs-container {
+    clear:both;
+    display:block; 
+
+    // Mixins
+    .padding-all(5);
+  }

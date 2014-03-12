@@ -1,0 +1,2 @@
+e09f770152f5265d0b28b052b6f3903aa:2:{s:21:"lbl_featured_products";s:17:"Featured products";s:11:"txt_welcome";s:374:"<p align="justify"><b>This is a demo store powered by X-Cart software.</b> No real products. No real prices. No real charges. Please do not submit real credit card information.</p>
+<p align="justify">To replace this text with a welcome message of your own, log in as administrator, select the Webmaster mode link in the Administration box, then follow the instructions.</p>";}

@@ -1,0 +1,17 @@
+@import "@{base-path-less}/_theme/_layout/_grid/t-grid-desktop.less";
+
+.wrapper {
+	width: 80%;
+	max-width: 63em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.main-nav {
+	.main-nav__link {
+		// Mixins
+		.padding-vertical(20, @paragon-text-size);
+		.padding-horizontal(20, @paragon-text-size);
+		.size-for-font(@paragon-text-size);
+	}
+}

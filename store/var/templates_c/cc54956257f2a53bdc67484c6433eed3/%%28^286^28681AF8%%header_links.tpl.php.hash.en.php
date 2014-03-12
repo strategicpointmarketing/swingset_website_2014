@@ -1,0 +1,1 @@
+9529cb9b747c222ea75bf2dc38720126a:5:{s:10:"lbl_logoff";s:8:"Sign out";s:14:"lbl_my_account";s:10:"My account";s:18:"lbl_orders_history";s:13:"Order history";s:12:"lbl_register";s:8:"Register";s:13:"lbl_wish_list";s:9:"Wish list";}
