@@ -201,7 +201,7 @@ vim: set ts=2 sw=2 sts=2 et:
 
             <!--Product Details-->
 
-                <a href="{$url}" class="product-title secondary-font semibold primer-text">{$product.product|amp}</a>
+                <h3 class="primer-text"><a href="{$url}" class="item-title">{$product.product|amp}</a></h3>
 
                 {if $active_modules.New_Arrivals}
                     {include file="modules/New_Arrivals/new_arrivals_show_date.tpl" product=$product}
@@ -228,11 +228,11 @@ vim: set ts=2 sw=2 sts=2 et:
 
                             {if $product.appearance.has_price}
 
-                                <div class="price-row{if $active_modules.Special_Offers ne "" and $product.use_special_price ne ""} special-price-row{/if}">
+
                                     {if $active_modules.XPayments_Subscriptions and $product.subscription}
                                         {include file="modules/XPayments_Subscriptions/customer/setup_fee.tpl"}
                                     {else}
-                                        <span class="price-value mbl>{currency value=$product.taxed_price}</span>
+                                        <span class="item-price new-line">{currency value=$product.taxed_price}</span>
                                     {/if}
                                     {if $active_modules.Klarna_Payments}
                                         {include file="modules/Klarna_Payments/monthly_cost.tpl" elementid="pp_conditions`$product.productid`" monthly_cost=$product.monthly_cost products_list='Y'}
@@ -241,7 +241,7 @@ vim: set ts=2 sw=2 sts=2 et:
                                     {if $active_modules.Product_Notifications ne '' and $config.Product_Notifications.prod_notif_enabled_P eq 'Y' and $config.Product_Notifications.prod_notif_show_in_list_P eq 'Y'}
                                         {include file="modules/Product_Notifications/product_notification_request_button.tpl" productid=$product.productid type="P"}
                                     {/if}
-                                </div>
+
                                 {if $active_modules.XPayments_Subscriptions and $product.subscription}
                                     {include file="modules/XPayments_Subscriptions/customer/subscription_fee.tpl"}
                                 {/if}

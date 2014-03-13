@@ -1,73 +1,130 @@
-$.fn.productTabs = function() {
-
-  return this.each(function() {
-    var el = $(this),
-        tabs = el.find('.tab-heading'),
-        content = el.find('.tab-content'),
-        container = $('<div class="tabs-container"></div>').insertAfter(el);
-
-    tabs.on('click', function() {
-      var tab = $(this);
-
-      tabs.not(tab).removeClass('active');
-      tab.addClass('active');
-
-      container.html( tab.next().html() );
-    });
-
-    tabs.filter(':first').trigger('click');
-  });
-
-};
-
-$('.tabs').productTabs();
-
-
 $(document).ready(function() {
-    
-    function windowScroll() {
 
-       var itemToClick = $(".js-scroll-btn");
+    $("body").addClass('js');
 
-       if ( itemToClick.length ) {
+    windowScroll = {
+        config: {
+            targetElems: $(".js-scroll-btn"),
+            speed: 350
+        },
 
-           itemToClick.on('click', function(e) {
+        init: function() {
+            var config = this.config;
 
-               var itemClickedVal = $(this).attr('data-scroll'),
-                   scrollDestination = $(".js-scroll-dest[data-scroll='" + itemClickedVal + "']"),
-                   itemOffset = scrollDestination.offset();
+            // Check if elements exist
+            if (config.targetElems.length) {
+                this.bindButtons( config );
+            }
 
-                console.log("this thing" + itemClickedVal + "was clicked");
+        },
+        bindButtons: function( config ) {
+            var buttons = config.targetElems;
 
-               $('html, document').animate({
-                   scrollTop: itemOffset.top - 20
-               }, 350);
+            $(document.body).on("click", ".js-scroll-btn", function( e ) {
 
-               e.preventDefault();
+                var data = $(this).data('scroll'),
+                    destination = $(".js-scroll-dest[data-scroll='" + data + "']"),
+                    offset = destination.offset();
 
-           });
+                // Prevent Click
+                e.preventDefault();
 
-       }
+                // Animate
+                windowScroll.animateScroll( offset );
 
-    }
+            });
+        },
+        animateScroll: function( offset ) {
 
-    function simpleSlider() {
-        $(window).load(function() {
-          var slider = $(".flex-js");
+            $('html, document').animate({
+                scrollTop: offset.top - 20
+            }, this.config.speed);
 
-          if ( slider.length ) {
-            
-            slider.flexslider();
+        }
+    };
 
-          }
-          
-          
-        });
-      
-    }
+    homeSlider = {
+        config: {
+            targetElems: $(".flex-js"),
+            pluginOptions: {
+                "controlNav": true,
+                "directionNav": false,
+                "slideshowSpeed": 12000
+            }
+        },
 
-    windowScroll();
-    simpleSlider();
+        init: function() {
+            var config = homeSlider.config;
 
-    
+            if ( config.targetElems.length ) {
+                $.get("/skin/leaf-base/js/jquery.flexslider.js")
+                    .done(function() {
+                        homeSlider.callSlider();
+                    }).fail(function() {
+                        config.targetElems.hide();
+                    });
+            }
+
+        },
+
+        callSlider: function() {
+            var context = homeSlider.config;
+
+            context.targetElems.flexslider( context.pluginOptions );
+        }
+    };
+
+    tabbedWidget = {
+        config: {
+            targetElems: $(".tabs"),
+            currentClass: "is-current"
+        },
+
+        init: function() {
+            var context = this.config,
+                revealNavItem = context.targetElems.find("[data-reveal]");
+
+            if ( context.targetElems.length ) {
+
+                revealNavItem.on("click", function( e ) {
+                    tabbedWidget.revealTab.call($(this), revealNavItem);
+                    e.preventDefault();
+                });
+
+            }
+        },
+
+        revealTab: function( item ) {
+            var thisButton = $(this),
+                thisData = thisButton.data("reveal"),
+                context = tabbedWidget.config,
+                tab = context.targetElems.find(".tab");
+
+            // Handles the classes on the navigation
+
+            if ( !thisButton.hasClass( context.currentClass ) ) {
+                // Remove is-current class from nav item
+                item.removeClass( context.currentClass );
+
+                // Add is-current class to item clicked
+                thisButton.addClass( context.currentClass );
+            }
+
+            // Handles Revealing Tabs
+            if ( tab.hasClass( context.currentClass ) ) {
+                tab.removeClass( context.currentClass );
+            }
+
+            context.targetElems.find("#" + thisData).addClass( context.currentClass );
+
+        }
+    };
+
+    // Call the script
+    homeSlider.init();
+    windowScroll.init();
+    tabbedWidget.init();
+
+
+
 });

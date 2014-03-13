@@ -38,8 +38,8 @@
             <section class="gd-quarter gd-columns gt-half gt-columns">
                 <div class="ptm">
                     <div class="gd-full">
-                        <img class="float-left mts" src="templates/leaf-base/resources/images/accredit-ssl.png">
-                        <img class="float-left" src="templates/leaf-base/resources/images/accredit-authorize.png">
+                        <img class="float-left mts" src="skin/leaf-base/images/accredit-ssl.png">
+                        <img class="float-left" src="skin/leaf-base/images/accredit-authorize.png">
                     </div>
                     <a href="#" class="button--primary">View Catalog</a>
                 </div>

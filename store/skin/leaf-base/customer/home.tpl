@@ -7,7 +7,6 @@ vim: set ts=2 sw=2 sts=2 et:
 <html xmlns="http://www.w3.org/1999/xhtml"{if $active_modules.Socialize} xmlns:g="http://base.google.com/ns/1.0" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#"{/if}>
 <head>
   {include file="customer/global_head.tpl"}
-
 </head>
 <body>
 {if $active_modules.EU_Cookie_Law ne ""}

@@ -18,7 +18,7 @@ vim: set ts=2 sw=2 sts=2 et:
         {if $main eq 'cart' or $main eq 'checkout' or $main eq "order_message" or $main eq "order_message_widget"}
             {include file="customer/evaluation.tpl"}
         {/if}
-        <!-- central space -->
+        <!--Body Content-->
 
         {if ($main eq 'cart' and not $cart_empty) or $main eq 'checkout'}
 
@@ -72,10 +72,9 @@ vim: set ts=2 sw=2 sts=2 et:
 
         {/if}
 
-        <!-- /central space -->
+        <!--End Body Content -->
         </div>
 
-    </div><!-- /center -->
 
 
 

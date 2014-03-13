@@ -3,7 +3,7 @@
 vim: set ts=2 sw=2 sts=2 et:
 *}
 {if $product_options ne '' or $product_wholesale ne ''}
-<table>  
+<div class="product-options">
   {if $nojs ne 'Y'}
     <tr style="display: none;">
       <td colspan="3">
@@ -20,18 +20,20 @@ var alert_msg = '{$alert_msg|wm_remove|escape:javascript}';
 
   {foreach from=$product_options item=v}
     {if $v.options ne '' or $v.is_modifier eq 'T' or $v.is_modifier eq 'A'}
-      <tr>
-        <td class="property-name product-input">
+        <!--Option Label-->
+        <h4 class="secondary-font option-label">
           {if $usertype eq "A"}
             {$v.class}
           {else}
             {$v.classtext|escape|default:$v.class}
           {/if}
-        </td>
-        <td class="property-value" colspan="2">
+        </h4>
+        <!--End Option Label-->
+
+        <!--Option Value-->
 
           {if $cname ne ""}
-            {assign var="poname" value="$cname[`$v.classid`]"}
+            {assign var="poname" value="$cname[`$v.classid`]}
           {else}
             {assign var="poname" value="product_options[`$v.classid`]"}
           {/if}
@@ -69,12 +71,11 @@ var alert_msg = '{$alert_msg|wm_remove|escape:javascript}';
             </select>
           {/if}
 
-        </td>
-      </tr>
+       <!--End Option Value-->
     {/if}
 
   {/foreach}
-</table>
+</div>
 {/if}
 
 {if $product_options_ex ne ""}

@@ -69,7 +69,7 @@
 {/strip}
 {else}
 {strip}
-<table cellspacing="0" class="SimpleButton">
+<table cellspacing="0" class="SimpleButton hey">
 <tr>
 {if $button_title ne ''}
 <td>

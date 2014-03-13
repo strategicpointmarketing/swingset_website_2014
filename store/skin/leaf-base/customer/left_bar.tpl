@@ -87,9 +87,10 @@ vim: set ts=2 sw=2 sts=2 et:
     {include file="modules/Advanced_Customer_Reviews/customer_reviews_menu.tpl"}
 {/if}
 
+{*
 {if $active_modules.Recently_Viewed}
     {include file="modules/Recently_Viewed/section.tpl"}
-{/if}
+{/if}*}
 
 
 
@@ -97,10 +98,10 @@ vim: set ts=2 sw=2 sts=2 et:
     {include file="modules/New_Arrivals/menu_new_arrivals.tpl"}
 {/if}
 
-
+{*
 {if $active_modules.Manufacturers ne "" and $config.Manufacturers.manufacturers_menu eq "Y"}
     {include file="modules/Manufacturers/menu_manufacturers.tpl"}
-{/if}
+{/if}*}
 
 {*
 {if $active_modules.Gift_Certificates ne ""}

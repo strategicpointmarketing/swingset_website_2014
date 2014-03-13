@@ -41,10 +41,11 @@ vim: set ts=2 sw=2 sts=2 et:
       {/if}
 
   <div class="product-properties">
-      
-    <div class="property-name">{$lng.lbl_sku}</div>
-    <div class="property-value" id="product_code">{$product.productcode|escape}</div>    
-    <div class="separator"></div>
+    <h1 class="tertiary-heading paragon-text mtn">{$product.producttitle|amp}</h1>
+    <div class="pvs">
+        <span class="inline-block minion-text secondary-font bold mrxs">{$lng.lbl_sku}:</span>
+        <span class="inline-block minion-text secondary-font thin" id="product_code">{$product.productcode|escape}</span>
+    </div>
     {if $config.Appearance.show_in_stock eq "Y" and $config.General.unlimited_products ne "Y" and $product.distribution eq ""}
       <div class="property-name">{$lng.lbl_in_stock}</div>
       <div class="property-value product-quantity-text">
@@ -54,18 +55,16 @@ vim: set ts=2 sw=2 sts=2 et:
           {$lng.lbl_no_items_available}
         {/if}
       </div>
-      <div class="separator"></div>
     {/if}
 
-    {if $product.weight ne "0.00" or $variants ne ''}
+    {*if $product.weight ne "0.00" or $variants ne ''}
       <div id="product_weight_box"{if $product.weight eq '0.00'} style="display: none;"{/if}>
         <div class="property-name">{$lng.lbl_weight}</div>
         <div class="property-value">
           <span id="product_weight">{$product.weight|formatprice}</span> {$config.General.weight_symbol}
         </div>
       </div>
-      <div class="separator"></div>
-    {/if}
+    {/if*}
 
     {if $active_modules.Extra_Fields}
       {include file="modules/Extra_Fields/product.tpl"}
@@ -79,26 +78,22 @@ vim: set ts=2 sw=2 sts=2 et:
       {include file="modules/Refine_Filters/rf_product.tpl"}
     {/if}
 
-    <div class="separator"></div>
+    {*<div class="separator"></div>}*}
 
     {if $product.appearance.has_market_price and $product.appearance.market_price_discount gt 0}
       <div class="property-name product-taxed-price">{$lng.lbl_market_price}:</div>
       <div class="property-value product-taxed-price">{currency value=$product.list_price}</div>
-      <div class="separator"></div>
+      {*<div class="separator"></div>*}
     {/if}
 
 
     {if $active_modules.XPayments_Subscriptions and $product.subscription.subscription_product eq 'Y'}
       {include file="modules/XPayments_Subscriptions/customer/product_details.tpl"}
     {else}
-      <div class="property-name product-price">{$lng.lbl_our_price}:</div>
-      <div class="property-value">
+      <div class="property-value product-price">
       {if $product.taxed_price ne 0 or $variant_price_no_empty}
         <span class="product-price-value">{currency value=$product.taxed_price tag_id="product_price"}</span>
-        <span class="product-market-price">{alter_currency value=$product.taxed_price tag_id="product_alt_price"}</span>
-        {if $product.taxes}
-          <br />{include file="customer/main/taxed_price.tpl" taxes=$product.taxes}
-        {/if}
+
 
         {if $active_modules.Klarna_Payments}
           {include file="modules/Klarna_Payments/monthly_cost.tpl" elementid="pp_conditions`$product.productid`" monthly_cost=$product.monthly_cost}
@@ -125,9 +120,9 @@ vim: set ts=2 sw=2 sts=2 et:
       </div>
     {/if}
 
-    {if $product.forsale ne "B"}
+    {*{if $product.forsale ne "B"}
       {include file="customer/main/product_prices.tpl"}
-    {/if}
+    {/if}*}
 
     {if $product.forsale neq "B" or ($product.forsale eq "B" and $smarty.get.pconf ne "" and $active_modules.Product_Configurator)}
 
@@ -166,13 +161,15 @@ var product_avail = 0;
 
         {elseif not $product.appearance.force_1_amount and $product.forsale ne "B"}
 
-          <div class="product-input">
-            <div class="quantity"><img class="left_crns_qty" src="{$AltImagesDir}/custom/left_corners.gif" alt=""/><img class="right_crns_qty" src="{$AltImagesDir}/custom/right_corners.gif" alt=""/>
+          <div class="product-actions">
+            <div class="quantity-container">
+                <span class="quantity-label">
 			{if $config.Appearance.show_in_stock eq "Y" and not $product.appearance.quantity_input_box_enabled and $config.General.unlimited_products ne 'Y'}
               {$lng.lbl_quantity_x|substitute:quantity:$product.avail}
             {else}
               {$lng.lbl_qty}
             {/if}
+          </span>
   
 <script type="text/javascript">
 //<![CDATA[
@@ -237,7 +234,7 @@ var product_avail = 1;
       {/if}
 		{if $product.appearance.buy_now_buttons_enabled}
 			 {if $product.forsale ne "B"}
-			<div class="buttons-row">
+             <!--Buttons-->
 
       {* Uncomment this line if you don't want buy more button behavior:
         {include file="customer/buttons/buy_now.tpl" type="input" additional_button_class="main-button"}
@@ -252,11 +249,10 @@ var product_avail = 1;
 			{if $product.appearance.dropout_actions}
 			  {include file="customer/buttons/add_to_list.tpl" id=$product.productid js_if_condition="FormValidation()"}
 
-			{elseif $product.appearance.buy_now_add2wl_enabled}
-              {include file="customer/buttons/add_to_wishlist.tpl" href="javascript: if (FormValidation()) submitForm(document.orderform, 'add2wl', arguments[0]);"}
+
 			{/if}
 
-			</div>
+			<!--End Buttons-->
 			{else}
 
 			  {$lng.txt_pconf_product_is_bundled}
@@ -327,7 +323,8 @@ var product_avail = 1;
 
 <div class="clearing"></div>
 
-<div class="descr">{$product.fulldescr|default:$product.descr}</div>
+{*<div class="descr">{$product.fulldescr|default:$product.descr}</div>*}
+
 {if $active_modules.Product_Options and ($product_options ne '' or $product_wholesale ne '') and ($product.product_type ne "C" or not $active_modules.Product_Configurator)}
 <script type="text/javascript">
 //<![CDATA[
@@ -338,6 +335,7 @@ setTimeout(check_options, 200);
 
     {if $product.forsale ne "B"}
 
+      {*
       <ul class="simple-list">
       {if $active_modules.Socialize}
       <li>
@@ -355,7 +353,7 @@ setTimeout(check_options, 200);
       </li>
       {/if}
 
-      </ul>
+      </ul>*}
 
     {/if}
 {if $active_modules.Feature_Comparison ne ""} 
