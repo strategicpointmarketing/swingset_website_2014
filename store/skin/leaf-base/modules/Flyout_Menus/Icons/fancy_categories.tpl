@@ -6,7 +6,7 @@ vim: set ts=2 sw=2 sts=2 et:
 
 {if $fc_skin_path}
 
-  {load_defer file="`$fc_skin_path`/func.js" type="js"}
+  {*{load_defer file="`$fc_skin_path`/func.js" type="js"}*}
 
 
     {if $fancy_use_cache}

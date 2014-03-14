@@ -274,8 +274,9 @@ vim: set ts=2 sw=2 sts=2 et:
 
                         {else}
 
-                            <span class="price">{$lng.lbl_enter_your_price}</span><br />
-                            {$lng.lbl_enter_your_price_note}
+                            {*<span class="price">{$lng.lbl_enter_your_price}</span><br />
+                            {$lng.lbl_enter_your_price_note}*}
+                            <span class="item-price new-line">Call For Price</span>
 
                         {/if}
 

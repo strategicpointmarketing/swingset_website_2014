@@ -14,7 +14,7 @@ vim: set ts=2 sw=2 sts=2 et:
     {include file="modules/Special_Offers/customer/category_offers_short_list.tpl"}
 {/if}
 
-<h1 class="tertiary-heading canon-text mts">{$current_category.category|amp}</h1>
+<h1 class="tertiary-heading canon-text mtn">{$current_category.category|amp}</h1>
 
 {if $config.Appearance.subcategories_per_row eq 'Y'}
 

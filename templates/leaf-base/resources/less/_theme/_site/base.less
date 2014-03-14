@@ -233,6 +233,16 @@
 
 	a {
 		color: @primary-text-color;
+
+		// Mixins
+		.transition(padding,.1s,ease-in-out);
+
+		&:hover {
+			padding-left:5px;
+
+		// Mixins
+		.transition(padding,.1s,ease-in-out);
+		}
 	}
 
 	.active {
@@ -623,6 +633,10 @@ display:inline-block;
 
 		// Mixins
 		.border-radius(5);
+
+		&:hover {
+		background: lighten(@secondary-color, 10%);
+		}
 	}
 }
 

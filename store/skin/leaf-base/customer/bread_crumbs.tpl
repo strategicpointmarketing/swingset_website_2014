@@ -5,6 +5,7 @@ vim: set ts=2 sw=2 sts=2 et:
 
 
 {if $location}
+    <div class="bread-crumb mbl">
 
                     {foreach from=$location item=l name=location}
                         {if $l.1 and not $smarty.foreach.location.last and not $smarty.foreach.location.first}
@@ -17,5 +18,6 @@ vim: set ts=2 sw=2 sts=2 et:
                         {/if}
 
                     {/foreach}
+    </div>
 
 {/if}

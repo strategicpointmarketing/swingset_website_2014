@@ -100,12 +100,13 @@ vim: set ts=2 sw=2 sts=2 et:
         {/if}
 
       {else}
-        <input type="text" size="7" name="price" />
+        {*<input type="text" size="7" name="price" />*}
+          <h4 class="primer-text primary-color">Call For Price</h4>
       {/if}
       </div>
     {/if}
       
-      <div class="separator"></div>
+      {*<div class="separator"></div>*}
       
     {if $active_modules.Product_Notifications ne '' and $config.Product_Notifications.prod_notif_enabled_P eq 'Y' and ($product.taxed_price ne 0 or $variant_price_no_empty)}
       <div class="property-name">
@@ -134,9 +135,9 @@ vim: set ts=2 sw=2 sts=2 et:
 
         {if $product.appearance.empty_stock and ($variants eq '' or ($variants ne '' and $product.avail le 0))}
 
-          <div class="product-input">
-		  <div class="quantity"><img class="left_crns_qty" src="{$AltImagesDir}/custom/left_corners.gif" alt=""/><img class="right_crns_qty" src="{$AltImagesDir}/custom/right_corners.gif" alt=""/>
-		  {$lng.lbl_qty}
+          <div class="product-actions">
+		  <div class="quantity">{*<img class="left_crns_qty" src="{$AltImagesDir}/custom/left_corners.gif" alt=""/><img class="right_crns_qty" src="{$AltImagesDir}/custom/right_corners.gif" alt=""/>
+		  {$lng.lbl_qty}*}
 <script type="text/javascript">
 //<![CDATA[
 var min_avail = 1;
@@ -145,7 +146,8 @@ var product_avail = 0;
 //]]>
 </script>
 
-            <strong>{$lng.txt_out_of_stock}</strong>
+            {*<strong>{$lng.txt_out_of_stock}</strong>*}
+              <span class="quantity-label">1-800-794-6473</span>
 
             {if $active_modules.Product_Notifications ne ''}
               {if $config.Product_Notifications.prod_notif_enabled_L eq 'Y' and $product_options ne ''}
