@@ -10,12 +10,14 @@ vim: set ts=2 sw=2 sts=2 et:
             <div class="gd-quarter gd-columns gt-quarter gt-columns" id="left-bar">
                 {include file="customer/left_bar.tpl"}
             </div>
+            <div class="gd-three-quarters gd-columns gt-three-quarters gt-columns">
         {/if}
 
 
 
-        <div class="gd-three-quarters gd-columns gt-three-quarters gt-columns">
+
         {if $main eq 'cart' or $main eq 'checkout' or $main eq "order_message" or $main eq "order_message_widget"}
+            <div class="gd-full gd-columns gt-full gt-columns">
             {include file="customer/evaluation.tpl"}
         {/if}
         <!--Body Content-->

@@ -25,7 +25,7 @@ vim: set ts=2 sw=2 sts=2 et:
 
 {*start new content*}
 
-<div class="dialog{if $additional_class} {$additional_class}{/if}{if $noborder} noborder{/if}{if $sort and $printable ne 'Y'} list-dialog{/if}">
+{*<div class="dialog{if $additional_class} {$additional_class}{/if}{if $noborder} noborder{/if}{if $sort and $printable ne 'Y'} list-dialog{/if}">
     {if not $noborder}
 
             {if $sort and $printable ne 'Y'}
@@ -41,7 +41,7 @@ vim: set ts=2 sw=2 sts=2 et:
             <div class="b-l"></div><div class="b-r"></div>
 
     {/if}
-</div>
-<!--Start Product Listing-->
+</div>*}
+<!--Start Inner Content-->
 {$content}
-<!--End Product Listing-->
+<!--End Inner Content-->

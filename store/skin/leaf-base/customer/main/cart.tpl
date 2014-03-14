@@ -2,7 +2,7 @@
 99f49a017eeaa96cf5c4060c7785548523d6ad12, v11 (xcart_4_6_2), 2014-01-15 17:46:03, cart.tpl, mixon
 vim: set ts=2 sw=2 sts=2 et:
 *}
-<h1>{$lng.lbl_your_shopping_cart}</h1>
+<h1 class="canon-text tertiary-heading">{$lng.lbl_your_shopping_cart}</h1>
 
 {if $cart ne "" and $active_modules.Gift_Certificates}
   <p class="text-block cart-note">{$lng.txt_cart_note}</p>
