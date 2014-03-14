@@ -168,11 +168,11 @@ vim: set ts=2 sw=2 sts=2 et:
     {foreach from=$products item=product name=products}<li class="gd-third gd-columns gt-half gt-columns product-listing object">
         <div class="item-box">
 
-            <script type="text/javascript">
+            <!--<script type="text/javascript">
                 //<![CDATA[
                 products_data[{$product.productid}] = {ldelim}{rdelim};
                 //]]>
-            </script>
+            </script>-->
 
             {if $active_modules.Product_Configurator and $is_pconf and $current_product}
                 {assign var="url" value="product.php?productid=`$product.productid`&amp;pconf=`$current_product.productid`&amp;slot=`$slot`"}
@@ -282,7 +282,7 @@ vim: set ts=2 sw=2 sts=2 et:
                     <!--End Price-->
 
                     <!--View More-->
-                        <a href="{$url}" class="button--secondary mts">View More</a>
+                        <a href="{$url}" class="button--secondary mts">View Item</a>
                     <!--End View More-->
 
                     <div class="clearing"></div>

@@ -48,6 +48,6 @@ vim: set ts=2 sw=2 sts=2 et:
 
 {include file="customer/global_footer_scripts.tpl"}
 {load_defer_code type="js"}
-{load_defer_code type="css"}
+{*load_defer_code type="css"*}
 </body>
 </html>

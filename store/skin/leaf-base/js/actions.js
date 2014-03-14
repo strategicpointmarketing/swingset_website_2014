@@ -57,7 +57,7 @@ $(document).ready(function() {
             var config = homeSlider.config;
 
             if ( config.targetElems.length ) {
-                $.get("/skin/leaf-base/js/jquery.flexslider.js")
+                $.get("/store/skin/leaf-base/js/jquery.flexslider.js")
                     .done(function() {
                         homeSlider.callSlider();
                     }).fail(function() {
