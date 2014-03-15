@@ -13,7 +13,7 @@ vim: set ts=2 sw=2 sts=2 et:
 
 
 
-<h1>{$lng.lbl_checkout}</h1>
+<h1 class = "tertiary-heading great-text mtn">{$lng.lbl_checkout}</h1>
 
 {include file="modules/One_Page_Checkout/opc_authbox.tpl"}
 

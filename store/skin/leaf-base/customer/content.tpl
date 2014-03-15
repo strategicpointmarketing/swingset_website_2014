@@ -3,7 +3,7 @@
 vim: set ts=2 sw=2 sts=2 et:
 *}
 
-    <div class="gd-row gt-row" id="center-main">
+
 
 
         {if ($main neq 'cart' or $cart_empty) and $main neq 'checkout'}
@@ -22,7 +22,7 @@ vim: set ts=2 sw=2 sts=2 et:
         {/if}
         <!--Body Content-->
 
-        {if ($main eq 'cart' and not $cart_empty) or $main eq 'checkout'}
+        {if ($main eq 'cart' and not $cart_empty) or $main eq 'checkout' }
 
             {if $active_modules.Bill_Me_Later and $config.Bill_Me_Later.bml_enable_banners eq 'Y'}
                 {include file="modules/Bill_Me_Later/top_banner.tpl"}
@@ -32,7 +32,10 @@ vim: set ts=2 sw=2 sts=2 et:
 
         {else}
 
-            {if $main neq "catalog" or $current_category.category neq ""}
+
+
+            {if ($main neq "catalog" or $current_category.category neq "") and ($main eq "product" or $main eq "catalog")}
+
                 {include file="customer/bread_crumbs.tpl"}
             {/if}
 
@@ -75,7 +78,7 @@ vim: set ts=2 sw=2 sts=2 et:
         {/if}
 
         <!--End Body Content -->
-        </div>
+
 
 
 

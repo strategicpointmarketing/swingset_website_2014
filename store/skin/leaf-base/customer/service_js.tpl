@@ -91,7 +91,7 @@ vim: set ts=2 sw=2 sts=2 et:
     {load_defer file="modules/PayPalAuth/ppa.js" type="js"}
 {/if}
 
-{*eliminating redudancy{load_defer file="lib/jquery-min.js" type="js"}*}
+{*eliminating redudancy*}{load_defer file="lib/jquery-min.js" type="js"}{**}
 {if $development_mode_enabled}
     {load_defer file="lib/jquery-migrate.development.js" type="js"}
 {else}
