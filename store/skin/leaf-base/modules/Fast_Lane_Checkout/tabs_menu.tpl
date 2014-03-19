@@ -2,6 +2,7 @@
 850e5138e855497e58a9e99e00c2e8e04e3f7234, v1 (xcart_4_4_0_beta_2), 2010-05-21 08:31:50, tabs_menu.tpl, joy
 vim: set ts=2 sw=2 sts=2 et:
 *}
+{*
 <div class="flc-tabs-container">
   <div class="flc-tabs">
     <ul class="flc-progress-bar">
@@ -35,3 +36,32 @@ vim: set ts=2 sw=2 sts=2 et:
 </div>
 <div class="clearing"></div>
 </div>
+*}
+
+
+
+    <section class="tabbed-nav--container">
+
+        <div class="tabbed-nav--interior">
+            <div class="tabbed-nav--row">
+            {foreach item=step name=checkout_tabs from=$checkout_tabs}
+                {if $step.selected}
+                <a  class="tabbed-nav--item is-current capitalize" href="{$step.link|amp}">
+                    {$step.title}
+                </a>
+                {else}
+
+                    <a  class="tabbed-nav--item" href="{$step.link|amp}">
+                        <div class="tabbed-nav--label capitalize">{$step.title}</div>
+                    </a>
+                {/if}
+            {/foreach}
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+

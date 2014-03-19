@@ -2,12 +2,13 @@
 e29d845740cfab5b0da2599ff007d046b97b676c, v2 (xcart_4_6_2), 2014-01-09 10:03:17, register_address_info.tpl, random 
 vim: set ts=2 sw=2 sts=2 et:
 *}
+<!-- Begin skin/leaf-base/customer/main/register_address_info.tpl -->
 {if $need_address_info}
 
   {if $hide_header eq ''}
     <tr>
       <td colspan="3" class="register-section-title">
-        <div><label>{$lng.lbl_billing_address}</label></div>
+        <div><h3 class = "secondary-font primer-text capitalize">Billing Address</h3></div>
       </td>
     </tr>
   {/if}
@@ -27,6 +28,7 @@ vim: set ts=2 sw=2 sts=2 et:
     {/if}
 
     </tbody>
+
     <tbody id="ship2diff_box">
 
     {include file="customer/main/register_address_fields.tpl" default_fields=$address_fields address=$userinfo.address.S id_prefix='s_' name_prefix="address_book[S]" zip_section="shipping" update_address_book='Y' address_type='S' personal_firstname=$userinfo.personal_firstname personal_lastname=$userinfo.personal_lastname}
@@ -36,3 +38,5 @@ vim: set ts=2 sw=2 sts=2 et:
 
   {/if}
 {/if}
+
+<!-- End skin/leaf-base/customer/main/register_address_info.tpl -->

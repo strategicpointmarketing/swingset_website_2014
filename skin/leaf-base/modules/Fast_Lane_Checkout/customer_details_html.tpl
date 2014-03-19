@@ -6,8 +6,7 @@ vim: set ts=2 sw=2 sts=2 et:
   {assign var=modify_url value="cart.php?mode=checkout&edit_profile&paymentid=`$paymentid`"}
 {/if}
 
-
-
+<div class="flc-checkout-address-left">
 
   {*{include file="customer/subheader.tpl" title=$lng.lbl_contact_information class="grey"}*}
     <h3>Contact Information</h3>
@@ -15,7 +14,7 @@ vim: set ts=2 sw=2 sts=2 et:
   <table cellspacing="0" class="flc-checkout-address" summary="{$lng.lbl_contact_information|escape}">
   <tr class="hidden"><td colspan="2">&nbsp;</td></tr>
 
-  <tr>
+  <tr>   
     <td class = "gd-half gt-half gm-half">{$lng.lbl_email}:</td>
     <td class = "gd-half gt-half gm-half">{$userinfo.email}</td>
   </tr>
@@ -35,14 +34,14 @@ vim: set ts=2 sw=2 sts=2 et:
 {/if}
 
 {if $userinfo.default_fields.lastname}
-    <tr>
+    <tr> 
       <td class = "gd-half gt-half gm-half">{$lng.lbl_last_name}:</td>
       <td class = "gd-half gt-half gm-half">{$userinfo.lastname}</td>
     </tr>
 {/if}
 
 {if $userinfo.default_fields.company}
-    <tr>
+    <tr> 
       <td class = "gd-half gt-half gm-half">{$lng.lbl_company}:</td>
       <td class = "gd-half gt-half gm-half">{$userinfo.company}</td>
     </tr>
@@ -56,21 +55,21 @@ vim: set ts=2 sw=2 sts=2 et:
 {/if}
 
 {if $userinfo.default_fields.phone}
-    <tr>
+    <tr> 
       <td class = "gd-half gt-half gm-half">{$lng.lbl_phone}:</td>
       <td class = "gd-half gt-half gm-half">{$userinfo.phone}</td>
     </tr>
 {/if}
 
 {if $userinfo.default_fields.fax}
-    <tr>
+    <tr>  
       <td class = "gd-half gt-half gm-half">{$lng.lbl_fax}:</td>
       <td class = "gd-half gt-half gm-half">{$userinfo.fax}</td>
     </tr>
 {/if}
 
 {if $userinfo.default_fields.url}
-    <tr>
+    <tr>   
       <td class = "gd-half gt-half gm-half">{$lng.lbl_web_site}:</td>
       <td class = "gd-half gt-half gm-half">{$userinfo.url}</td>
     </tr>
@@ -86,8 +85,8 @@ vim: set ts=2 sw=2 sts=2 et:
 {/foreach}
 
   </table>
-
-
+</div>
+<div class="clearing"></div>
 
 <div class = "gd-row gt-row gm-row">
 <div class="gd-half gd-columns gt-half gt-columns gm-full gm-columns">
@@ -133,28 +132,28 @@ vim: set ts=2 sw=2 sts=2 et:
 {/if}
 
 {if $userinfo.default_address_fields.city}
-    <tr>
+    <tr> 
       <td class = "gd-half gt-half gm-half">{$lng.lbl_city}:</td>
       <td class = "gd-half gt-half gm-half">{$userinfo.b_city}</td>
     </tr>
 {/if}
 
 {if $userinfo.default_address_fields.state}
-    <tr>
+    <tr> 
       <td class = "gd-half gt-half gm-half">{$lng.lbl_state}:</td>
       <td class = "gd-half gt-half gm-half">{$userinfo.b_statename}</td>
     </tr>
 {/if}
 
 {if $userinfo.default_address_fields.country}
-    <tr>
+    <tr> 
       <td class = "gd-half gt-half gm-half">{$lng.lbl_country}:</td>
       <td class = "gd-half gt-half gm-half">{$userinfo.b_countryname}</td>
     </tr>
 {/if}
 
 {if $userinfo.default_address_fields.zipcode}
-    <tr>
+    <tr> 
       <td class = "gd-half gt-half gm-half">{$lng.lbl_zip_code}:</td>
       <td class = "gd-half gt-half gm-half">{include file="main/zipcode.tpl" val=$userinfo.b_zipcode zip4=$userinfo.b_zip4 static=true}</td>
     </tr>
@@ -173,7 +172,7 @@ vim: set ts=2 sw=2 sts=2 et:
     {assign var=modify_url value="javascript: popupOpen('popup_address.php?mode=select&amp;for=cart&amp;type=B');"}
     {assign var=link_href value="popup_address.php?mode=select&for=cart&type=B"}
 {/if}
-    {* <tr><td colspan="2">{include file="customer/buttons/modify.tpl" href=$modify_url link_href=$link_href|default:$modify_url style="link"}</td></tr> *}
+    <tr><td colspan="2">{include file="customer/buttons/modify.tpl" href=$modify_url link_href=$link_href|default:$modify_url style="link"}</td></tr>
 
   </table>
 </div>
@@ -201,14 +200,14 @@ vim: set ts=2 sw=2 sts=2 et:
 {/if}
 
 {if $userinfo.default_address_fields.lastname}
-    <tr>
+    <tr> 
       <td class = "gd-half gt-half gm-half">{$lng.lbl_last_name}:</td>
       <td class = "gd-half gt-half gm-half">{$userinfo.s_lastname}</td>
     </tr>
 {/if}
 
 {if $userinfo.default_address_fields.address}
-    <tr>
+    <tr> 
       <td class = "gd-half gt-half gm-half">{$lng.lbl_address}:</td>
       <td class = "gd-half gt-half gm-half">
         {$userinfo.s_address}
@@ -220,28 +219,28 @@ vim: set ts=2 sw=2 sts=2 et:
 {/if}
 
 {if $userinfo.default_address_fields.city}
-    <tr>
+    <tr> 
       <td class = "gd-half gt-half gm-half">{$lng.lbl_city}:</td>
       <td class = "gd-half gt-half gm-half">{$userinfo.s_city}</td>
     </tr>
 {/if}
 
 {if $userinfo.default_address_fields.state}
-    <tr>
+    <tr> 
       <td class = "gd-half gt-half gm-half">{$lng.lbl_state}:</td>
       <td class = "gd-half gt-half gm-half">{$userinfo.s_statename}</td>
     </tr>
 {/if}
 
 {if $userinfo.default_address_fields.country}
-    <tr>
+    <tr> 
       <td class = "gd-half gt-half gm-half">{$lng.lbl_country}:</td>
       <td class = "gd-half gt-half gm-half">{$userinfo.s_countryname}</td>
     </tr>
 {/if}
 
 {if $userinfo.default_address_fields.zipcode}
-    <tr>
+    <tr> 
       <td class = "gd-half gt-half gm-half">{$lng.lbl_zip_code}:</td>
       <td class = "gd-half gt-half gm-half">{include file="main/zipcode.tpl" val=$userinfo.s_zipcode zip4=$userinfo.s_zip4 static=true}</td>
     </tr>
@@ -260,14 +259,14 @@ vim: set ts=2 sw=2 sts=2 et:
     {assign var=modify_url value="javascript: popupOpen('popup_address.php?mode=select&amp;for=cart&amp;type=S');"}
     {assign var=link_href value="popup_address.php?mode=select&for=cart&type=S"}
 {/if}
-    {*<tr><td colspan="2">{include file="customer/buttons/modify.tpl" href=$modify_url link_href=$link_href|default:$modify_url style="link"}</td></tr>*}
+    <tr><td colspan="2">{include file="customer/buttons/modify.tpl" href=$modify_url link_href=$link_href|default:$modify_url style="link"}</td></tr>
 
   </table>
 
 </div>
 
 </div>
-
+<div class="clearing"></div>
 
 {capture name=addfields}
 {foreach from=$userinfo.additional_fields item=v}
@@ -282,15 +281,13 @@ vim: set ts=2 sw=2 sts=2 et:
 
 {if $smarty.capture.addfields ne ""}
 
-
+<div class="flc-checkout-address-left">
   {include file="customer/subheader.tpl" title=$lng.lbl_additional_information class="grey"}
 
   <table cellspacing="0" class="flc-checkout-address" summary="{$lng.lbl_additional_information|escape}">
     {$smarty.capture.addfields}
   </table>
-
-
+</div>
+<div class="clearing"></div>
 
 {/if}
-
-

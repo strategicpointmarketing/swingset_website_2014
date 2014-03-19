@@ -49,7 +49,7 @@ vim: set ts=2 sw=2 sts=2 et:
 No data
 {/if}
 
-
+{*
 {if $userinfo ne ""}
 <div class="text-pre-block">
   {if $login ne ''}
@@ -58,7 +58,7 @@ No data
   {/if}
   {include file="customer/buttons/modify.tpl" href=$modify_url link_href=$link_href|default:$modify_url style="link"}
 </div>
-{/if}
+{/if}*}
 
   </div>
   <div class="flc-checkout-options">
@@ -110,6 +110,7 @@ No data
 
 {/if} 
 
+        {*
 {if $userinfo}
 
 {if $login ne ''}
@@ -118,6 +119,7 @@ No data
 {/if}
 {include file="customer/buttons/modify.tpl" href=$modify_url link_href=$link_href|default:$modify_url style="link"}
 {/if}
+*}
 
     </div>
     <div class="flc-checkout-options">
@@ -133,11 +135,11 @@ No data
   </div>
 
   <br />
-  <div class="center">
-    <div class="halign-center">
+
+    <div class="gd-half gd-columns gt-half gt-columns mts">
       {include file="customer/buttons/continue.tpl" type="input" additional_button_class="main-button"}
     </div>
-  </div>
+
 
 </form>
 

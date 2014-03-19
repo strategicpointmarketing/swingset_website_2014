@@ -2,16 +2,12 @@
 99f49a017eeaa96cf5c4060c7785548523d6ad12, v13 (xcart_4_6_2), 2014-01-15 17:46:03, checkout_3_place.tpl, mixon
 vim: set ts=2 sw=2 sts=2 et:
 *}
-<h1>{$lng.lbl_place_order}</h1>
+<h1 class="tertiary-heading canon-text mtn">Place Order</h1>
 
 {capture name=dialog}
 
-<div class="flc-checkout-products">
-{if $config.Appearance.show_cart_details eq "Y"} 
-  {include file="customer/main/cart_details.tpl" link_qty="Y"}
-{else}
-  {include file="customer/main/cart_contents.tpl" link_qty="Y"}
-{/if}
+
+
 
 {include file="customer/main/cart_totals.tpl" link_shipping="Y" no_form_fields=true}
 
@@ -19,7 +15,7 @@ vim: set ts=2 sw=2 sts=2 et:
   {include file="modules/TaxCloud/cart_totals.tpl"}
 {/if}
 
-</div>
+
 
 
 {if $cart.coupon_discount eq 0 and $products and $active_modules.Discount_Coupons}
@@ -31,28 +27,35 @@ vim: set ts=2 sw=2 sts=2 et:
   <input type="hidden" name="action" value="place_order" />
   <input type="hidden" name="payment_method" value="{$payment_data.payment_method_orig}" />
 
+    {*
   {include file="customer/subheader.tpl" title=$lng.lbl_personal_information}
+    *}
 
-  <div class="flc-checkout-box-info">
+
+
     {include file="modules/Fast_Lane_Checkout/customer_details_html.tpl" paymentid=$payment_data.paymentid}
-  </div>
 
-  {include file="customer/subheader.tpl" title="`$lng.lbl_payment_method`: `$payment_data.payment_method`"}
+<div class = "gd-full gt-full gm-full">
+  {include file="customer/subheader.tpl" title="Payment Method: `$payment_data.payment_method`"}
+</div>
 
+{*
 {if $ignore_payment_method_selection eq ""}
   <div class="right-box">
     {include file="customer/buttons/button.tpl" button_title=$lng.lbl_change_payment_method href="cart.php?mode=checkout" style="link"}
   </div>
 {/if}
+*}
 
 <script type="text/javascript">
 //<![CDATA[
 requiredFields = [];
 //]]>
 </script>
+
 {include file="check_required_fields_js.tpl" use_email_validation="N"}
 
-  <div class="flc-checkout-box-info">
+
 
 {if $payment_cc_data.background eq "I"}
 
@@ -63,39 +66,55 @@ requiredFields = [];
 
 {elseif $payment_data.payment_template ne ""}
 
+    {*
   {capture name=payment_template_output}
     {include file=$payment_data.payment_template hide_header="Y"}
   {/capture}
+    *}
 
   {if $smarty.capture.payment_template_output ne ""}
 
     {include file="customer/subheader.tpl" title=$lng.lbl_payment_details class="grey"}
 
-    <div class="flc-payment-options">
+
 
       {$smarty.capture.payment_template_output}
 
-    </div>
+
 
   {/if}
 
 {/if}
 
+
+
 {if $payment_cc_data.cmpi eq 'Y' and $config.CMPI.cmpi_enabled eq 'Y'}
     {include file="main/cmpi.tpl"}
 {/if}
 
-    <div class="text-block">
+      {if $config.Appearance.show_cart_details eq "Y"}
+
+          {include file="customer/main/cart_details.tpl" link_qty="Y"}
+
+      {else}
+          {include file="customer/main/cart_contents.tpl" link_qty="Y"}
+      {/if}
+
+
       {include file="customer/main/checkout_notes.tpl"}
-    </div>
 
-  </div>
 
-  <div class="terms_n_conditions center">
+
+
+  {* <div class="terms_n_conditions center">
     <label for="accept_terms">
       <input type="checkbox" name="accept_terms" id="accept_terms" value="Y" />
       {$lng.txt_terms_and_conditions_note|substitute:"terms_url":"`$xcart_web_dir`/pages.php?alias=conditions":"privacy_url":"`$xcart_web_dir`/pages.php?alias=business"}
     </label>
+  </div> *}
+
+  <div class="mvl">
+    <input class="inline-selector" type="checkbox" id="accept_terms" name="accept_terms" value="Y"><span class="semibold secondary-font minion-text">I accept the <a href="pages.php?alias=conditions" target = "_blank">"Terms &amp; Conditions"</a> and <a href = "pages.php?alias=business" target = "_blank">"Privacy Statement"</a>.</span>
   </div>
 
   {include file="modules/Fast_Lane_Checkout/checkout_js.tpl"}
