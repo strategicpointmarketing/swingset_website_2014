@@ -2,19 +2,130 @@
 99f49a017eeaa96cf5c4060c7785548523d6ad12, v11 (xcart_4_6_2), 2014-01-15 17:46:03, cart.tpl, mixon
 vim: set ts=2 sw=2 sts=2 et:
 *}
-<h1 class="canon-text tertiary-heading">{$lng.lbl_your_shopping_cart}</h1>
 
+
+<h1 class="canon-text tertiary-heading">Your Shopping Cart</h1>
+
+{*
 {if $cart ne "" and $active_modules.Gift_Certificates}
   <p class="text-block cart-note">{$lng.txt_cart_note}</p>
+
+
 {/if}
+
+The above commented out code will generate a message saying: Please note: 1) Delivery Method is ignored if you are ordering Gift Certificates or electronically distributed products. 2) Gift Certificates are redeemed during Checkout process.
+
+*}
 
 {capture name=dialog}
 
   {if $products ne ""}
 
-    <script type="text/javascript" src="{$SkinDir}/js/cart.js"></script>
+        <script type="text/javascript" src="{$SkinDir}/js/cart.js"></script>
 
-    <div class="products cart">
+    <form action="cart.php" method="post" name="cartform">
+
+        <input type="hidden" name="action" id="action" value="update" />
+        <input type="hidden" name="mode" value="" />
+        <input type="hidden" name="productid" id="productid" value="" />
+        <input type="hidden" name="pindex" id="pindex" value="" />
+
+        <div class="gd-row gt-row">
+            <div class="gd-two-thirds gd-columns gt-two-thirds gt-columns gm-half gm-columns">
+                <!--item heading-->
+                <h3 class="primary-color primer-text bold">Item</h3>
+            </div>
+
+            <div class="gd-third gd-columns gt-third gt-columns gm-half gm-columns">
+                <!--subtotal heading-->
+
+                <h3 class="primary-color primer-text bold">Subtotal</h3>
+            </div>
+        </div>
+
+        <!-- every item added-->
+
+        {foreach from=$products item=product name=products}
+            {if $product.hidden eq ""}
+            <div class="gd-row gt-row">
+                <div class="gd-two-thirds gd-columns gt-two-thirds gt-columns gm-half gm-columns">
+                    <!-- Product name/link -->
+                    <p><a href="product.php?productid={$product.productid}" >{$product.product|amp}</a></p>
+                    <p>{$product.descr|truncate:100}</p>
+
+
+                    {*{if $product.product_options ne ""}
+                        <p>{$lng.lbl_selected_options}:</p>
+                        <div>
+                            {include file="modules/Product_Options/display_options.tpl" options=$product.product_options}
+                            {include file="customer/buttons/edit_product_options.tpl" id=$product.cartid additional_button_class="light-button edit-options" style=" "}
+                        </div>
+                    {/if}*}
+                </div>
+                <div class="gd-third gd-columns gt-third gt-columns gm-half gm-columns">
+                    <!-- Begin pricing/quantity info -->
+                    {assign var="price" value=$product.display_price}
+
+                        <div class = "float-left">{$price} x </div> <input type="text" size="3" name="productindexes[{$product.cartid}]" id="productindexes_{$product.cartid}" value="{$product.amount}" />
+
+
+
+                    {*{if $config.Taxes.display_taxed_order_totals eq "Y" and $product.taxes}
+                        <div class="taxes">
+                            {include file="customer/main/taxed_price.tpl" taxes=$product.taxes is_subtax=true}
+                        </div>
+                    {/if}*}
+
+
+
+                    <button class="button--secondary capitalize light-button small-button" type="button" title="Apply" onclick="javascript: return updateCartItem({$product.cartid});">
+                        Apply
+                    </button>
+
+                    <div class="subtotal last">
+                        <div class="subtotal-wrapper">
+                    <span class="price">
+                      {multi x=$price y=$product.amount assign=unformatted}{currency value=$unformatted}
+                    </span>
+                    <span class="market-price">
+                      {alter_currency value=$unformatted}
+                    </span>
+                        </div>
+                    </div>
+
+                    <div class="delete">
+
+                        <div class="delete-wrapper">
+                            {include file="customer/buttons/delete_item.tpl" href="cart.php?mode=delete&amp;productindex=`$product.cartid`" style="image" additional_button_class="simple-delete-button"}
+                        </div>
+
+                    </div>
+
+
+
+
+                    <!-- End pricing/quantity info -->
+                </div>
+            </div>
+            {/if}
+        {/foreach}
+
+
+
+
+
+
+
+    </form>
+
+
+
+
+      <!-- every item added-->
+             
+
+
+     {* <div class="products cart">
 
       <form action="cart.php" method="post" name="cartform">
 
@@ -28,7 +139,8 @@ vim: set ts=2 sw=2 sts=2 et:
             <div class="responsive-price">{$lng.lbl_price}</div>
             <div class="responsive-subtotal">{$lng.lbl_subtotal}</div>
           </div>
-          {foreach from=$products item=product name=products}
+
+           {foreach from=$products item=product name=products}
             {if $product.hidden eq ""}
             <div {interline name=products additional_class=responsive-row}>
               <div class="responsive-item">
@@ -78,11 +190,7 @@ vim: set ts=2 sw=2 sts=2 et:
                 </div>
                 <div class="price">
 
-                  {*{assign var="price" value=$product.display_price}
-                  {if $active_modules.Product_Configurator and $product.product_type eq "C"}
-                    {include file="modules/Product_Configurator/pconf_customer_cart.tpl" main_product=$product}
-                    {assign var="price" value=$product.pconf_display_price}
-                  {/if}*}
+
 
                   {if $active_modules.Special_Offers}
                     {include file="modules/Special_Offers/customer/cart_price_special.tpl"}
@@ -205,8 +313,8 @@ vim: set ts=2 sw=2 sts=2 et:
         </div>
       {/if}
 
-    </div>
-
+    </div> *}
+    <!-- End cart -->
   {else}
 
     {$lng.txt_your_shopping_cart_is_empty}
@@ -216,16 +324,32 @@ vim: set ts=2 sw=2 sts=2 et:
 {/capture}
 {include file="customer/dialog.tpl" title=$lng.lbl_items_in_cart content=$smarty.capture.dialog noborder=true}
 
-{if $active_modules.Special_Offers and $cart ne ""}
-  {include file="modules/Special_Offers/customer/cart_offers.tpl"}
-  {include file="modules/Special_Offers/customer/promo_offers.tpl"}
-{/if}
 
-{if $cart.coupon_discount eq 0 and $products and $active_modules.Discount_Coupons}
-  {include file="modules/Discount_Coupons/add_coupon.tpl"}
-{/if}
 
+
+    <form action="cart.php" name="couponform">
+        <input type="hidden" name="mode" value="add_coupon">
+        <div>
+            Have a coupon?
+            <input type="text"  size="32" name="coupon" value="Coupon code">
+        </div>
+
+        <button class="button--secondary" type="submit" title="Submit">
+            Submit
+        </button>
+
+    </form>
+
+
+<div class = "mts">
+    <a href = "cart.php?mode=checkout" class="button--primary" type="submit" title="Submit">
+        Checkout
+    </a>
+</div>
+
+{*
 {getvar func='func_tpl_is_jcarousel_is_needed'}
+
 {if $active_modules.Wishlist ne '' and $func_tpl_is_jcarousel_is_needed}
 {if !$products}
   {assign var=additional_class value="empty-cart"}
@@ -234,4 +358,4 @@ vim: set ts=2 sw=2 sts=2 et:
     {include file="modules/Wishlist/wl_carousel.tpl" products=$wl_products giftcerts=$wl_giftcerts}
   {/capture}
   {include file="customer/dialog.tpl" title=$lng.lbl_wl_products content=$smarty.capture.dialog additional_class="wl-dialog $additional_class"}
-{/if}
+{/if} *}

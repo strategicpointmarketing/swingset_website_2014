@@ -2,6 +2,7 @@
 696e4b5af71508f80ea82ef9f079ba6f0fa8495b, v3 (xcart_4_5_5), 2013-01-17 18:51:58, button.tpl, aim
 vim: set ts=2 sw=2 sts=2 et:
 *}
+
 {assign var="js_link" value=$href|regex_replace:"/^\s*javascript\s*:/Si":""}
 {if $js_link eq $href}
 
@@ -71,6 +72,7 @@ vim: set ts=2 sw=2 sts=2 et:
 
   {/if}
 
+
 {elseif $is_link}
 
   {if $js_link}
@@ -79,8 +81,8 @@ vim: set ts=2 sw=2 sts=2 et:
     {assign var="div_link" value=$href|amp}
     {assign var="div_link" value="javascript: self.location = '`$div_link`'; if (event) event.cancelBubble = true;"}
   {/if}
-  <div class="button{if $additional_button_class} {$additional_button_class}{/if}" title="{$title|default:$button_title|strip_tags:false|escape}" onclick="{$div_link}"{if $button_id} id="{$button_id|escape}"{/if}>
-    <a href="{$href}" onclick="{if $js_link}{$js_link};{else}javascript:{/if} if (event) event.cancelBubble = true;"{$reading_direction_tag}>{$button_title|amp}</a>
+  <div class="button--secondary light-button small-button" title="{$title|default:$button_title|strip_tags:false|escape}" onclick="{$div_link}"{if $button_id} id="{$button_id|escape}"{/if}>
+    <a class = "white" href="{$href}" onclick="{if $js_link}{$js_link};{else}javascript:{/if} if (event) event.cancelBubble = true;"{$reading_direction_tag}>{$button_title|amp}</a>
 
   </div>
 
@@ -104,6 +106,8 @@ vim: set ts=2 sw=2 sts=2 et:
 
 {elseif $style eq 'div_button'}
 
+
+
   <div class="button{if $additional_button_class} {$additional_button_class}{/if}" title="{$title|default:$button_title|strip_tags:false|escape}"{if $js_link} onclick="{$js_link}"{/if}{if $button_id} id="{$button_id|escape}"{/if}>
     <div{$reading_direction_tag}>{$button_title|amp}</div>
   </div>
@@ -117,3 +121,5 @@ vim: set ts=2 sw=2 sts=2 et:
   </button>
 
 {/if}
+
+

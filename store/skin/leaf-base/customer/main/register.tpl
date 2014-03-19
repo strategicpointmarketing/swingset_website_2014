@@ -5,7 +5,7 @@ vim: set ts=2 sw=2 sts=2 et:
 
 
 <!--Begin skin/leaf-base/customer/main/register.tpl -->
-flag1
+
 {if $main ne 'checkout'}
   {if $login}
     <h1 class = "primary-color paragon-text secondary-font mbs">Personal Details</h1>
@@ -18,7 +18,7 @@ flag1
   {/if}
 {/if}
 
-flag2
+
 
 {if $av_error}
 
@@ -34,7 +34,7 @@ flag2
 
   {include file="check_registerform_fields_js.tpl"}
 
-  <p class="class4563">
+  <p >
 
     {if $newbie eq "Y" and $registered eq ""}
       {if $mode eq "update"}
@@ -52,7 +52,7 @@ flag2
       <p>The fields marked with * are mandatory.</p>
 
   </p>
-flag3
+
   {capture name=dialog}
 
     {if $newbie ne "Y" and $main ne "user_add" and $is_admin_user}
@@ -77,18 +77,19 @@ flag3
         {if $active_modules.XAuth}
           {include file="modules/XAuth/register_link.tpl"}
         {/if}
-flag4
-        <table cellspacing="1" class="class48954" summary="{$lng.lbl_register|escape}">
+
+          <!--Still in skin/leaf-base/customer/main/register.tpl -->
+        <table cellspacing="1"  summary="{$lng.lbl_register|escape}">
           <tbody>
-            flagA
+
             {include file="customer/main/register_personal_info.tpl"}
-            flagB
+
             {include file="customer/main/register_additional_info.tpl" section='A'}
-            flagC
+
             {include file="customer/main/register_address_info.tpl"}
-            flagD
+
             {include file="customer/main/register_account.tpl"}
-            flagE
+
             {if $active_modules.News_Management and $newslists}
               {include file="modules/News_Management/customer/register_newslists.tpl"}
             {/if}
@@ -114,7 +115,7 @@ flag4
               </td>
             </tr>
             {/if}
-            flagF
+
             <tr>
 
               {if $login ne "" && $main eq "register"}
@@ -129,7 +130,7 @@ flag4
                 </td>
 
               {else}
-                flagG
+
                 <td colspan="3" class="button-row center">
                   <div class="center">
                     {if $smarty.get.action eq "cart"}
@@ -139,17 +140,17 @@ flag4
                     {/if}
                   </div>
                 </td>
-                flagH
-              {/if}
-                flagI
-            </tr>
-                flagJ
-          </tbody>
-                flagK
-        </table>
-          flagL
 
-          flag5
+              {/if}
+
+            </tr>
+
+          </tbody>
+
+        </table>
+
+
+
 
       </form>
 
@@ -159,7 +160,7 @@ flag4
           {include file="modules/UPS_OnLine_Tools/ups_av_notice.tpl"}
         </div>
       {/if}
-flag6
+
     {else}
 
       {if $smarty.post.mode eq "update" or $smarty.get.mode eq "update"}

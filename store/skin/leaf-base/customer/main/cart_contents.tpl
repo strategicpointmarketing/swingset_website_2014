@@ -2,8 +2,8 @@
 dc27372a8bcf6ab0db5d9416127afd6609d66fad, v4 (xcart_4_6_1), 2013-06-20 12:14:18, cart_contents.tpl, aim
 vim: set ts=2 sw=2 sts=2 et:
 *}
+<!-- Begin /skin/leaf-base/customer/main/cart_contents.tpl -->
 
-FLAGB
 <table cellspacing="1" class="cart-content width-100" summary="{$lng.lbl_products|escape}">
 
   <tr class="head-row">
@@ -73,3 +73,5 @@ FLAGB
   {/if}
 
 </table>
+
+<!-- End /skin/leaf-base/customer/main/cart_contents.tpl -->
