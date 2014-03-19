@@ -26,7 +26,7 @@
     <!-- End Tab 1 -->
 
     <!-- Tab 2 -->
-    <section id="tab2" class="tab is-current tabbed-content--container">
+    <section id="tab2" class="tab tabbed-content--container">
 
             <div class="tabbed-content--body pts">
                 <p>{$product.shortdescr|default:$product.descr}</p>

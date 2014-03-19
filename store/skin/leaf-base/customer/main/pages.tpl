@@ -3,7 +3,7 @@ f2a6bb8e9f03427774bebc311ec0f0acf6ef942f, v3 (xcart_4_4_2), 2010-10-21 13:48:30,
 vim: set ts=2 sw=2 sts=2 et:
 *}
 
-<h1 class="tertiary-heading canon-text">{$page_data.title|amp}</h1>
+<h1 class="tertiary-heading canon-text mtn">{$page_data.title|amp}</h1>
 
 {capture name=dialog}
 
