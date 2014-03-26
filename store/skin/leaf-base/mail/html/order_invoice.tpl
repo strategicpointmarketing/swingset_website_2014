@@ -18,15 +18,15 @@ vim: set ts=2 sw=2 sts=2 et:
       </strong>
       <br />
       <br />
-      <strong>{$lng.lbl_date}:</strong> {$order.date|date_format:$config.Appearance.datetime_format}<br />
-      <strong>{$lng.lbl_order_id}:</strong> #{$order.orderid}<br />
-      <strong>{$lng.lbl_order_status}:</strong> {include file="main/order_status.tpl" status=$order.status mode="static"}<br />
-      <strong>{$lng.lbl_payment_method}:</strong><br />
+      <strong>Date:</strong> {$order.date|date_format:$config.Appearance.datetime_format}<br />
+      <strong>Order ID:</strong> #{$order.orderid}<br />
+      <strong>Order Status:</strong> {include file="main/order_status.tpl" status=$order.status mode="static"}<br />
+      <strong>Payment Method:</strong><br />
       {$order.payment_method}<br />
       {if $order.extra.xpc_saved_card_num and $order.extra.xpc_saved_card_type}
         {$order.extra.xpc_saved_card_type} {$order.extra.xpc_saved_card_num}<br />
       {/if}                  
-      <strong>{$lng.lbl_delivery}:</strong><br />
+      <strong>Delivery Method:</strong><br />
       {$order.shipping|trademark:'use_alt'|default:$lng.txt_not_available}
       {if $order.tracking}
       <br /><strong>{$lng.lbl_tracking_number}:</strong> {$order.tracking|escape}
@@ -75,14 +75,14 @@ vim: set ts=2 sw=2 sts=2 et:
 
   {if $_userinfo.default_fields.firstname}
     <tr>
-      <td class="name"><strong>{$lng.lbl_first_name}:</strong></td>
+      <td class="name"><strong>First Name:</strong></td>
       <td class="value">{$order.firstname}</td>
     </tr>
   {/if}
 
   {if $_userinfo.default_fields.lastname}
     <tr>
-      <td class="name"><strong>{$lng.lbl_last_name}:</strong></td>
+      <td class="name"><strong>Last Name:</strong></td>
       <td class="value">{$order.lastname}</td>
     </tr>
   {/if}
@@ -121,7 +121,7 @@ vim: set ts=2 sw=2 sts=2 et:
 <table class="block-grid two-up address-table-container" summary="{$lng.lbl_addresses|escape}">
   <tr>
     <td>
-      <div class="address-header">{$lng.lbl_billing_address}</div>
+      <div class="address-header">Billing Address</div>
       <hr style="border: 0px none; border-bottom: 2px solid #58595b; margin: 2px 0px; padding: 0px; height: 0px;" />
 
       <table class="block-grid address-table" summary="{$lng.lbl_billing_address|escape}">
@@ -135,14 +135,14 @@ vim: set ts=2 sw=2 sts=2 et:
 
         {if $_userinfo.default_address_fields.firstname}
           <tr>
-            <td class="name"><strong>{$lng.lbl_first_name}:</strong> </td>
+            <td class="name"><strong>First Name:</strong> </td>
             <td class="value">{$order.b_firstname|escape}</td>
           </tr>
         {/if}
 
         {if $_userinfo.default_address_fields.lastname}
           <tr>
-            <td class="name"><strong>{$lng.lbl_last_name}:</strong> </td>
+            <td class="name"><strong>Last Name:</strong> </td>
             <td class="value">{$order.b_lastname|escape}</td>
           </tr>
         {/if}
@@ -184,7 +184,7 @@ vim: set ts=2 sw=2 sts=2 et:
 
         {if $_userinfo.default_address_fields.zipcode}
           <tr>
-            <td class="name"><strong>{$lng.lbl_zip_code}:</strong> </td>
+            <td class="name"><strong>Zip/Postal Code:</strong> </td>
             <td class="value">{include file="main/zipcode.tpl" val=$order.b_zipcode zip4=$order.b_zip4 static=true}</td>
           </tr>
         {/if}
@@ -215,7 +215,7 @@ vim: set ts=2 sw=2 sts=2 et:
       </table>
 
     </td><td>
-      <div class="address-header">{$lng.lbl_shipping_address}</div>
+      <div class="address-header">Shipping Address</div>
       <hr style="border: 0px none; border-bottom: 2px solid #58595b; margin: 2px 0px; padding: 0px; height: 0px;" />
 
       <table class="block-grid address-table" summary="{$lng.lbl_shipping_address|escape}">
@@ -229,14 +229,14 @@ vim: set ts=2 sw=2 sts=2 et:
 
         {if $_userinfo.default_address_fields.firstname}
           <tr>
-            <td class="name"><strong>{$lng.lbl_first_name}:</strong> </td>
+            <td class="name"><strong>First Name:</strong> </td>
             <td class="value">{$order.s_firstname|escape}</td>
           </tr>
         {/if}
 
         {if $_userinfo.default_address_fields.lastname}
           <tr>
-            <td class="name"><strong>{$lng.lbl_last_name}:</strong> </td>
+            <td class="name"><strong>Last Name:</strong> </td>
             <td class="value">{$order.s_lastname|escape}</td>
           </tr>
         {/if}
@@ -278,7 +278,7 @@ vim: set ts=2 sw=2 sts=2 et:
 
         {if $_userinfo.default_address_fields.zipcode}
           <tr>
-            <td class="name"><strong>{$lng.lbl_zip_code}:</strong> </td>
+            <td class="name"><strong>Zip/Postal Code:</strong> </td>
             <td class="value">{include file="main/zipcode.tpl" val=$order.s_zipcode zip4=$order.s_zip4 static=true}</td>
           </tr>
         {/if}
@@ -339,14 +339,14 @@ vim: set ts=2 sw=2 sts=2 et:
   and ($order.details ne "" or $order.extra.advinfo ne "")
 }
 
-  <table class="block-grid two-up address-table-container"> 
+  <table class="block-grid two-up address-table-container">
     <tr>
-      <td>
-        <div class="address-header">{$lng.lbl_order_payment_details}</div>
-        <hr style="border: 0px none; border-bottom: 2px solid #58595b; margin: 2px 0px; padding: 0px; height: 0px;" />
-      </td>
+        <td>
+            <div class="address-header">{$lng.lbl_order_payment_details}</div>
+            <hr style="border: 0px none; border-bottom: 2px solid #58595b; margin: 2px 0px; padding: 0px; height: 0px;" />
+        </td>
     </tr>
-  </table>
+   </table>
 
   {if $order.details ne ""}
     {capture name="row"}
