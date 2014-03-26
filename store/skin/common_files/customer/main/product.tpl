@@ -51,7 +51,7 @@ $(ajax).bind(
           {if $active_modules.On_Sale}
             {include file="modules/On_Sale/on_sale_icon.tpl" product=$product module="product"}
           {else}
-          {include file="product_thumbnail.tpl" productid=$product.image_id image_x=$product.image_x image_y=$product.image_y product=$product.product tmbn_url=$product.image_url id="product_thumbnail" type=$product.image_type}
+          {include file="product_thumbnail.tpl" productid=$product.image_id image_x=$product.image_x image_y=$product.image_y product=$product.product tmbn_url=$product.image_url id="product_thumbnail" type=$product.image_type }
           {/if}
         </div>
 

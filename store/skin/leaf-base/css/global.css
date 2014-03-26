@@ -504,6 +504,7 @@ html,
 body {
   font-size: 100%;
   font-family: "pt-serif", "Times New Roman", Georgia, serif;
+  color: #666666;
 }
 /*
 
@@ -519,6 +520,9 @@ Colors
 .white,
 .inverse-text {
   color: #ffffff;
+}
+.black {
+  color: #000000;
 }
 .primary-color {
   color: #fa6851;
@@ -732,13 +736,13 @@ html[xmlns] .slides {
   padding-bottom: 8.125em;
 }
 .flex-slide--1 {
-  background-image: url("/store/skin/leaf-base/images/slides/swingset-warehouse-hero.jpg");
+  background-image: url("/skin/leaf-base/images/slides/stw-slider-play.jpg");
 }
 .flex-slide--2 {
-  background-image: url("http://placeimg.com/1440/536/nature");
+  background-image: url("/skin/leaf-base/images/slides/stw-slider-quality.jpg");
 }
 .flex-slide--3 {
-  background-image: url("http://placeimg.com/1440/536/nature");
+  background-image: url("/skin/leaf-base/images/slides/stw-slider-trampolines.jpg");
 }
 /*
 
@@ -1102,16 +1106,16 @@ Padding All
   padding: 0.3125em;
 }
 .ps {
-  padding: 0.3125em;
+  padding: 0.9375em;
 }
 .pm {
-  padding: 0.3125em;
+  padding: 1.5625em;
 }
 .pl {
-  padding: 0.3125em;
+  padding: 2.1875em;
 }
 .pxl {
-  padding: 0.3125em;
+  padding: 2.8125em;
 }
 /*
 Padding Top
@@ -1337,6 +1341,9 @@ Border Radius
   font-size: 12px;
   font-size: 0.75rem;
 }
+.tertiary-nav a:hover {
+  color: #808080;
+}
 .tertiary-nav a.cart {
   color: #ffffff;
   background-color: #fa6851;
@@ -1365,7 +1372,7 @@ Border Radius
   padding: 1.5625em;
 }
 .featured-item {
-  background: #339bbb url("/store/skin/leaf-base/images/pattern-diamond.png");
+  background: #339bbb url("/skin/leaf-base/images/pattern-diamond.png");
   padding-top: 2.8125em;
   padding-bottom: 2.8125em;
 }
@@ -1603,7 +1610,7 @@ Border Radius
 .icon--phone {
   width: 20px;
   height: 20px;
-  background-image: url("/store/skin/leaf-base/images/global-sprite.png");
+  background-image: url("/skin/leaf-base/images/global-sprite.png");
   background-position: 0px 0px;
   margin-right: 0.3125em;
 }
@@ -1636,7 +1643,7 @@ Border Radius
   background: #b21f27;
 }
 .social.pinterest:before {
-  background-image: url("/store/skin/leaf-base/images/global-sprite.png");
+  background-image: url("/skin/leaf-base/images/global-sprite.png");
   background-position: -200px 0px;
 }
 .social.facebook {
@@ -1646,7 +1653,7 @@ Border Radius
   background: #344e86;
 }
 .social.facebook:before {
-  background-image: url("/store/skin/leaf-base/images/global-sprite.png");
+  background-image: url("/skin/leaf-base/images/global-sprite.png");
   background-position: -100px 0px;
 }
 .social.twitter {
@@ -1656,7 +1663,7 @@ Border Radius
   background: #268bff;
 }
 .social.twitter:before {
-  background-image: url("/store/skin/leaf-base/images/global-sprite.png");
+  background-image: url("/skin/leaf-base/images/global-sprite.png");
   background-position: -150px 0px;
 }
 .bread-crumb:before {
@@ -1742,6 +1749,25 @@ Border Radius
   width: 100%;
   border-bottom: solid 1px #ffffff;
 }
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  border: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 @media only screen and (max-width: 47.9375em) {
   /*
 
@@ -1812,7 +1838,8 @@ Example Markup:
     bottom: 0.625em;
     right: 0;
   }
-  #left-bar {
+  #left-bar,
+  .home-slider {
     display: none;
   }
   .inner-content {
@@ -2015,12 +2042,24 @@ Example Markup:
   .secondary-nav li {
     display: block;
   }
+  .secondary-nav li a {
+    display: inline-block;
+  }
   .secondary-nav a {
     color: #ffffff;
+    position: relative;
     padding-top: 0.625em;
     padding-bottom: 0.625em;
     font-size: 16px;
     font-size: 1rem;
+  }
+  .secondary-nav a:hover:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: dotted 1px;
   }
   .tertiary-nav a {
     padding-top: 0.85714286em;

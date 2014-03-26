@@ -51,6 +51,16 @@ Markup Examples:
 	.size-for-font(@minion-text-size);
 }
 
+// Pearl Text
+.pearl-text {
+
+	// Variables
+	@pearl-text-size: 10;
+
+	// Mixins
+	.size-for-font(@pearl-text-size);
+}
+
 /*
 
 Headings
@@ -178,6 +188,7 @@ html,
 body {
 	font-size: @body-percentage;
 	font-family: @primary-font-family;
+	color: @dark-grey;
 }
 
 /*
@@ -198,6 +209,10 @@ Colors
 	color:@white;
 }
 
+.black {
+	color:@black;
+}
+
 .primary-color {
 	color:@primary-color;
 }
@@ -210,7 +225,9 @@ Colors
 	color:@tertiary-color;
 }
 
-
+.base-color {
+	color: @primary-text-color;
+}
 
 /*
 

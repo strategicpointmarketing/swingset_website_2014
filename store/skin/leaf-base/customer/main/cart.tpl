@@ -2,13 +2,13 @@
 99f49a017eeaa96cf5c4060c7785548523d6ad12, v11 (xcart_4_6_2), 2014-01-15 17:46:03, cart.tpl, mixon
 vim: set ts=2 sw=2 sts=2 et:
 *}
-<<<<<<< HEAD
-=======
-<h1 class="canon-text tertiary-heading mtn">{$lng.lbl_your_shopping_cart}</h1>
->>>>>>> 6f10f04ae1c8e49f6119a4c6881df382bee26c14
+{*<<<<<<< HEAD
+=======*}
+<h1 class="canon-text tertiary-heading mtn capitalize">{$lng.lbl_your_shopping_cart}</h1>
+{*>>>>>>> 6f10f04ae1c8e49f6119a4c6881df382bee26c14*}
 
 
-<h1 class="canon-text tertiary-heading">Your Shopping Cart</h1>
+
 
 {*
 {if $cart ne "" and $active_modules.Gift_Certificates}
@@ -37,13 +37,13 @@ The above commented out code will generate a message saying: Please note: 1) Del
         <div class="gd-row gt-row">
             <div class="gd-two-thirds gd-columns gt-two-thirds gt-columns gm-half gm-columns">
                 <!--item heading-->
-                <h3 class="primary-color primer-text bold">Item</h3>
+                <h3 class="primary-color secondary-font paragon-text mbs bold">Item</h3>
             </div>
 
             <div class="gd-third gd-columns gt-third gt-columns gm-half gm-columns">
                 <!--subtotal heading-->
 
-                <h3 class="primary-color primer-text bold">Subtotal</h3>
+                <h3 class="primary-color secondary-font paragon-text mbs bold">Subtotal</h3>
             </div>
         </div>
 
@@ -51,11 +51,11 @@ The above commented out code will generate a message saying: Please note: 1) Del
 
         {foreach from=$products item=product name=products}
             {if $product.hidden eq ""}
-            <div class="gd-row gt-row">
+            <div class="gd-row gt-row clear">
                 <div class="gd-two-thirds gd-columns gt-two-thirds gt-columns gm-half gm-columns">
                     <!-- Product name/link -->
-                    <p><a href="product.php?productid={$product.productid}" >{$product.product|amp}</a></p>
-                    <p>{$product.descr|truncate:100}</p>
+                    <p class="mtn"><a class="black secondary-font semibold" href="product.php?productid={$product.productid}" >{$product.product|amp}</a></p>
+                    <p class="mtxs petite-text">{$product.fulldescr|truncate:75}</p>
 
 
                     {*{if $product.product_options ne ""}
@@ -126,6 +126,8 @@ The above commented out code will generate a message saying: Please note: 1) Del
 
 
       <!-- every item added-->
+
+     {include file="customer/main/cart_subtotal.tpl"}
              
 
 

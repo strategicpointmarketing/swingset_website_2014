@@ -9,6 +9,6 @@ vim: set ts=2 sw=2 sts=2 et:
     <option value="{$value}"{if $value eq $objects_per_page} selected="selected"{/if}>{$value}</option>
     {/foreach}
   </select>
-  <span class="inline-block minion-text">{$lng.lbl_per_page}</span>
+  <span class="inline-block minion-text">{*{$lng.lbl_per_page}*}page</span>
 
 {/strip}

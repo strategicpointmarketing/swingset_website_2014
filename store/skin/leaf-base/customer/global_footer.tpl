@@ -7,10 +7,10 @@
                     <h4 class="paragon-text primary-heading semibold mbs">Site Map</h4>
 
                     <ul class="unstyled footer-links">
-                        <li><a href="#">Products</a></li>
-                        <li><a href="#">Locations</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="/pages.php?pageid=6">Products</a></li>
+                        <li><a href="/pages.php?pageid=8">Locations</a></li>
+                        <li><a href="/pages.php?pageid=9">About</a></li>
+                        <li><a href="/pages.php?pageid=8">Contact</a></li>
                     </ul>
                 </nav>
             </section>
@@ -41,7 +41,7 @@
                         <img class="float-left mts" src="skin/leaf-base/images/accredit-ssl.png">
                         <img class="float-left" src="skin/leaf-base/images/accredit-authorize.png">
                     </div>
-                    <a href="#" class="button--primary">View Catalog</a>
+                    <!--<a href="#" class="button--primary">View Catalog</a>-->
                 </div>
             </section>
         </div>
@@ -51,7 +51,7 @@
     <div class="wrapper">
         <div class="bottom-footer">
             <span class="new-line">&copy; <?php echo date("Y"); ?> Swingset & Toy Warehouse.</span>
-            <span class="new-line">Design by <a href="http://strategicpointmarketing.com" target="_blank">Strategic Point Marketing</a>. SEO by <a href="http://googlegrowth.com" target="_blank">Google Growth</a>.</span>
+            <span class="new-line">Design by <a href="http://strategicpointmarketing.com" target="_blank">Strategic Point Marketing</a>.</span>
         </div>
     </div>
 </div>

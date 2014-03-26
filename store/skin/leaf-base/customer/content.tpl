@@ -6,7 +6,7 @@ vim: set ts=2 sw=2 sts=2 et:
 
 
 
-        {if ($main neq 'cart' or $cart_empty) and $main neq 'checkout'}
+        {if $page_data.pageid eq 6 or ($main neq 'cart' or $cart_empty) and $main neq 'checkout' and $main neq "pages"}
             <div class="gd-quarter gd-columns gt-quarter gt-columns" id="left-bar">
                 {include file="customer/left_bar.tpl"}
             </div>
@@ -16,7 +16,7 @@ vim: set ts=2 sw=2 sts=2 et:
 
 
 
-        {if $main eq 'cart' or $main eq 'checkout' or $main eq "order_message" or $main eq "order_message_widget"}
+        {if $main eq 'cart' or $main eq 'checkout' or $main eq "order_message" or $main eq "order_message_widget" or $main eq "pages"}
             <div class="gd-full gd-columns gt-full gt-columns">
             {include file="customer/evaluation.tpl"}
         {/if}

@@ -23,7 +23,7 @@ vim: set ts=2 sw=2 sts=2 et:
   </div> *}
 
 
-    <div class="align-right">
+    {*<div class="align-right">
 
 
         <div class="button--secondary light-button small-button" title="Continue shopping" onclick="javascript: self.location = '/store/home.php?cat=246&amp;sort=orderby&amp;sort_direction=0'; if (event) event.cancelBubble = true;">
@@ -36,7 +36,7 @@ vim: set ts=2 sw=2 sts=2 et:
 
         </div>
 
-    </div>
+    </div>*}
 
 {/if}
 

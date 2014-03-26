@@ -109,6 +109,10 @@
 		.padding-horizontal(10, @minion-text-size);
 		.size-for-font(@minion-text-size);
 
+		&:hover {
+			color: lighten(@dark-grey, 10%);
+		}
+
 		&.cart {
 			color:@white;
 			
@@ -718,4 +722,27 @@ display:inline-block;
 
 		
 	}
+}
+
+// Responsive Embed
+
+.embed-container { 
+	position: relative; 
+	padding-bottom: 56.25%; 
+	padding-top: 30px; 
+	height: 0; 
+	overflow: hidden; 
+	max-width: 100%; 
+	height: auto;
+
+	iframe, object, embed {
+		border:0;
+		position: absolute; 
+		top: 0; 
+		left: 0; 
+		width: 100%; 
+		height: 100%;
+
+	}
+
 }

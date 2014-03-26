@@ -54,7 +54,7 @@ vim: set ts=2 sw=2 sts=2 et:
                 </div>
             </li>
         {/if}
-        <li class="gd-quarter gt-quarter float-left">
+        <li class="gd-quarter gt-quarter float-left align-right">
             {if $per_page eq "Y" and $total_items gte $per_page_values.0}
                 {include file="customer/main/per_page.tpl"}
             {/if}

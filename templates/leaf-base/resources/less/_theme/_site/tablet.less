@@ -54,13 +54,32 @@
 
 	li {
 		display: block;
+
+		a {
+			display: inline-block;
+		}
 	}
 
 	a {
 		color: @white;
+		position:relative;
+
 		// Mixins
 		.padding-vertical(10);
 		.size-for-font(@normal-text-size);
+
+		&:hover {
+
+
+			&:before {
+			content:"";
+			position:absolute;
+			bottom:0;
+			left:0;
+			width:100%;
+			border-bottom: dotted 1px;
+			}
+		}
 	}
 }
 

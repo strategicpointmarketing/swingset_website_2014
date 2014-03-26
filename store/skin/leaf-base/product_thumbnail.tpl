@@ -23,7 +23,7 @@ alt="{$product|escape}" title="{$product|escape}" />
 
 
 {strip}
-    <img
+    <img class="gd-full gt-full gm-full"
             {if $id ne ''} id="{$id}"{/if} src="
 {if $tmbn_url}
 {$tmbn_url|amp}

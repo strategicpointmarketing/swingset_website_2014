@@ -21,3 +21,4 @@ ErrorDocument 401 default
 	Order Deny,Allow
 	Deny from all
 </Files>
+
