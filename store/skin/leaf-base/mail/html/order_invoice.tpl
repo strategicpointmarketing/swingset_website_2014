@@ -328,16 +328,19 @@ vim: set ts=2 sw=2 sts=2 et:
   {/if}
 </table>
 
+
 {if $smarty.capture.additional_fields ne ''}
   <table class="block-grid data-table invoice-table" summary="{$lng.lbl_additional_information|escape}">
     {$smarty.capture.additional_fields}
   </table>
 {/if}
 
+
 {if $config.Email.show_cc_info eq "Y" 
   and $show_order_details eq "Y" 
   and ($order.details ne "" or $order.extra.advinfo ne "")
 }
+
 
   <table class="block-grid two-up address-table-container">
     <tr>
@@ -348,13 +351,14 @@ vim: set ts=2 sw=2 sts=2 et:
     </tr>
    </table>
 
+
   {if $order.details ne ""}
     {capture name="row"}
       {$order.details|order_details_translate|escape|nl2br}
     {/capture}
     {include file="mail/html/responsive_row.tpl" content=$smarty.capture.row}
   {/if}
-  
+
   {if $order.extra.advinfo ne ""}
     {capture name="row"}
       {$order.extra.advinfo|escape|nl2br}
@@ -386,6 +390,7 @@ vim: set ts=2 sw=2 sts=2 et:
   {/capture}
   {include file="mail/html/responsive_row.tpl" content=$smarty.capture.row}
 {/if}
+
 
 {capture name="row"}
   {$lng.txt_thank_you_for_purchase}

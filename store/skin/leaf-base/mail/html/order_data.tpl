@@ -11,7 +11,7 @@ vim: set ts=2 sw=2 sts=2 et:
 {if $is_nomail eq 'Y'}
 <p class="invoice-products-title">{$lng.lbl_products_ordered}</p>
 {else}
-<center><font style="font-size: 14px; font-weight: bold; text-align: center">{$lng.lbl_products_ordered}</font></center>
+<center><font style="font-size: 14px; font-weight: bold; text-align: center">Products Ordered</font></center>
 {/if}
 
 <table {if $is_nomail eq 'Y'}cellspacing="1"{else}cellspacing="0" width="100%" border="1"{/if} class="invoice-products" summary="{$lng.lbl_products|escape}">
@@ -28,9 +28,9 @@ vim: set ts=2 sw=2 sts=2 et:
         {/if}
       </th>
     {/if}
-    <th {if $is_nomail eq 'Y'}class="invoice-price-column"{else}style="max-width: 100px; background: #ccc;"{/if}>{$lng.lbl_item_price}</th>
-    <th {if $is_nomail eq 'Y'}class="invoice-quantity-column"{else}style="max-width: 60px; background: #ccc;"{/if}>{$lng.lbl_quantity}</th>
-    <th {if $is_nomail eq 'Y'}class="invoice-total-column"{else}style="max-width: 60px; background: #ccc;"{/if}>{$lng.lbl_total}</th>
+    <th {if $is_nomail eq 'Y'}class="invoice-price-column"{else}style="max-width: 100px; background: #ccc;"{/if}>Item Price</th>
+    <th {if $is_nomail eq 'Y'}class="invoice-quantity-column"{else}style="max-width: 60px; background: #ccc;"{/if}>Quantity</th>
+    <th {if $is_nomail eq 'Y'}class="invoice-total-column"{else}style="max-width: 60px; background: #ccc;"{/if}>Total</th>
   </tr>
 
   {foreach from=$products item=product}
@@ -147,7 +147,7 @@ vim: set ts=2 sw=2 sts=2 et:
 
   {if $config.Shipping.enable_shipping eq 'Y'}
     <tr>
-      <td {if $is_nomail eq 'Y'}class="invoice-total-name"{else}style="padding-right: 3px; height: 20px; width: 100%; text-align: right;"{/if}><strong>{$lng.lbl_shipping_cost}:</strong></td>
+      <td {if $is_nomail eq 'Y'}class="invoice-total-name"{else}style="padding-right: 3px; height: 20px; width: 100%; text-align: right;"{/if}><strong>Shipping Cost:</strong></td>
       <td {if $is_nomail eq 'Y'}class="invoice-total-value"{else}style="white-space: nowrap; padding-right: 5px; height: 20px; text-align: right;"{/if}>{if $order.coupon and $order.coupon_type eq "free_ship"}{currency value=0}{else}{currency value=$order.display_shipping_cost}{/if}</td>
     </tr>
   {/if}
@@ -173,7 +173,7 @@ vim: set ts=2 sw=2 sts=2 et:
 
   {if $order.payment_surcharge ne 0}
     <tr>
-      <td {if $is_nomail eq 'Y'}class="invoice-total-name"{else}style="padding-right: 3px; height: 20px; width: 100%; text-align: right;"{/if}><strong>{if $order.payment_surcharge gt 0}{$lng.lbl_payment_method_surcharge}{else}{$lng.lbl_payment_method_discount}{/if}:</strong></td>
+      <td {if $is_nomail eq 'Y'}class="invoice-total-name"{else}style="padding-right: 3px; height: 20px; width: 100%; text-align: right;"{/if}><strong>{if $order.payment_surcharge gt 0}Payment Method Surcharge{else}{$lng.lbl_payment_method_discount}{/if}:</strong></td>
       <td {if $is_nomail eq 'Y'}class="invoice-total-value"{else}style="white-space: nowrap; padding-right: 5px; height: 20px; text-align: right;"{/if}>{currency value=$order.payment_surcharge}</td>
     </tr>
   {/if}

@@ -3,7 +3,7 @@
 vim: set ts=2 sw=2 sts=2 et:
 *}
 {if $section ne '' and $additional_fields ne '' and (($is_areas.A eq 'Y' and $section eq 'A') or $section ne 'A')}
-flag1
+
   {if $hide_header eq "" and $section eq 'A'}
     <tr>
       <td colspan="3" class="register-section-title">
@@ -38,5 +38,5 @@ flag1
       </tr>
     {/if}
   {/foreach}
-flag2
+
 {/if}

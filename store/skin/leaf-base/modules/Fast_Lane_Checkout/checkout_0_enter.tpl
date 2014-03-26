@@ -4,7 +4,7 @@ vim: set ts=2 sw=2 sts=2 et:
 *}
 
 <h1>{$lng.lbl_personal_details}</h1>
-flag1
+
 
 {if $active_modules.Image_Verification and $show_antibot.on_login eq 'Y' and $login_antibot_on}
   {assign var="is_antibot" value="Y"}
