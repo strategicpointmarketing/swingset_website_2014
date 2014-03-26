@@ -64,16 +64,17 @@ vim: set ts=2 sw=2 sts=2 et:
 
 </ul>
 *}
-
+{*<p><a href="home.php?cat=265">Residential</a></p>*}
 
 <ul {if $level eq '0'}class = "product-navigation"{/if}{if $level gte '1'}class = "active "{/if} >
 
     {assign var="loop_name" value="subcat`$parentid`"}
-    {foreach from=$categories_menu_list item=c key=catid name=$loop_name}
 
+    {foreach from=$categories_menu_list item=c key=catid name=$loop_name}
+        {*{if $level eq '1' or $level eq '2'}*}
         <li>
             {strip}
-                <a href="home.php?cat={$catid}" >
+                <a href="home.php?cat={$catid}" {if $level eq '0'}class = "product-nav__category"{/if}>
                     {if $config.Flyout_Menus.icons_icons_in_categories gte $level+1 and $c.is_icon}
                         <img src="{$c.thumb_url|amp}" alt="" width="{$c.thumb_x}" height="{$c.thumb_y}" />
                     {else}
@@ -90,6 +91,8 @@ vim: set ts=2 sw=2 sts=2 et:
                 {include file="`$fc_skin_path`/fancy_subcategories.tpl" categories_menu_list=$c.childs parentid=$catid level=$level+1}
             {/if}
         </li>
+        {*{/if}*}
+
 
     {/foreach}
 
