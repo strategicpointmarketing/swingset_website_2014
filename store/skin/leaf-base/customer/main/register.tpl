@@ -8,12 +8,12 @@ vim: set ts=2 sw=2 sts=2 et:
 
 {if $main ne 'checkout'}
   {if $login}
-    <h1 class = "primary-color paragon-text secondary-font mbs">Personal Details</h1>
+    <h1 class ="primary-color paragon-text secondary-font mbs">Personal Details</h1>
   {else}
     {if $anonymous and $config.General.enable_anonymous_checkout eq "Y"}
-        <h1 class = "primary-color paragon-text secondary-font mbs">Personal Details</h1>
+        <h1 class ="primary-color paragon-text secondary-font mbs">Personal Details</h1>
     {else}
-      <h1>{$lng.lbl_create_profile}</h1>
+      <h1 class ="primary-color paragon-text secondary-font mbs mtn">{$lng.lbl_create_profile}</h1>
     {/if}
   {/if}
 {/if}

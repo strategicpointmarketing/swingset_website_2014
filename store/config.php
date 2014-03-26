@@ -119,9 +119,9 @@ define('SQL_BIG_SELECTS', 'ON');
  * http://www.yourhost.com/
  * https://www.yourhost.com/
  */
-$xcart_http_host = '69.175.29.125';
-$xcart_https_host = '69.175.29.125';
-$xcart_web_dir = '/store';
+$xcart_http_host = 'swingsetandtoywarehouse.com';
+$xcart_https_host = 'swingsetandtoywarehouse.com';
+$xcart_web_dir = '';
 
 /**
  * Storing Customers' Credit Card Info

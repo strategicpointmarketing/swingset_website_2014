@@ -34,7 +34,7 @@ vim: set ts=2 sw=2 sts=2 et:
 
 
 
-            {if ($main neq "catalog" or $current_category.category neq "") and ($main eq "product" or $main eq "catalog")}
+            {if ($main neq "catalog" or $current_category.category neq "") and $main eq "product"}
 
                 {include file="customer/bread_crumbs.tpl"}
             {/if}

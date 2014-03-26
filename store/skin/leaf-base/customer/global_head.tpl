@@ -23,6 +23,6 @@ vim: set ts=2 sw=2 sts=2 et:
 
 
         <!--Typekit here-->
-        <script type="text/javascript" src="//use.typekit.net/fgh0sbx.js"></script>
+        <script type="text/javascript" src="//use.typekit.net/bbd8lsu.js"></script>
         <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
         <!--End Typekit-->

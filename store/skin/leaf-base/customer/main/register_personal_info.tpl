@@ -6,16 +6,17 @@ vim: set ts=2 sw=2 sts=2 et:
 {if $is_areas.P eq 'Y'}
 
 {if $hide_header eq ""}
-      <tr>
+     {* <tr>
         <td colspan="3" class="register-section-title">
           <div>
-            <label>{$lng.lbl_personal_information}</label>
+            <label>*}<h4 class="primer-text secondary-font black capitalize">{$lng.lbl_personal_information}</h4>
+    {*</label>
           </div>
         </td>
-      </tr>
+      </tr>*}
 {/if}
 
-{if $default_fields.title.avail eq 'Y'}
+{*{if $default_fields.title.avail eq 'Y'}
       <tr>
         <td class="data-name"><label for="title">{$lng.lbl_title}</label></td>
         <td{if $default_fields.title.required eq 'Y'} class="data-required">*{else}>&nbsp;{/if}</td>
@@ -23,7 +24,7 @@ vim: set ts=2 sw=2 sts=2 et:
           {include file="main/title_selector.tpl" val=$userinfo.titleid}
         </td>
       </tr>
-{/if}
+{/if}*}
 
 {if $default_fields.firstname.avail eq 'Y'}
       <tr>

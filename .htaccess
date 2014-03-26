@@ -21,3 +21,25 @@ ErrorDocument 401 default
 	Order Deny,Allow
 	Deny from all
 </Files>
+
+RewriteEngine On
+
+# Map http://www.example.com to /store.
+RewriteRule ^$ /store/ [L]
+
+# Map http://www.example.com/x to /store/x unless there is a x in the web root.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !^/store/
+RewriteRule ^(.*)$ /store/$1
+
+# Add trailing slash to directories without them so DirectoryIndex works.
+# This does not expose the internal URL.
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteCond %{REQUEST_FILENAME} !/$
+RewriteRule ^(.*)$ $1/
+
+# Disable auto-adding slashes to directories without them, since this happens
+# after mod_rewrite and exposes the rewritten internal URL, e.g. turning
+# http://www.example.com/about into http://www.example.com/jekyll/about.
+DirectorySlash off
