@@ -1,5 +1,9 @@
 .button {
 
+	// Variables
+	@10px: 1em * (10 / @base-text-size);
+	@25px: 1em * (25 / @base-text-size);
+
 	//Baseline
 	
 	font-family: @primary-heading-font;
@@ -8,6 +12,7 @@
 	display: inline-block;
 	border:none;
 	outline:none;
+	cursor:pointer;
 
 	//Mixins
 
@@ -47,6 +52,50 @@
 		&:hover {
 			background: @secondary-button-hover;
 		}
+	}
+
+	&.arrow {
+		position:relative;
+		background:@secondary-color;
+		width:25px;
+		height:25px;
+		margin-bottom: -5px;
+		font-size:1px;
+
+		// Mixins
+		.border-radius(100);
+
+			&:hover {
+				background:lighten(@secondary-color, 5%);
+			}
+
+			&:before {
+				content: "";
+				position: absolute;
+				top: 7px;
+				left: 11px;
+				width: 0;
+				height: 0;
+				border-top: 5px solid transparent;
+				border-bottom: 5px solid transparent;				
+				border-left: 5px solid white;
+				
+
+			}	
+
+			&:after {
+				content:"";
+				position:absolute;
+				top:2px;
+				left:2px;
+				bottom:2px;
+				right:2px;
+				border: solid 1px @white;
+			
+				// Mixins
+				.border-radius(100);
+
+			}	
 	}
 
 	&.small {

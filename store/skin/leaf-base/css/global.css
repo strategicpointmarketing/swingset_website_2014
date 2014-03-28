@@ -543,6 +543,9 @@ Colors
 .base-color {
   color: #666666;
 }
+.grey-color {
+  color: #a9a9a9;
+}
 /*
 
 Weights
@@ -591,6 +594,7 @@ a {
   display: inline-block;
   border: none;
   outline: none;
+  cursor: pointer;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
   -o-border-radius: 7px;
@@ -623,6 +627,45 @@ a {
 }
 .button.cart:hover {
   background: #36a5c7;
+}
+.button.arrow {
+  position: relative;
+  background: #339bbb;
+  width: 25px;
+  height: 25px;
+  margin-bottom: -5px;
+  font-size: 1px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -o-border-radius: 100px;
+  border-radius: 100px;
+}
+.button.arrow:hover {
+  background: #3da9ca;
+}
+.button.arrow:before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 11px;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid white;
+}
+.button.arrow:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  border: solid 1px #ffffff;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -o-border-radius: 100px;
+  border-radius: 100px;
 }
 .button.small {
   font-size: 14px;
@@ -1425,9 +1468,6 @@ Border Radius
 .product-nav--list {
   padding-left: 0;
 }
-.product-nav__category {
-  cursor: default;
-}
 .product-nav--sub {
   list-style-type: none;
   font-weight: 600;
@@ -1445,17 +1485,9 @@ Border Radius
 }
 .product-nav--sub a {
   color: #666666;
-  -webkit-transition: padding 0.1s ease-in-out;
-  -moz-transition: padding 0.1s ease-in-out;
-  -o-transition: padding 0.1s ease-in-out;
-  transition: padding 0.1s ease-in-out;
 }
 .product-nav--sub a:hover {
-  padding-left: 5px;
-  -webkit-transition: padding 0.1s ease-in-out;
-  -moz-transition: padding 0.1s ease-in-out;
-  -o-transition: padding 0.1s ease-in-out;
-  transition: padding 0.1s ease-in-out;
+  color: #333333;
 }
 .product-nav--sub .active {
   font-weight: 100;
@@ -1541,6 +1573,10 @@ Border Radius
 .form-link {
   text-decoration: none;
   color: #fa6851;
+  background: none;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
   border-bottom: dotted 1px;
 }
 .form-link:hover {
@@ -1667,7 +1703,7 @@ Border Radius
   transition: all 0.25s ease-in-out;
 }
 .account-nav li a:hover {
-  color: #1a1a1a;
+  color: #333333;
 }
 .account-nav li a:hover:before {
   -webkit-transition-property: -webkit-transform;
@@ -1958,7 +1994,7 @@ Example Markup:
     bottom: 0.625em;
     right: 0;
   }
-  #left-bar,
+  .product-nav--list,
   .home-slider {
     display: none;
   }
@@ -1968,7 +2004,7 @@ Example Markup:
   }
   .ui-widget-content {
     top: 1.5625em !important;
-    bottom: 1.5625em !important;
+    bottom: 0.625em !important;
   }
 }
 @media only screen and (min-width: 48em) and (max-width: 61.9375em) {

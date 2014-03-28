@@ -51,11 +51,11 @@ The above commented out code will generate a message saying: Please note: 1) Del
 
         {foreach from=$products item=product name=products}
             {if $product.hidden eq ""}
-            <div class="gd-row gt-row clear">
+            <div class="gd-row gt-row pvm clear">
                 <div class="gd-two-thirds gd-columns gt-two-thirds gt-columns gm-half gm-columns">
                     <!-- Product name/link -->
-                    <p class="mtn"><a class="black secondary-font semibold" href="product.php?productid={$product.productid}" >{$product.product|amp}</a></p>
-                    <p class="mtxs petite-text">{$product.fulldescr|truncate:75}</p>
+                    <p class="mtn"><a class="black secondary-font semibold primer-text" href="product.php?productid={$product.productid}" >{$product.product|amp}</a></p>
+                    <div class="mtxs petite-text">{$product.fulldescr|truncate:75}</div>
 
 
                     {*{if $product.product_options ne ""}
@@ -70,7 +70,7 @@ The above commented out code will generate a message saying: Please note: 1) Del
                     <!-- Begin pricing/quantity info -->
                     {assign var="price" value=$product.display_price}
 
-                        <div class = "float-left">{$price} x </div> <input type="text" size="3" name="productindexes[{$product.cartid}]" id="productindexes_{$product.cartid}" value="{$product.amount}" />
+                        <div class = "new-line secondary-font grey-color petite-text">{$price} x </div> <input class="form-input inline-block" type="text" size="1" name="productindexes[{$product.cartid}]" id="productindexes_{$product.cartid}" value="{$product.amount}" />
 
 
 
@@ -82,13 +82,13 @@ The above commented out code will generate a message saying: Please note: 1) Del
 
 
 
-                    <button class="button secondary capitalize" type="button" title="Apply" onclick="javascript: return updateCartItem({$product.cartid});">
-                        Apply
-                    </button>
+                    <a class="button arrow" type="button" title="Apply" onclick="javascript: return updateCartItem({$product.cartid});">
+                        {*Apply*}
+                    </a>
 
                     <div class="subtotal last">
                         <div class="subtotal-wrapper">
-                    <span class="price">
+                    <span class="price secondary-font semibold">
                       {multi x=$price y=$product.amount assign=unformatted}{currency value=$unformatted}
                     </span>
                     <span class="market-price">
@@ -111,6 +111,9 @@ The above commented out code will generate a message saying: Please note: 1) Del
                     <!-- End pricing/quantity info -->
                 </div>
             </div>
+
+            <hr class="clear">
+
             {/if}
         {/foreach}
 
@@ -336,13 +339,15 @@ The above commented out code will generate a message saying: Please note: 1) Del
     <form action="cart.php" name="couponform">
         <input type="hidden" name="mode" value="add_coupon">
         <div>
-            Have a coupon?
-            <input type="text"  size="32" name="coupon" value="Coupon code">
-        </div>
+            {*Have a coupon?*}
+            <input class="form-input inline-block gm-two-thirds" type="text"  size="32" name="coupon" placeholder="Enter Coupon Code">
 
-        <button class="button secondary" type="submit" title="Submit">
-            Submit
-        </button>
+
+                <button class="form-link pn secondary-font mlxs" type="submit" title="Submit">
+                    Submit
+                </button>
+
+        </div>
 
     </form>
 

@@ -37,15 +37,15 @@ vim: set ts=2 sw=2 sts=2 et:
     {include file="customer/main/address_fields.tpl" address=$address name_prefix="posted_data" id_prefix=''}
   
     {if not $is_address_book_empty and $address.default_b ne 'Y'}
-      <div class="address-checkbox">
-        <label><input type="checkbox" id="default_b" name="posted_data[default_b]" size="32" maxlength="32"{if $address.default_b eq 'Y'} checked="checked"{/if}/>&nbsp;{$lng.lbl_use_as_b_address}</label>
-      </div>
+      {*<div class="address-checkbox">*}
+        <label class="new-line secondary-font mts"><input class="inline-block" type="checkbox" id="default_b" name="posted_data[default_b]" size="32" maxlength="32"{if $address.default_b eq 'Y'} checked="checked"{/if}/>&nbsp;{$lng.lbl_use_as_b_address}</label>
+      {*</div>*}
     {/if}
   
     {if not $is_address_book_empty and $address.default_s ne 'Y'}
-      <div class="address-checkbox">
-        <label><input type="checkbox" id="default_s" name="posted_data[default_s]" size="32" maxlength="32"{if $address.default_s eq 'Y'} checked="checked"{/if}/>&nbsp;{$lng.lbl_use_as_s_address}</label>
-      </div>
+      {*<div class="address-checkbox">*}
+        <label class="new-line secondary-font"><input class="inline-block" type="checkbox" id="default_s" name="posted_data[default_s]" size="32" maxlength="32"{if $address.default_s eq 'Y'} checked="checked"{/if}/>&nbsp;{$lng.lbl_use_as_s_address}</label>
+      {*</div>*}
     {/if}
   
     {if $is_address_book_empty}

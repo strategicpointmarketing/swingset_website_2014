@@ -223,7 +223,6 @@
 	}
 
 	&__category {	
-		cursor:default;
 	}
 	
 }
@@ -251,14 +250,10 @@
 	a {
 		color: @primary-text-color;
 
-		// Mixins
-		.transition(padding,.1s,ease-in-out);
+		
 
 		&:hover {
-			padding-left:5px;
-
-		// Mixins
-		.transition(padding,.1s,ease-in-out);
+			color:darken(@primary-text-color, 20%);
 		}
 	}
 
@@ -401,6 +396,10 @@
 .form-link {
 	text-decoration:none;
 	color:@primary-color;
+	background:none;
+	border-top:0;
+	border-right:0;
+	border-left:0;
 	border-bottom: dotted 1px;
 
 	&:hover {
@@ -560,7 +559,7 @@ display:inline-block;
 			}
 
 			&:hover {
-				color: lighten(@black, 10%);
+				color: lighten(@black, 20%);
 
 				&:before {
 					// Mixins
