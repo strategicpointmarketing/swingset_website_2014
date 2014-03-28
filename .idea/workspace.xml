@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13852943-1c0b-47b6-8598-c4088533d564" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/store/skin/leaf-base/customer/content.tpl" afterPath="$PROJECT_DIR$/store/skin/leaf-base/customer/content.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/store/skin/leaf-base/customer/main/subcategories.tpl" afterPath="$PROJECT_DIR$/store/skin/leaf-base/customer/main/subcategories.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/store/skin/leaf-base/customer/main/cart_totals.tpl" afterPath="$PROJECT_DIR$/store/skin/leaf-base/customer/main/cart_totals.tpl" />
     </list>
     <ignored path="swingset_website_2014.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="13852943-1c0b-47b6-8598-c4088533d564" time="1396027290477" ignored="false" />
-    <file path="/a.dummy" changelist="13852943-1c0b-47b6-8598-c4088533d564" time="1396027409337" ignored="false" />
+    <file path="/a.dummy" changelist="13852943-1c0b-47b6-8598-c4088533d564" time="1396039469537" ignored="false" />
     <file path="/subcategories.tpl" changelist="13852943-1c0b-47b6-8598-c4088533d564" time="1396027664978" ignored="false" />
     <file path="/subcategories_t.tpl" changelist="13852943-1c0b-47b6-8598-c4088533d564" time="1396030684365" ignored="false" />
     <file path="/content.tpl" changelist="13852943-1c0b-47b6-8598-c4088533d564" time="1396038276469" ignored="false" />
@@ -41,10 +40,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="top_links.tpl" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="top_links.tpl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/store/skin/leaf-base/customer/main/top_links.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="5" selection-start="850" selection-end="850" vertical-scroll-proportion="0.3340081">
+            <state line="23" column="0" selection-start="851" selection-end="851" vertical-scroll-proportion="-14.375">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cart_totals.tpl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/store/skin/leaf-base/customer/main/cart_totals.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="69" column="21" selection-start="2194" selection-end="2194" vertical-scroll-proportion="-7.5416665">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="payment_methods.tpl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/store/skin/leaf-base/modules/Fast_Lane_Checkout/payment_methods.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="8" selection-start="653" selection-end="653" vertical-scroll-proportion="-8.75">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shipping_methods.tpl" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/store/skin/leaf-base/modules/Fast_Lane_Checkout/shipping_methods.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="0" selection-start="901" selection-end="901" vertical-scroll-proportion="0.40656206">
               <folding />
             </state>
           </provider>
@@ -63,7 +89,16 @@
         <entry file="file://$PROJECT_DIR$/store/skin/leaf-base/customer/main/register.tpl">
           <provider selected="true" editor-type-id="text-editor">
             <state line="28" column="2" selection-start="736" selection-end="736" vertical-scroll-proportion="-17.5">
-              <folding />
+              <folding>
+                <marker date="1396027232000" expanded="true" signature="1028:1374" placeholder="..." />
+                <marker date="1396027232000" expanded="true" signature="1549:1681" placeholder="..." />
+                <marker date="1396027232000" expanded="true" signature="1974:5071" placeholder="..." />
+                <marker date="1396027232000" expanded="true" signature="3366:3663" placeholder="..." />
+                <marker date="1396027232000" expanded="true" signature="3397:3645" placeholder="..." />
+                <marker date="1396027232000" expanded="true" signature="3434:3625" placeholder="..." />
+                <marker date="1396027232000" expanded="true" signature="4076:4473" placeholder="..." />
+                <marker date="1396027232000" expanded="true" signature="5225:5393" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -72,24 +107,6 @@
         <entry file="file://$PROJECT_DIR$/store/skin/leaf-base/customer/header_links.tpl">
           <provider selected="true" editor-type-id="text-editor">
             <state line="1" column="2" selection-start="20" selection-end="65" vertical-scroll-proportion="-0.625">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="register.tpl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/store/skin/common_files/provider/main/register.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="top_links.tpl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/store/skin/common_files/customer/main/top_links.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="22" selection-start="807" selection-end="807" vertical-scroll-proportion="-12.5">
               <folding />
             </state>
           </provider>
@@ -115,15 +132,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="subcategories.tpl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/store/skin/leaf-base/customer/subcategories.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -142,7 +150,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/store/skin/leaf-base/customer/main/change_password.tpl" />
         <option value="$PROJECT_DIR$/store/skin/leaf-base/customer/global_nav.tpl" />
         <option value="$PROJECT_DIR$/store/skin/leaf-base/customer/home.tpl" />
         <option value="$PROJECT_DIR$/store/skin/leaf-base/customer/main/register.tpl" />
@@ -158,6 +165,7 @@
         <option value="$PROJECT_DIR$/store/skin/leaf-base/customer/main/subcategories_t.tpl" />
         <option value="$PROJECT_DIR$/store/skin/leaf-base/customer/content.tpl" />
         <option value="$PROJECT_DIR$/store/skin/leaf-base/customer/main/top_links.tpl" />
+        <option value="$PROJECT_DIR$/store/skin/leaf-base/customer/main/cart_totals.tpl" />
       </list>
     </option>
   </component>
@@ -502,18 +510,18 @@
     <frame x="0" y="22" width="1430" height="1333" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10617284" sideWeight="0.9748252" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.10617284" sideWeight="0.9748252" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33168724" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15101156" sideWeight="0.89382714" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33168724" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15101156" sideWeight="0.6683127" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294893" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24205202" sideWeight="0.89382714" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24205202" sideWeight="0.6683127" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -590,23 +598,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/store/skin/leaf-base/js/popup_open.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="3" selection-start="386" selection-end="386" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/store/skin/leaf-base/customer/main/address.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="6" selection-start="316" selection-end="316" vertical-scroll-proportion="0.4276316" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/store/skin/leaf-base/modules/One_Page_Checkout/profile/address_book_link.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/store/skin/leaf-base/main/states.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="0" selection-start="1187" selection-end="1187" vertical-scroll-proportion="0.56435645" />
@@ -671,7 +662,16 @@
     <entry file="file://$PROJECT_DIR$/store/skin/leaf-base/customer/main/register.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="2" selection-start="736" selection-end="736" vertical-scroll-proportion="-17.5">
-          <folding />
+          <folding>
+            <marker date="1396027232000" expanded="true" signature="1028:1374" placeholder="..." />
+            <marker date="1396027232000" expanded="true" signature="1549:1681" placeholder="..." />
+            <marker date="1396027232000" expanded="true" signature="1974:5071" placeholder="..." />
+            <marker date="1396027232000" expanded="true" signature="3366:3663" placeholder="..." />
+            <marker date="1396027232000" expanded="true" signature="3397:3645" placeholder="..." />
+            <marker date="1396027232000" expanded="true" signature="3434:3625" placeholder="..." />
+            <marker date="1396027232000" expanded="true" signature="4076:4473" placeholder="..." />
+            <marker date="1396027232000" expanded="true" signature="5225:5393" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -691,7 +691,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/store/skin/leaf-base/customer/main/top_links.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="5" selection-start="850" selection-end="850" vertical-scroll-proportion="0.3340081">
+        <state line="23" column="0" selection-start="851" selection-end="851" vertical-scroll-proportion="-14.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store/skin/leaf-base/customer/main/cart_totals.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="21" selection-start="2194" selection-end="2194" vertical-scroll-proportion="-7.5416665">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store/skin/leaf-base/modules/Fast_Lane_Checkout/payment_methods.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="8" selection-start="653" selection-end="653" vertical-scroll-proportion="-8.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store/skin/leaf-base/modules/Fast_Lane_Checkout/shipping_methods.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="901" selection-end="901" vertical-scroll-proportion="0.40656206">
           <folding />
         </state>
       </provider>

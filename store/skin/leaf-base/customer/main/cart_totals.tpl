@@ -72,7 +72,6 @@ vim: set ts=2 sw=2 sts=2 et:
             {include file="customer/buttons/modify.tpl" href="cart.php?mode=checkout&edit_profile"}
           </div>
         {/if}
-flag3
         <div class="clearing"></div>
         <hr class="cart-total-line" />
       {/if}
