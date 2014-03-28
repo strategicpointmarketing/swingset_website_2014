@@ -20,12 +20,15 @@ vim: set ts=2 sw=2 sts=2 et:
 
     {if $current_category.description ne ""}
         <!--Subcategory Description-->
-        <p>{$current_category.description|amp}</p>
+
+        {*<p>{$current_category.description|amp}</p>*}
         <!--End Subcategory Description-->
     {/if}
 
     {if $categories}
+
         {include file="customer/main/subcategories_t.tpl"}
+
     {/if}
 
 {else}
@@ -35,6 +38,7 @@ vim: set ts=2 sw=2 sts=2 et:
     <div style="margin-left: {$standoff}px;">
         {if $current_category.description ne ""}
             <!--Subcategory Description-->
+
             <p>{$current_category.description|amp}</p>
             <!--End Subcategory Description-->
         {/if}
