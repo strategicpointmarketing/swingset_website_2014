@@ -66,9 +66,7 @@
                 {/if}
 
 
-                {if $login}
-                    <li><a class="capitalize" href="orders.php">Orders</a></li>
-                {/if}
+
 
 
 

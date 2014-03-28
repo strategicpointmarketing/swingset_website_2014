@@ -13,6 +13,13 @@ Making changes to this file will impact the framework.
 Style Guide 0.1.0
 
 */
+.transform {
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  transition-property: transform;
+  overflow: hidden;
+}
 /*
 
 Responsive Grid Builder
@@ -577,12 +584,13 @@ Additional
 a {
   text-decoration: none;
 }
-[class*='button'] {
+.button {
   font-family: "proxima-nova-soft", Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", Arial, sans-serif;
   color: #ffffff;
   text-align: center;
   display: inline-block;
   border: none;
+  outline: none;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
   -o-border-radius: 7px;
@@ -592,31 +600,37 @@ a {
   padding-top: 0.625em;
   padding-bottom: 0.625em;
 }
-.button--primary {
+.button.primary {
   text-transform: uppercase;
   background: #fa6851;
   border-bottom: solid 3px #f72807;
 }
-.button--primary:hover {
+.button.primary:hover {
   background: #fa7560;
 }
-.button--secondary {
+.button.secondary {
   text-transform: lowercase;
   background: #339bbb;
   border-bottom: solid 3px #23697f;
-  font-size: 14px;
-  font-size: 0.875rem;
 }
-.button--secondary:hover {
+.button.secondary:hover {
   background: #36a5c7;
 }
-.button--cart {
+.button.cart {
   text-transform: uppercase;
   background: #339bbb;
   border-bottom: solid 3px #23697f;
 }
-.button--cart:hover {
+.button.cart:hover {
   background: #36a5c7;
+}
+.button.small {
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+.button.large {
+  font-size: 24px;
+  font-size: 1.5rem;
 }
 .tabs {
   padding-left: 0;
@@ -1408,43 +1422,49 @@ Border Radius
   border-bottom: 4px solid #339bbb;
   border-top: 0;
 }
-.product-navigation {
+.product-nav--list {
+  padding-left: 0;
+}
+.product-nav__category {
+  cursor: default;
+}
+.product-nav--sub {
+  list-style-type: none;
   font-weight: 600;
-  margin-top: 0;
   padding-left: 0;
   list-style: none outside none;
   font-size: 12px;
   font-size: 0.75rem;
   font-family: "proxima-nova-soft", Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", Arial, sans-serif;
 }
-.product-navigation li {
+.product-nav--sub li {
   line-height: 1.75;
 }
-.product-navigation > li {
+.product-nav--sub > li {
   border-bottom: dotted 1px;
 }
-.product-navigation a {
+.product-nav--sub a {
   color: #666666;
   -webkit-transition: padding 0.1s ease-in-out;
   -moz-transition: padding 0.1s ease-in-out;
   -o-transition: padding 0.1s ease-in-out;
   transition: padding 0.1s ease-in-out;
 }
-.product-navigation a:hover {
+.product-nav--sub a:hover {
   padding-left: 5px;
   -webkit-transition: padding 0.1s ease-in-out;
   -moz-transition: padding 0.1s ease-in-out;
   -o-transition: padding 0.1s ease-in-out;
   transition: padding 0.1s ease-in-out;
 }
-.product-navigation .active {
+.product-nav--sub .active {
   font-weight: 100;
   list-style-type: none;
 }
-.product-navigation .active a {
+.product-nav--sub .active a {
   border-top: solid 2px;
 }
-.product-navigation .active a:first-child {
+.product-nav--sub .active a:first-child {
   border: 0;
 }
 .product-listing {
@@ -1518,18 +1538,23 @@ Border Radius
   display: inline-block;
   vertical-align: top;
 }
-.input-label {
-  font-family: "proxima-nova-soft", Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", Arial, sans-serif;
-  font-weight: 600;
+.form-link {
+  text-decoration: none;
+  color: #fa6851;
+  border-bottom: dotted 1px;
 }
-.input-label input,
-.input-label select {
-  width: 100%;
-  margin-top: 0.9375em;
-  margin-bottom: 0.9375em;
+.form-link:hover {
+  color: #f95238;
 }
-.input-label input {
+.form-label {
+  text-transform: capitalize;
+  font-weight: 400;
   font-family: "proxima-nova-soft", Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", Arial, sans-serif;
+}
+.form-input {
+  border: solid 1px #999999;
+  font-family: "proxima-nova-soft", Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", Arial, sans-serif;
+  font-weight: 400;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
   -o-border-radius: 7px;
@@ -1538,18 +1563,12 @@ Border Radius
   padding-bottom: 0.3125em;
   padding-left: 0.625em;
   padding-right: 0.625em;
+  margin-top: 0.3125em;
+  margin-bottom: 0.3125em;
 }
-.input-label input::-webkit-input-placeholder {
-  font-family: "proxima-nova-soft", Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", Arial, sans-serif;
-}
-.input-label input:-moz-placeholder {
-  font-family: "proxima-nova-soft", Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", Arial, sans-serif;
-}
-.input-label input::-moz-placeholder {
-  font-family: "proxima-nova-soft", Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", Arial, sans-serif;
-}
-.input-label input:-ms-input-placeholder {
-  font-family: "proxima-nova-soft", Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", Arial, sans-serif;
+.form-input:focus {
+  outline: none;
+  background: #f6f6f6;
 }
 .form-container.colored {
   background: #e9e9e9;
@@ -1573,6 +1592,94 @@ Border Radius
   clip: rect(1px, 1px, 1px, 1px);
   border: 0;
   overflow: hidden;
+}
+.ui-widget-overlay {
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.ui-widget-content {
+  background: #ffffff;
+  color: #666666;
+  top: 7.8125em !important;
+  right: 1.5625em !important;
+  left: 1.5625em !important;
+  max-height: 46.875em !important;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+}
+.ui-front {
+  z-index: 10000;
+}
+.ui-dialog {
+  position: fixed;
+  padding: 1.25em;
+}
+.ui-button {
+  float: right;
+  font-family: "proxima-nova-soft", Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", Arial, sans-serif;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0;
+  border-bottom: dotted 1px;
+}
+.ui-dialog-title {
+  font-family: "proxima-nova-soft", Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", Arial, sans-serif;
+  color: #fa6851;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+.account-nav {
+  list-style-type: none;
+  padding-left: 1.5625em;
+}
+.account-nav li {
+  border-bottom: dotted 1px;
+  margin-bottom: 0.3125em;
+}
+.account-nav li a {
+  position: relative;
+  color: #000000;
+  font-weight: 600;
+  font-family: "proxima-nova-soft", Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", Arial, sans-serif;
+}
+.account-nav li a:before {
+  content: "+";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fa6851;
+  color: #ffffff;
+  display: block;
+  padding: 0 0.3125em;
+  margin-left: -1.5625em;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.account-nav li a:hover {
+  color: #1a1a1a;
+}
+.account-nav li a:hover:before {
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  transition-property: transform;
+  overflow: hidden;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 .main-footer {
   background: #fff4e4;
@@ -1767,6 +1874,19 @@ Border Radius
   left: 0;
   width: 100%;
   height: 100%;
+}
+.error-message {
+  background: rgba(250, 104, 81, 0.7);
+  color: #ffffff;
+  font-family: "proxima-nova-soft", Helvetica, Arial, "Arial Unicode", "Lucida Sans Unicode", Arial, sans-serif;
+  position: relative;
+  font-size: 14px;
+  font-size: 0.875rem;
+  padding: 1.25em;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
 }
 /*
 

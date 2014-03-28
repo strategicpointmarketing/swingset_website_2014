@@ -4,7 +4,6 @@ vim: set ts=2 sw=2 sts=2 et:
 *}
 <!-- begin store/skin/leaf-base/customer/menu_dialog.tpl -->
 <nav>
-  <h5 class = "tertiary-heading uppercase mtn mbs">
     {strip}
 
       {if $link_href}
@@ -15,18 +14,18 @@ vim: set ts=2 sw=2 sts=2 et:
 	  {if $minicart}
 		  <img class="icon ajax-minicart-icon" src="{$ImagesDir}/spacer.gif" alt="" />
 	  {else}
-	      {$title}
+	      {*{$title}*}
 	  {/if}
 
     {/strip}
-  </h5>
+
 
     {$content}
 
   {if $minicart}
-	<div class="clearing"></div>
+	{*<div class="clearing"></div>
 	<div class="t-l"></div><div class="t-r"></div>
-	<div class="b-l"></div><div class="b-r"></div>
+	<div class="b-l"></div><div class="b-r"></div>*}
   {/if}
 </nav>
 

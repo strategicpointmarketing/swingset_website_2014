@@ -283,7 +283,7 @@ vim: set ts=2 sw=2 sts=2 et:
                     <!--End Price-->
 
                     <!--View More-->
-                        <a href="{$url}" class="button--secondary mts">View Item</a>
+                        <a href="{$url}" class="button secondary small mts">View Item</a>
                     <!--End View More-->
 
                     <div class="clearing"></div>

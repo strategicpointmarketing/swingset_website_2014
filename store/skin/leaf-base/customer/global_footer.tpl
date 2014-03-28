@@ -22,6 +22,7 @@
                     <li><a href="#">Shipping Policy</a></li>
                     <li><a href="#">Return Policy</a></li>
                     <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Warranty Information</a></li>
                 </ul>
 
             </section>
@@ -36,13 +37,11 @@
                 </div>
             </section>
             <section class="gd-quarter gd-columns gt-half gt-columns">
-                <div class="ptm">
-                    <div class="gd-full">
-                        <img class="float-left mts" src="skin/leaf-base/images/accredit-ssl.png">
-                        <img class="float-left" src="skin/leaf-base/images/accredit-authorize.png">
-                    </div>
-                    <!--<a href="#" class="button--primary">View Catalog</a>-->
-                </div>
+
+                <img class="mtm" src="skin/leaf-base/images/accredit-ssl.png">
+                <img class="mts" src="skin/leaf-base/images/accredit-authorize.png">
+                {*<a href="#" class="button primary">View Catalog</a>*}
+
             </section>
         </div>
     </div>
@@ -50,8 +49,7 @@
 <div class="relative-container primary-bg pvs">
     <div class="wrapper">
         <div class="bottom-footer">
-            <span class="new-line">&copy; <?php echo date("Y"); ?> Swingset & Toy Warehouse.</span>
-            <span class="new-line">Design by <a href="http://strategicpointmarketing.com" target="_blank">Strategic Point Marketing</a>.</span>
+            <span>&copy; <?php echo date("Y"); ?> Swingset & Toy Warehouse. Design by <a href="http://strategicpointmarketing.com" target="_blank">Strategic Point Marketing</a>.</span>
         </div>
     </div>
 </div>

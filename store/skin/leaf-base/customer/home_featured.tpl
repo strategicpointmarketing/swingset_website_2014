@@ -10,7 +10,7 @@
         </p>
 		<div class="mts">
 			<span class="featured-heading uppercase mrm">See our swingsets and more now</span>
-			<a class="button--primary gm-full mts" href="/?cat=245">View Products</a>
+			<a class="button primary gm-full mts" href="/?cat=245">View Products</a>
 		</div>
 	</div>
 </div>

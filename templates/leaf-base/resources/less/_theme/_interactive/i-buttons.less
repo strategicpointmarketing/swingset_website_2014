@@ -1,20 +1,21 @@
-[class*='button'] {
+.button {
+
+	//Baseline
+	
 	font-family: @primary-heading-font;
 	color: @button-text-color;
 	text-align: center;
 	display: inline-block;
 	border:none;
+	outline:none;
 
 	//Mixins
 
 	.border-radius(7);
 	.padding-horizontal(20);
 	.padding-vertical(10);
-}
 
-.button {
-
-	&--primary {
+	&.primary {
 		text-transform: uppercase;
 		background: @primary-button-color;
 		border-bottom: solid 3px @primary-button-border;
@@ -25,13 +26,11 @@
 
 	}
 
-	&--secondary {
+	&.secondary {
 		text-transform: lowercase;
 		background: @secondary-button-color;
 		border-bottom: solid 3px @secondary-button-border;
-
-		// Mixins
-		.petite-text;
+	
 		
 		&:hover {
 			background: @secondary-button-hover;
@@ -40,7 +39,7 @@
 
 	// E-commerce
 
-	&--cart {
+	&.cart {
 		text-transform: uppercase;
 		background: @secondary-button-color;
 		border-bottom: solid 3px @secondary-button-border;
@@ -48,5 +47,13 @@
 		&:hover {
 			background: @secondary-button-hover;
 		}
+	}
+
+	&.small {
+		.petite-text;
+	}
+
+	&.large {
+		.paragon-text;
 	}
 }

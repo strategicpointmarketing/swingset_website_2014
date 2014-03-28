@@ -82,7 +82,7 @@ The above commented out code will generate a message saying: Please note: 1) Del
 
 
 
-                    <button class="button--secondary capitalize light-button small-button" type="button" title="Apply" onclick="javascript: return updateCartItem({$product.cartid});">
+                    <button class="button secondary capitalize" type="button" title="Apply" onclick="javascript: return updateCartItem({$product.cartid});">
                         Apply
                     </button>
 
@@ -340,7 +340,7 @@ The above commented out code will generate a message saying: Please note: 1) Del
             <input type="text"  size="32" name="coupon" value="Coupon code">
         </div>
 
-        <button class="button--secondary" type="submit" title="Submit">
+        <button class="button secondary" type="submit" title="Submit">
             Submit
         </button>
 
@@ -348,7 +348,7 @@ The above commented out code will generate a message saying: Please note: 1) Del
 
 
 <div class = "mts">
-    <a href = "cart.php?mode=checkout" class="button--primary" type="submit" title="Submit">
+    <a href = "cart.php?mode=checkout" class="button primary" type="submit" title="Submit">
         Checkout
     </a>
 </div>

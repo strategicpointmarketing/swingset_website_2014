@@ -43,7 +43,7 @@ vim: set ts=2 sw=2 sts=2 et:
   {else}
 
     {strip}
-      <a class="simple-button{if $additional_button_class} {$additional_button_class}{/if}" href="{$href|amp}"
+      <a class="form-link{if $additional_button_class} {$additional_button_class}{/if}" href="{$href|amp}"
         {if $onclick ne ''} onclick="{$onclick}; return false;"{/if} title="{$title|default:$button_title|strip_tags:false|escape}"
         {if $target ne ''} target="{$target}"{/if}
       >
@@ -81,7 +81,7 @@ vim: set ts=2 sw=2 sts=2 et:
     {assign var="div_link" value=$href|amp}
     {assign var="div_link" value="javascript: self.location = '`$div_link`'; if (event) event.cancelBubble = true;"}
   {/if}
-  <div class="button--secondary light-button small-button" title="{$title|default:$button_title|strip_tags:false|escape}" onclick="{$div_link}"{if $button_id} id="{$button_id|escape}"{/if}>
+  <div class="button secondary" title="{$title|default:$button_title|strip_tags:false|escape}" onclick="{$div_link}"{if $button_id} id="{$button_id|escape}"{/if}>
     <a class = "white" href="{$href}" onclick="{if $js_link}{$js_link};{else}javascript:{/if} if (event) event.cancelBubble = true;"{$reading_direction_tag}>{$button_title|amp}</a>
 
   </div>
@@ -114,7 +114,7 @@ vim: set ts=2 sw=2 sts=2 et:
 
 {else}
 
-  <button class="button--cart gm-full{if $additional_button_class} {$additional_button_class}{/if}" type="{if $type eq 'input'}submit{else}button{/if}" title="{$title|default:$button_title|strip_tags:false|escape}"{if $js_link} onclick="{$js_link}"{/if}{if $button_id} id="{$button_id|escape}"{/if}>
+  <button class="button cart gm-full{if $additional_button_class} {$additional_button_class}{/if}" type="{if $type eq 'input'}submit{else}button{/if}" title="{$title|default:$button_title|strip_tags:false|escape}"{if $js_link} onclick="{$js_link}"{/if}{if $button_id} id="{$button_id|escape}"{/if}>
   {strip}
    {$button_title|amp}
   {/strip}

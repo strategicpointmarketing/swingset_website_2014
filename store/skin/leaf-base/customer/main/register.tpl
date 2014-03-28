@@ -46,8 +46,6 @@ vim: set ts=2 sw=2 sts=2 et:
           {$lng.txt_create_profile_msg}
         {/if}
       {/if}
-      <br />
-      <br />
     {/if}
       <p>The fields marked with * are mandatory.</p>
 
@@ -79,8 +77,8 @@ vim: set ts=2 sw=2 sts=2 et:
         {/if}
 
           <!--Still in skin/leaf-base/customer/main/register.tpl -->
-        <table cellspacing="1"  summary="{$lng.lbl_register|escape}">
-          <tbody>
+        {*<table cellspacing="1"  summary="{$lng.lbl_register|escape}">
+          <tbody>*}
 
             {include file="customer/main/register_personal_info.tpl"}
 
@@ -108,46 +106,48 @@ vim: set ts=2 sw=2 sts=2 et:
             </tr>
             {/if}
 
-            {if $newbie eq "Y"}
+            {*{if $newbie eq "Y"}
             <tr>
               <td colspan="3" class="register-newbie-note">
                   {$lng.txt_terms_and_conditions_newbie_note|substitute:"terms_url":"`$xcart_web_dir`/pages.php?alias=conditions"}
               </td>
             </tr>
-            {/if}
+            {/if}*}
 
-            <tr>
+
 
               {if $login ne "" && $main eq "register"}
 
-                <td class="button-row"><a href="register.php?mode=delete">{$lng.lbl_delete_profile}</a></td>
-                <td colspan="2" class="button-row">
+
+                <div class="mvs">
+
                   {if $smarty.get.action eq "cart"}
                     {include file="customer/buttons/submit.tpl" type="input" additional_button_class="main-button" button_title=$lng.lbl_submit_n_checkout}
                   {else}
                     {include file="customer/buttons/submit.tpl" type="input" additional_button_class="main-button"}
                   {/if}
-                </td>
+                </div>
+
+                  {*<a class="form-link" href="register.php?mode=delete">{$lng.lbl_delete_profile}</a>*}
+
 
               {else}
 
-                <td colspan="3" class="button-row center">
-                  <div class="center">
+
                     {if $smarty.get.action eq "cart"}
                       {include file="customer/buttons/submit.tpl" type="input" additional_button_class="main-button" button_title=$lng.lbl_submit_n_checkout}
                     {else}
                       {include file="customer/buttons/submit.tpl" type="input" additional_button_class="main-button"}
                     {/if}
-                  </div>
-                </td>
+
 
               {/if}
 
-            </tr>
 
-          </tbody>
 
-        </table>
+        {*  </tbody>
+
+        </table>*}
 
 
 
@@ -175,9 +175,9 @@ vim: set ts=2 sw=2 sts=2 et:
 
     {/if}
 
-    {if $newbie eq 'Y'}
-      {$lng.txt_newbie_registration_bottom}
-    {/if}
+    {*{if $newbie eq 'Y'}
+      <p>{$lng.txt_newbie_registration_bottom}</p>
+    {/if}*}
 
   {/capture}
   {include file="customer/dialog.tpl" title=$lng.lbl_profile_details content=$smarty.capture.dialog noborder=true}

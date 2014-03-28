@@ -41,7 +41,7 @@ vim: set ts=2 sw=2 sts=2 et:
 {/else}
 {/if}
 
-<footer class="main-footer" id="main-footer" role="contentinfo">
+<footer class="main-footer clear" id="main-footer" role="contentinfo">
     {include file="customer/global_footer.tpl"}
 </footer>
 
