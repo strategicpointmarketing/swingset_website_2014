@@ -10,10 +10,10 @@ vim: set ts=2 sw=2 sts=2 et:
 
 
   {*{include file="customer/subheader.tpl" title=$lng.lbl_contact_information class="grey"}*}
-    <h3>Contact Information</h3>
+    <h3 class="black secondary-font semibold primer-text mbs">{$lng.lbl_contact_information}</h3>
 
   <table cellspacing="0" class="flc-checkout-address" summary="{$lng.lbl_contact_information|escape}">
-  <tr class="hidden"><td colspan="2">&nbsp;</td></tr>
+  <tr class="is-hidden"><td colspan="2">&nbsp;</td></tr>
 
   <tr>
     <td class = "gd-half gt-half gm-half">{$lng.lbl_email}:</td>
@@ -95,10 +95,10 @@ vim: set ts=2 sw=2 sts=2 et:
 
 
 
-    <h3>Billing Address</h3>
+    <h3 class="black secondary-font semibold primer-text mbs">{$lng.lbl_billing_address}</h3>
 
   <table cellspacing="0" class="gd-full gt-full gm-full" summary="{$lng.lbl_billing_address|escape}">
-  <tr class="hidden"><td colspan="2">&nbsp;</td></tr>
+  <tr class="is-hidden"><td colspan="2">&nbsp;</td></tr>
 {if $userinfo.default_address_fields.title}
     <tr>
       <td class = "gd-half gt-half gm-half">{$lng.lbl_title}:</td>
@@ -182,10 +182,10 @@ vim: set ts=2 sw=2 sts=2 et:
 
 <div class="gd-half gd-columns gt-half gt-columns gm-full gm-columns">
   {*{include file="customer/subheader.tpl" title=$lng.lbl_shipping_address class="grey"} *}
-    <h3>Shipping Address</h3>
+    <h3 class="black secondary-font semibold primer-text mbs">{$lng.lbl_shipping_address}</h3>
 
   <table cellspacing="0" class="gd-full gt-full gm-full" summary="{$lng.lbl_shipping_address|escape}">
-  <tr class="hidden"><td colspan="2">&nbsp;</td></tr>
+  <tr class="is-hidden"><td colspan="2">&nbsp;</td></tr>
 {if $userinfo.default_address_fields.title}
     <tr>
       <td class = "gd-half gt-half gm-half">{$lng.lbl_title}:</td>

@@ -11,7 +11,7 @@ vim: set ts=2 sw=2 sts=2 et:
 <table cellspacing="1" class="gd-full gt-full gm-full align-left" summary="{$lng.lbl_products|escape}">
 
   <tr class="head-row">
-    <th class="cart-column-product">{$lng.lbl_product}</th>
+    <th class="secondary-font semibold black primer-text cart-column-product">{$lng.lbl_product}</th>
     {if $cart.display_cart_products_tax_rates eq "Y"}
       <th class="cart-column-tax">
         {if $cart.product_tax_name ne ""}
@@ -22,11 +22,11 @@ vim: set ts=2 sw=2 sts=2 et:
       </th>
       {inc value=$colspan assign="colspan"}
     {/if}
-    <th class="cart-column-price">{$lng.lbl_price}</th>
-    <th>Qty</th>
+    <th class="secondary-font semibold black primer-text cart-column-price">{$lng.lbl_price}</th>
+    {*<th class="secondary-font semibold black primer-text">Qty</th>*}
 
     {if $cart.discount gt 0}
-      <th class="cart-column-price">{$lng.lbl_discount}</th>
+      <th class="secondary-font semibold black primer-text cart-column-price">{$lng.lbl_discount}</th>
       {inc value=$colspan assign="colspan"}
     {/if}
 
@@ -34,7 +34,7 @@ vim: set ts=2 sw=2 sts=2 et:
       <th class="cart-column-price">{$lng.lbl_discount_coupon}</th>
       {inc value=$colspan assign="colspan"}
     {/if}
-    <th class="cart-column-total">{$lng.lbl_subtotal}</th>
+    <th class="secondary-font semibold black primer-text cart-column-total">{$lng.lbl_subtotal}</th>
   </tr>
 
   {assign var="products" value=$cart.products}
@@ -64,14 +64,13 @@ vim: set ts=2 sw=2 sts=2 et:
             {/if}
           {/capture}
 
-          <a href="product.php?productid={$product.productid}" title="{$smarty.capture.link_title|escape}">
-
+          <a class="primary-color" href="product.php?productid={$product.productid}" title="{$smarty.capture.link_title|escape}">
             {if $product.productcode}
               {$product.productcode}
             {else}
               #{$product.productid}
             {/if}
-            . {$product.product|truncate:"30":"...":true}
+            {$product.product|truncate:"30":"...":true}
           </a>
           {if $active_modules.Product_Configurator and $product.product_type eq "C"}
             {include file="modules/Product_Configurator/pconf_customer_checkout.tpl" main_product=$product}
@@ -101,12 +100,12 @@ vim: set ts=2 sw=2 sts=2 et:
           {if $active_modules.Product_Configurator and $product.product_type eq "C"}
           {currency value=$product.pconf_display_price}
           {else}
-          {currency value=$product.display_price}
+          {currency value=$product.display_price}<span class="minion-text">x{$product.amount}</span>
           {/if}
         </td>
-        <td>
+       {* <td>
           {$product.amount}
-        </td>
+        </td>*}
 
         {if $cart.discount gt 0}
           <td class="cart-column-price">{currency value=$product.discount}</td>
@@ -133,13 +132,12 @@ vim: set ts=2 sw=2 sts=2 et:
 
     <tr class="head-row">
 
-      <td class="summary-cell">{$lng.lbl_summary}:</td>
+      <td class="summary-cell">{*{$lng.lbl_summary}:*}</td>
 
       {if $cart.display_cart_products_tax_rates eq "Y"}
         <td>&nbsp;</td>
       {/if}
 
-      <td class="cart-column-price">&nbsp;</td>
       <td class="cart-column-price">&nbsp;</td>
 
       {if $cart.discount gt 0}

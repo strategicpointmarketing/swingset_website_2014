@@ -4,6 +4,13 @@
     <list default="true" id="283c0ed0-9562-4039-80ba-5e82beb5fa30" name="Default" comment="" />
     <ignored path="store.iws" />
     <ignored path=".idea/workspace.xml" />
+    <file path="/a.dummy" changelist="283c0ed0-9562-4039-80ba-5e82beb5fa30" time="1398657854459" ignored="false" />
+    <file path="/customer_details_html.tpl" changelist="283c0ed0-9562-4039-80ba-5e82beb5fa30" time="1398655515110" ignored="false" />
+    <file path="/subheader.tpl" changelist="283c0ed0-9562-4039-80ba-5e82beb5fa30" time="1398656694715" ignored="false" />
+    <file path="/cart_details.tpl" changelist="283c0ed0-9562-4039-80ba-5e82beb5fa30" time="1398658296693" ignored="false" />
+    <file path="/checkout_notes.tpl" changelist="283c0ed0-9562-4039-80ba-5e82beb5fa30" time="1398657476179" ignored="false" />
+    <file path="/checkout_3_place.tpl" changelist="283c0ed0-9562-4039-80ba-5e82beb5fa30" time="1398657641459" ignored="false" />
+    <file path="/add_coupon.tpl" changelist="283c0ed0-9562-4039-80ba-5e82beb5fa30" time="1398657741721" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,55 +30,66 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="global.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/skin/leaf-base/css/global.css">
+      <file leaf-file-name="customer_details_html.tpl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/skin/leaf-base/modules/Fast_Lane_Checkout/customer_details_html.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1665" column="21" selection-start="28830" selection-end="28830" vertical-scroll-proportion="0.44668245" vertical-offset="24598" max-vertical-offset="34605">
+            <state line="256" column="10" selection-start="8147" selection-end="8147" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="content.tpl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/skin/leaf-base/customer/content.tpl">
+      <file leaf-file-name="checkout_3_place.tpl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/skin/leaf-base/modules/Fast_Lane_Checkout/checkout_3_place.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="11" selection-start="151" selection-end="151" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="1365">
+            <state line="98" column="12" selection-start="2564" selection-end="2564" vertical-scroll-proportion="-22.166666">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="leaf_tabs.tpl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/skin/leaf-base/customer/leaf_tabs.tpl">
+      <file leaf-file-name="add_coupon.tpl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/skin/leaf-base/modules/Discount_Coupons/add_coupon.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="567" selection-end="567" vertical-scroll-proportion="-6.25" vertical-offset="60" max-vertical-offset="660">
+            <state line="18" column="10" selection-start="689" selection-end="689" vertical-scroll-proportion="-11.25">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cart.tpl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/skin/leaf-base/customer/main/cart.tpl">
+      <file leaf-file-name="subheader.tpl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/skin/leaf-base/customer/subheader.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="30" selection-start="1822" selection-end="1822" vertical-scroll-proportion="-7.52" vertical-offset="419" max-vertical-offset="5595">
+            <state line="5" column="0" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home_only.tpl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/skin/leaf-base/customer/home_only.tpl">
+      <file leaf-file-name="cart_contents.tpl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/skin/leaf-base/customer/main/cart_contents.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="285">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home_grid.tpl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/skin/leaf-base/customer/home_grid.tpl">
+      <file leaf-file-name="cart_details.tpl" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/skin/leaf-base/customer/main/cart_details.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="106" selection-start="2447" selection-end="2447" vertical-scroll-proportion="-23.75" vertical-offset="225" max-vertical-offset="1005">
+            <state line="98" column="36" selection-start="3658" selection-end="3658" vertical-scroll-proportion="0.24787535">
+              <folding>
+                <element signature="n#style#0;n#span#0;n#div#0;n#td#1;n#tr#1;n#table#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="checkout_notes.tpl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/skin/leaf-base/customer/main/checkout_notes.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="0" selection-start="1165" selection-end="1165" vertical-scroll-proportion="-16.25">
               <folding />
             </state>
           </provider>
@@ -87,66 +105,30 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/skin/leaf-base/customer/head.tpl" />
-        <option value="$PROJECT_DIR$/skin/leaf-base/customer/main/welcome.tpl" />
-        <option value="$PROJECT_DIR$/skin/common_files/customer/home_main.tpl" />
-        <option value="$PROJECT_DIR$/skin/leaf-base/customer/home_slider.tpl" />
-        <option value="$PROJECT_DIR$/skin/leaf-base/customer/home_main.tpl" />
-        <option value="$PROJECT_DIR$/skin/leaf-base/customer/categories.tpl" />
-        <option value="$PROJECT_DIR$/skin/leaf-base/modules/Flyout_Menus/Icons/fancy_subcategories.tpl" />
-        <option value="$PROJECT_DIR$/skin/common_files/customer/main/subcategories.tpl" />
-        <option value="$PROJECT_DIR$/skin/leaf-base/customer/simple_products_list.tpl" />
-        <option value="$PROJECT_DIR$/skin/leaf-base/customer/main/products_list.tpl" />
-        <option value="$PROJECT_DIR$/skin/leaf-base/customer/search_sort_by.tpl" />
-        <option value="$PROJECT_DIR$/skin/leaf-base/customer/main/per_page.tpl" />
-        <option value="$PROJECT_DIR$/skin/leaf-base/customer/main/navigation.tpl" />
-        <option value="$PROJECT_DIR$/skin/leaf-base/customer/main/np_products.tpl" />
-        <option value="$PROJECT_DIR$/skin/leaf-base/customer/global_footer.tpl" />
-        <option value="$PROJECT_DIR$/skin/leaf-base/buttons/button.tpl" />
-        <option value="$PROJECT_DIR$/skin/leaf-base/customer/buttons/buy_more.tpl" />
-        <option value="$PROJECT_DIR$/skin/leaf-base/customer/main/buy_now.tpl" />
-        <option value="$PROJECT_DIR$/skin/common_files/buttons/button.tpl" />
-        <option value="$PROJECT_DIR$/skin/leaf-base/customer/buttons/buy_now.tpl" />
-        <option value="$PROJECT_DIR$/skin/leaf-base/customer/buttons/button.tpl" />
-        <option value="$PROJECT_DIR$/skin/leaf-base/customer/left_bar.tpl" />
-        <option value="$PROJECT_DIR$/skin/leaf-base/modules/Product_Options/customer_options.tpl" />
-        <option value="$PROJECT_DIR$/skin/leaf-base/customer/service_head.tpl" />
-        <option value="$PROJECT_DIR$/skin/common_files/customer/home.tpl" />
-        <option value="$PROJECT_DIR$/skin/leaf-base/customer/global_head.tpl" />
-        <option value="$PROJECT_DIR$/skin/leaf-base/customer/service_js.tpl" />
-        <option value="$PROJECT_DIR$/skin/leaf-base/customer/product_thumbnail.tpl" />
-        <option value="$PROJECT_DIR$/skin/leaf-base/product_thumbnail.tpl" />
-        <option value="$PROJECT_DIR$/skin/common_files/main/edit_product_image.tpl" />
-        <option value="$PROJECT_DIR$/skin/common_files/main/product_details.tpl" />
-        <option value="$PROJECT_DIR$/skin/leaf-base/main/product_details.tpl" />
-        <option value="$PROJECT_DIR$/skin/leaf-base/customer/main/product.tpl" />
-        <option value="$PROJECT_DIR$/skin/leaf-base/customer/home.tpl" />
-        <option value="$PROJECT_DIR$/skin/leaf-base/customer/global_footer_scripts.tpl" />
-        <option value="$PROJECT_DIR$/skin/leaf-base/js/actions.js" />
-        <option value="$PROJECT_DIR$/skin/common_files/customer/main/pages.tpl" />
-        <option value="$PROJECT_DIR$/skin/leaf-base/customer/dialog.tpl" />
-        <option value="$PROJECT_DIR$/skin/leaf-base/customer/global_nav.tpl" />
-        <option value="$PROJECT_DIR$/skin/leaf-base/customer/leaf_tabs.tpl" />
-        <option value="$PROJECT_DIR$/skin/leaf-base/customer/bread_crumbs.tpl" />
         <option value="$PROJECT_DIR$/skin/leaf-base/customer/main/subcategories.tpl" />
         <option value="$PROJECT_DIR$/skin/leaf-base/customer/main/pages.tpl" />
         <option value="$PROJECT_DIR$/skin/leaf-base/modules/Flyout_Menus/Icons/fancy_categories.tpl" />
-        <option value="$PROJECT_DIR$/skin/leaf-base/css/global.css" />
         <option value="$PROJECT_DIR$/skin/leaf-base/customer/main/products_t.tpl" />
         <option value="$PROJECT_DIR$/skin/leaf-base/customer/main/product_details.tpl" />
         <option value="$PROJECT_DIR$/skin/leaf-base/customer/home_grid.tpl" />
         <option value="$PROJECT_DIR$/skin/leaf-base/customer/content.tpl" />
         <option value="$PROJECT_DIR$/skin/leaf-base/modules/Fast_Lane_Checkout/content.tpl" />
         <option value="$PROJECT_DIR$/skin/leaf-base/customer/main/cart.tpl" />
+        <option value="$PROJECT_DIR$/skin/leaf-base/css/global.css" />
+        <option value="$PROJECT_DIR$/skin/leaf-base/modules/Fast_Lane_Checkout/customer_details_html.tpl" />
+        <option value="$PROJECT_DIR$/skin/leaf-base/customer/subheader.tpl" />
+        <option value="$PROJECT_DIR$/skin/leaf-base/customer/main/checkout_notes.tpl" />
+        <option value="$PROJECT_DIR$/skin/leaf-base/modules/Fast_Lane_Checkout/checkout_3_place.tpl" />
+        <option value="$PROJECT_DIR$/skin/leaf-base/modules/Discount_Coupons/add_coupon.tpl" />
+        <option value="$PROJECT_DIR$/skin/leaf-base/customer/main/cart_details.tpl" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1705" />
-    <option name="y" value="77" />
-    <option name="width" value="1515" />
-    <option name="height" value="954" />
+    <option name="y" value="22" />
+    <option name="width" value="1280" />
+    <option name="height" value="1330" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -174,6 +156,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -192,31 +175,143 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="store" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="store" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="store" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="store" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leaf-base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="store" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="store" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leaf-base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="store" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="store" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leaf-base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Fast_Lane_Checkout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="store" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="store" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leaf-base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="customer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="FullScreen" value="false" />
-    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="FullScreen" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+  </component>
+  <component name="PublishConfig" serverName="STW DEV" serverId="e8c149e9-76de-4ec3-ad81-949049d3c665" autoUpload="true">
+    <servers>
+      <server id="e8c149e9-76de-4ec3-ad81-949049d3c665">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </server>
+    </servers>
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/skin/leaf-base/customer" />
       <recent name="$PROJECT_DIR$/skin/leaf-base/customer/main" />
       <recent name="$PROJECT_DIR$/skin/leaf-base/images" />
       <recent name="$PROJECT_DIR$/skin/leaf-base/js" />
-      <recent name="$PROJECT_DIR$/skin/leaf-base/customer" />
       <recent name="$PROJECT_DIR$/skin/leaf-base/customer/buttons" />
     </key>
   </component>
@@ -228,10 +323,7 @@
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server" server_id="e8c149e9-76de-4ec3-ad81-949049d3c665" server_name="STW DEV">
       <method />
     </configuration>
     <list size="0" />
@@ -263,24 +355,24 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1705" y="77" width="1515" height="954" extended-state="0" />
-    <editor active="false" />
+    <frame x="0" y="22" width="1280" height="1330" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.09832402" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.097520664" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33333334" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14983499" sideWeight="0.6702479" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33305785" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14910859" sideWeight="0.6669421" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18613862" sideWeight="0.6702479" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19529983" sideWeight="0.6669421" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -297,400 +389,172 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="true" />
     <option name="myTodoPanelSettings">
-      <TodoPanelSettings />
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
     </option>
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
+    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
+    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
+    <option name="SHORT_DIFF_HORIZONTALLY" value="true" />
+    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
+    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
+    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
+    <option name="LIMIT_HISTORY" value="true" />
+    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
+    <option name="UPDATE_FILTER_SCOPE_NAME" />
+    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
+    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
+    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
+    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
+    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
+    <option name="ACTIVE_VCS_NAME" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
+    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
+    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/skin/leaf-base/customer/buttons/button.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="37" selection-start="3894" selection-end="3894" vertical-scroll-proportion="-55.291668" vertical-offset="353" max-vertical-offset="2025">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/leaf-base/customer/left_bar.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="7" selection-start="3214" selection-end="3214" vertical-scroll-proportion="0.7380952" vertical-offset="1173" max-vertical-offset="2175">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/leaf-base/customer/search_sort_by.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="0" selection-start="1417" selection-end="1417" vertical-scroll-proportion="-17.5" vertical-offset="180" max-vertical-offset="750">
-          <folding>
-            <marker date="1394656423000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1394656423000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/common_files/customer/main/product_prices.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="735">
-          <folding>
-            <marker date="1394635384000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1394635384000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1394635384000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1394635384000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1394635384000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1394635384000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1394635384000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1394635384000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/leaf-base/customer/main/product_prices.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="2" selection-start="140" selection-end="140" vertical-scroll-proportion="2.5" vertical-offset="105" max-vertical-offset="735">
-          <folding>
-            <marker date="1394635384000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1394635384000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1394635384000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1394635384000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1394635384000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1394635384000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1394635384000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1394635384000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/leaf-base/customer/meta.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="1" selection-start="591" selection-end="738" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="330">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/leaf-base/customer/service_head.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="59" selection-start="200" selection-end="200" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="465">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/common_files/customer/service_js.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="52" selection-start="4346" selection-end="4346" vertical-scroll-proportion="0.057026476" vertical-offset="1232" max-vertical-offset="2460">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/leaf-base/customer/global_head.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="201" selection-end="201" vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="510">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/leaf-base/customer/global_footer.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="14" selection-start="2623" selection-end="2623" vertical-scroll-proportion="0.73214287" vertical-offset="441" max-vertical-offset="945">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/leaf-base/customer/product_thumbnail.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="509" selection-end="509" vertical-scroll-proportion="-13.125" vertical-offset="0" max-vertical-offset="405">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/common_files/main/textarea.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="30" selection-start="387" selection-end="387" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="885">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/common_files/main/product_details.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="136" column="0" selection-start="0" selection-end="21444" vertical-scroll-proportion="-2.28" vertical-offset="1926" max-vertical-offset="6735">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/common_files/admin/main/page_edit.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="5" selection-start="2062" selection-end="2062" vertical-scroll-proportion="0.26987448" vertical-offset="771" max-vertical-offset="2970">
-          <folding>
-            <marker date="1394635384000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1394635384000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1394635384000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/common_files/main/edit_product_image.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="248" selection-start="980" selection-end="980" vertical-scroll-proportion="0.36659878" vertical-offset="0" max-vertical-offset="491">
-          <folding>
-            <element signature="n#style#0;n#img#0;n#a#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/leaf-base/product_thumbnail.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="10" selection-start="429" selection-end="429" vertical-scroll-proportion="0.34816247" vertical-offset="120" max-vertical-offset="690">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/leaf-base/customer/main/ui_tabs.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="10" selection-start="1151" selection-end="1151" vertical-scroll-proportion="0.20833333" vertical-offset="450" max-vertical-offset="990">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/leaf-base/main/product_details.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="309" column="41" selection-start="17924" selection-end="17927" vertical-scroll-proportion="0.33333334" vertical-offset="4468" max-vertical-offset="6735">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/leaf-base/customer/main/product.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="24" selection-start="2124" selection-end="2124" vertical-scroll-proportion="-5.06" vertical-offset="752" max-vertical-offset="1965">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/leaf-base/modules/Product_Options/customer_options.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="54" selection-start="405" selection-end="405" vertical-scroll-proportion="-3.6" vertical-offset="0" max-vertical-offset="1860">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/common_files/customer/head.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="541">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/common_files/customer/service_head.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="68" selection-start="540" selection-end="540" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="585">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/common_files/customer/home.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="44" selection-start="588" selection-end="588" vertical-scroll-proportion="-0.6964286" vertical-offset="486" max-vertical-offset="990">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/leaf-base/customer/global_footer_scripts.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="40" selection-start="163" selection-end="163" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="120">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/leaf-base/customer/simple_products_list.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="37" selection-start="2772" selection-end="2772" vertical-scroll-proportion="0.8386454" vertical-offset="374" max-vertical-offset="1155">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/leaf-base/customer/service_js.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="129" column="0" selection-start="6422" selection-end="6422" vertical-scroll-proportion="-15.208333" vertical-offset="1570" max-vertical-offset="2460">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/common_files/modules/One_Page_Checkout/content.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="8" selection-start="713" selection-end="713" vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="495">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/leaf-base/customer/special.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.78640777" vertical-offset="405" max-vertical-offset="930">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/common_files/customer/special.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="990">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/common_files/customer/home_main.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3210">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/common_files/customer/main/pages.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="3" selection-start="135" selection-end="135" vertical-scroll-proportion="0.09259259" vertical-offset="0" max-vertical-offset="810">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/leaf-base/customer/dialog.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="38" selection-start="400" selection-end="400" vertical-scroll-proportion="-3.75" vertical-offset="45" max-vertical-offset="855">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/leaf-base/customer/global_nav.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="74" selection-start="953" selection-end="953" vertical-scroll-proportion="-14.375" vertical-offset="0" max-vertical-offset="1110">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/common_files/modules/Fast_Lane_Checkout/content.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="503">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/leaf-base/customer/home.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="40" selection-start="520" selection-end="520" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="885">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/common_files/modules/One_Page_Checkout/opc_main.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="4.7916665" vertical-offset="115" max-vertical-offset="675">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/skin/leaf-base/js/actions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="0" selection-start="3345" selection-end="3345" vertical-scroll-proportion="0.0" vertical-offset="1231" max-vertical-offset="2040">
-          <folding />
-        </state>
+        <state line="118" column="0" selection-start="3345" selection-end="3345" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/skin/leaf-base/customer/main/product_details.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="149" column="43" selection-start="6364" selection-end="6364" vertical-scroll-proportion="0.80042917" vertical-offset="1952" max-vertical-offset="5970">
-          <folding>
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#div#0;n#div#9;n#div#1;n#form#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#select#0;n#div#0;n#div#1;n#div#0;n#div#9;n#div#1;n#form#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/leaf-base/customer/main/pages.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="42" selection-start="174" selection-end="174" vertical-scroll-proportion="0.14563107" vertical-offset="0" max-vertical-offset="515">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/leaf-base/customer/main/subcategories.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="42" selection-start="576" selection-end="576" vertical-scroll-proportion="0.33193278" vertical-offset="82" max-vertical-offset="1155">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/leaf-base/customer/bread_crumbs.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="30" selection-start="750" selection-end="750" vertical-scroll-proportion="0.35856575" vertical-offset="0" max-vertical-offset="502">
+        <state line="149" column="43" selection-start="6364" selection-end="6364" vertical-scroll-proportion="0.80042917">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/skin/leaf-base/customer/main/products_t.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="269" column="0" selection-start="13372" selection-end="13372" vertical-scroll-proportion="0.39043826" vertical-offset="3839" max-vertical-offset="4785">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/leaf-base/modules/Flyout_Menus/Icons/fancy_categories.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="59" selection-start="304" selection-end="304" vertical-scroll-proportion="0.22304833" vertical-offset="0" max-vertical-offset="570">
+        <state line="269" column="0" selection-start="13372" selection-end="13372" vertical-scroll-proportion="0.39043826">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/skin/leaf-base/modules/Flyout_Menus/Icons/fancy_subcategories.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1545">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/skin/leaf-base/customer/home_only.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="562">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/skin/leaf-base/customer/home_grid.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="106" selection-start="2447" selection-end="2447" vertical-scroll-proportion="-23.75" vertical-offset="225" max-vertical-offset="1005">
+        <state line="53" column="106" selection-start="2476" selection-end="2476" vertical-scroll-proportion="0.7169811">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/skin/leaf-base/customer/content.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="11" selection-start="151" selection-end="151" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="1365">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/leaf-base/customer/leaf_tabs.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="567" selection-end="567" vertical-scroll-proportion="-6.25" vertical-offset="60" max-vertical-offset="660">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/leaf-base/modules/Fast_Lane_Checkout/content.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="12" selection-start="1598" selection-end="1598" vertical-scroll-proportion="0.8277311" vertical-offset="176" max-vertical-offset="735">
+        <state line="47" column="11" selection-start="1516" selection-end="1516" vertical-scroll-proportion="0.020215634">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/skin/leaf-base/customer/main/cart.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="30" selection-start="1822" selection-end="1822" vertical-scroll-proportion="-7.52" vertical-offset="419" max-vertical-offset="5595">
+        <state line="31" column="30" selection-start="898" selection-end="898" vertical-scroll-proportion="0.020215634">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/skin/leaf-base/css/global.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1665" column="21" selection-start="28830" selection-end="28830" vertical-scroll-proportion="0.44668245" vertical-offset="24598" max-vertical-offset="34605">
+        <state line="2045" column="16" selection-start="36050" selection-end="36050" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skin/leaf-base/modules/Fast_Lane_Checkout/customer_details_html.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="256" column="10" selection-start="8147" selection-end="8147" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skin/leaf-base/customer/subheader.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skin/leaf-base/customer/main/cart_contents.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skin/leaf-base/modules/Fast_Lane_Checkout/checkout_3_place.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="98" column="12" selection-start="2564" selection-end="2564" vertical-scroll-proportion="-22.166666">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skin/leaf-base/modules/Discount_Coupons/add_coupon.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="10" selection-start="689" selection-end="689" vertical-scroll-proportion="-11.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skin/leaf-base/customer/main/checkout_notes.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="0" selection-start="1165" selection-end="1165" vertical-scroll-proportion="-16.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skin/leaf-base/customer/main/cart_details.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="98" column="36" selection-start="3658" selection-end="3658" vertical-scroll-proportion="0.24787535">
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#0;n#td#1;n#tr#1;n#table#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

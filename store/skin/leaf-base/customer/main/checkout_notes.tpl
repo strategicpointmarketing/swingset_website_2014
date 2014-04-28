@@ -4,10 +4,10 @@ vim: set ts=2 sw=2 sts=2 et:
 *}
 {include file="customer/subheader.tpl" title=$lng.txt_notes class="grey"}
 
-<table cellspacing="0" class="data-table" summary="{$lng.lbl_customer_notes|escape}">
+<table cellspacing="0" class="data-table gd-full gt-full gm-full"" summary="{$lng.lbl_customer_notes|escape}">
   <tr>
-    <td class="data-name">{$lng.lbl_customer_notes}:</td>
-    <td><textarea cols="70" rows="10" name="Customer_Notes"></textarea></td>
+    {*<td class="data-name">{$lng.lbl_customer_notes}:</td>*}
+    <td class="gd-full gt-full gm-full"><textarea class="gm-full" cols="70" rows="10" name="Customer_Notes"></textarea></td>
   </tr>
 
   {if $active_modules.XAffiliate eq "Y" and $partner eq '' and $config.XAffiliate.ask_partnerid_on_checkout eq 'Y'}

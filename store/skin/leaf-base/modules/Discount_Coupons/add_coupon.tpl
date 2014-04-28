@@ -6,7 +6,7 @@ vim: set ts=2 sw=2 sts=2 et:
 {capture name=dialog}
 
   <a name='check_coupon'></a>
-  <div class="add-coupon mtl">
+  <div class="add-coupon mvl">
     <form action="cart.php" name="couponform">
       <input type="hidden" name="mode" value="add_coupon" />  
       <div class="black secondary-font semibold primer-text data-name">

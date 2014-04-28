@@ -114,7 +114,7 @@ requiredFields = [];
   </div> *}
 
   <div class="mvl">
-    <input class="inline-selector" type="checkbox" id="accept_terms" name="accept_terms" value="Y"><span class="semibold secondary-font minion-text">I accept the <a href="pages.php?alias=conditions" target = "_blank">"Terms &amp; Conditions"</a> and <a href = "pages.php?alias=business" target = "_blank">"Privacy Statement"</a>.</span>
+    <input class="inline-selector" type="checkbox" id="accept_terms" name="accept_terms" value="Y"><span class="semibold secondary-font minion-text">I accept the <a class="primary-color" href="pages.php?alias=conditions" target = "_blank">"Terms &amp; Conditions"</a> and <a class="primary-color" href = "pages.php?alias=business" target = "_blank">"Privacy Statement"</a>.</span>
   </div>
 
   {include file="modules/Fast_Lane_Checkout/checkout_js.tpl"}
