@@ -8,7 +8,7 @@ vim: set ts=2 sw=2 sts=2 et:
   {if $hide_header eq ''}
     <tr>
       <td colspan="3" class="register-section-title">
-        <div><h3 class = "secondary-font primer-text capitalize">Billing Address</h3></div>
+        <div><h3 class = "primer-text secondary-font black capitalize mbs">Billing Address</h3></div>
       </td>
     </tr>
   {/if}
@@ -17,14 +17,15 @@ vim: set ts=2 sw=2 sts=2 et:
   {if $config.Shipping.need_shipping_section eq 'Y'}
 
     {if $hide_header eq ''}
-      <tr>
+
         <td class="register-section-title register-exp-section{if not $ship2diff} register-sec-minimized{/if}" colspan="3">
-          <div>
-            <label class="pointer" for="ship2diff">{$lng.lbl_ship_to_different_address}</label>
-            <input type="checkbox" id="ship2diff" name="ship2diff" value="Y"{if $ship2diff} checked="checked"{/if} />
+          <div class="new-line mtxs mbm">
+
+            <input class="inline-block" type="checkbox" id="ship2diff" name="ship2diff" value="Y"{if $ship2diff} checked="checked"{/if} />
+              <label class="pointer secondary-font" for="ship2diff">{$lng.lbl_ship_to_different_address}</label>
           </div>
         </td>
-      </tr>
+
     {/if}
 
     </tbody>

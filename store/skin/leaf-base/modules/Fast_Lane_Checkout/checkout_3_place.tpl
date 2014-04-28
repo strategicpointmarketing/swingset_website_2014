@@ -2,7 +2,7 @@
 99f49a017eeaa96cf5c4060c7785548523d6ad12, v13 (xcart_4_6_2), 2014-01-15 17:46:03, checkout_3_place.tpl, mixon
 vim: set ts=2 sw=2 sts=2 et:
 *}
-<h1 class="tertiary-heading canon-text mtn">Place Order</h1>
+<h1 class="primary-color paragon-text capitalize secondary-font mbs">{$lng.lbl_place_order}</h1>
 
 {capture name=dialog}
 

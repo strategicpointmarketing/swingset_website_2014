@@ -3,10 +3,10 @@
 vim: set ts=2 sw=2 sts=2 et:
 *}
 {if $mode eq 'select'}
-  <h1 class="primary-color paragon-text secondary-font capitalize mbn">{$lng.lbl_select_address}</h1>
+  <h1 class="primary-color paragon-text secondary-font capitalize mbn mtn">{$lng.lbl_select_address}</h1>
   <div><a href="address_book.php"{if $is_modal_popup} onclick="javascript: self.location='address_book.php';"{/if}>{$lng.lbl_edit_address_book}</a></div>
 {else}
-  <h1 class="primary-color paragon-text secondary-font capitalize mbn">{$lng.lbl_address_book}</h1>
+  <h1 class="primary-color paragon-text secondary-font capitalize mbn mtn">{$lng.lbl_address_book}</h1>
 {/if}
 
 <br />

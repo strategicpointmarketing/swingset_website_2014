@@ -19,10 +19,10 @@
                 <h4 class="paragon-text primary-heading semibold mbs">Policies</h4>
 
                 <ul class="unstyled footer-links">
-                    <li><a href="#">Shipping Policy</a></li>
-                    <li><a href="#">Return Policy</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Warranty Information</a></li>
+                    <li><a href="/pages.php?pageid=11">Shipping Policy</a></li>
+                    <li><a href="/pages.php?pageid=12">Return Policy</a></li>
+                    <li><a href="/pages.php?pageid=13">Privacy Policy</a></li>
+                    <li><a href="/pages.php?pageid=14">Warranty Information</a></li>
                 </ul>
 
             </section>

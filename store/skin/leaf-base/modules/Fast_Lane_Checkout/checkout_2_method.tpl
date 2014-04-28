@@ -2,9 +2,9 @@
 9801da6f17425f50e8047475e08712045e9818fd, v7 (xcart_4_6_1), 2013-08-29 12:26:36, checkout_2_method.tpl, aim
 vim: set ts=2 sw=2 sts=2 et:
 *}
-<div class = "gd-full gd-columns gt-full gt-columns">
+
     <h1 class = "primary-color paragon-text secondary-font mbs">Shipping &amp; Payment</h1>
-</div>
+
 {load_defer file="js/popup_open.js" type="js"}
 {capture name=dialog}
 {if $smarty.get.err eq 'gc_not_enough_money'}
@@ -20,6 +20,7 @@ vim: set ts=2 sw=2 sts=2 et:
 {assign var=modify_url value="cart.php?mode=checkout&edit_profile&paymentid=`$paymentid`"}
 {if $config.Shipping.enable_shipping eq "Y"}
 
+<div class="gd-row gt-row">
 <div class="gd-half gd-columns gt-half gt-columns">
   <div class="flc-address">
 
@@ -130,17 +131,17 @@ No data
 
     </div>
 
-    <div class="clearing"></div>
+
 
   </div>
 
-  <br />
+
 
     <div class="gd-half gd-columns gt-half gt-columns mts">
       {include file="customer/buttons/continue.tpl" type="input" additional_button_class="main-button"}
     </div>
 
-
+</div>
 </form>
 
 {/capture}

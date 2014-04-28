@@ -3,7 +3,7 @@
 vim: set ts=2 sw=2 sts=2 et:
 *}
 
-<h1>{$lng.lbl_personal_details}</h1>
+<h1 class="primary-color paragon-text secondary-font capitalize mbn">{$lng.lbl_personal_details}</h1>
 
 
 {if $active_modules.Image_Verification and $show_antibot.on_login eq 'Y' and $login_antibot_on}
@@ -54,10 +54,11 @@ function show_regdlg() {
 
 {capture name=dialog}
 
-  <span class="flc-login-text">
+  {*<span class="flc-login-text">
     {$lng.lbl_flc_new_customer_text}&nbsp;
     <a href="cart.php?mode=checkout&amp;no_script=Y#regdlg" onclick="javascript: return show_regdlg();">{$lng.lbl_flc_new_customer_link}</a>
-  </span>
+  </span>*}
+    <a class="form-link" href="register.php">Register here</a>
 
 {/capture}
 {include file="customer/dialog.tpl" title=$lng.lbl_new_customer content=$smarty.capture.dialog additional_class="flc-right-dialog`$right_ext_additional_class`"}

@@ -21,7 +21,7 @@
         <nav class="main-nav" role="navigation">
             <ul class="nav white">
                 <li class="sub-nav">
-                    <a class="main-nav__link" href="pages.php?pageid=6">Products</a>
+                    <a class="main-nav__link" href="/?cat=265">Products</a>
                     <div class="secondary-nav">
                         <div class="group">
                             <ul class="gd-columns gt-columns gd-half gt-half">

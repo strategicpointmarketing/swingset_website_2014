@@ -1,4 +1,4 @@
-DirectoryIndex home.php index.php index.html index.htm
+DirectoryIndex redir.php home.php index.php index.html index.htm
 
 # If you would like X-Cart to show informative message for errors caused 
 # by opening of missing/deleted files (HTTP Error 404), please uncomment

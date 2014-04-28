@@ -546,6 +546,9 @@ Colors
 .grey-color {
   color: #a9a9a9;
 }
+.success-color {
+  color: #019026;
+}
 /*
 
 Weights
@@ -1703,7 +1706,7 @@ Border Radius
   transition: all 0.25s ease-in-out;
 }
 .account-nav li a:hover {
-  color: #333333;
+  color: #666666;
 }
 .account-nav li a:hover:before {
   -webkit-transition-property: -webkit-transform;
@@ -1943,8 +1946,8 @@ Example Markup:
 
 */
   .gm-row {
-    margin-left: -1.125em;
-    margin-right: -1.125em;
+    margin-left: -0.75em;
+    margin-right: -0.75em;
   }
   .lte7 .gm-row {
     zoom: 1;

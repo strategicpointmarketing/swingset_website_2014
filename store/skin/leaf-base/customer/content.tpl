@@ -3,15 +3,54 @@
 vim: set ts=2 sw=2 sts=2 et:
 *}
 
+{* You can use below commented out code for debugging purposes *}
+
+      {* main is {$main}
+{if $login ne ""}
+    The user is logged in.
+
+{else}
+The user is logged out.
+{/if}*}
+
 
 
 
         {if $page_data.pageid eq 6 or ($main neq 'cart' or $cart_empty) and $main neq 'checkout' and $main neq "pages"}
-            <div class="gd-quarter gd-columns gt-quarter gt-columns" id="left-bar">
-                {include file="customer/left_bar.tpl"}
-            </div>
-            <div class="gd-three-quarters gd-columns gt-three-quarters gt-columns">
+
+
+
+            {if $login eq "" and ($main eq "register" or $main eq "authentication" or $main eq "help") }
+
+                {*don't display left bar at all, and make the div gd-full*}
+                <div class="gd-full gd-columns gt-full gt-columns">
+
+            {elseif $login ne "" and ($main eq "register" or $main eq "address_book" or $main eq "orders" or $main eq "change_password" or $main eq "profile_delete" )}
+
+                {*don't display the left navbar, instead put top_links.tpl in the sidebar*}
+                <div class="gd-quarter gd-columns gt-quarter gt-columns" id="left-bar">
+
+                    {include file="customer/main/top_links.tpl" tabs=$page_tabs}
+                </div>
+
+                <div class="gd-three-quarters gd-columns gt-three-quarters gt-columns">
+
+
+
+            {else}
+
+                {*Do things normally with the left sidebar and left menu*}
+
+                <div class="gd-quarter gd-columns gt-quarter gt-columns" id="left-bar">
+                    {include file="customer/left_bar.tpl"}
+                </div>
+
+                <div class="gd-three-quarters gd-columns gt-three-quarters gt-columns">
+            {/if}
+
+
         {/if}
+
 
 
 
@@ -20,6 +59,7 @@ vim: set ts=2 sw=2 sts=2 et:
             <div class="gd-full gd-columns gt-full gt-columns">
             {include file="customer/evaluation.tpl"}
         {/if}
+
         <!--Body Content-->
 
         {if ($main eq 'cart' and not $cart_empty) or $main eq 'checkout' }
@@ -61,9 +101,10 @@ vim: set ts=2 sw=2 sts=2 et:
                 {include file="modules/Special_Offers/customer/new_offers_message.tpl"}
             {/if}
 
-            {if $page_tabs ne ''}
+
+            {* {if $page_tabs ne ''}
                 {include file="customer/main/top_links.tpl" tabs=$page_tabs}
-            {/if}
+            {/if} *}
 
             {if $page_title}
                 <h1>{$page_title|escape}</h1>

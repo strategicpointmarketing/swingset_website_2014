@@ -3,9 +3,9 @@
 <!-- End Global Head -->
 
 <body>
-	
+
 	<header>
-		
+
 		<!-- Main Navigaiton -->
 		<?php include('views/partials/global-navigation.php'); ?>
 		<!-- End Main Navigaiton -->
@@ -18,10 +18,10 @@
 		<!-- Home Slider -->
 		<div class="relative-container flex-js">
 			<div class="flexslider">
-				 
+
 				  <ul class="slides">
 				    <li class="flex-slide--1">
-				      
+
 				      	<div class="align-center">
 							<h2 class="great-text white secondary-font semibold">Make them smile this time.</h2>
 							<h2 class="great-text white secondary-font bold mtn">And every time.</h2>
@@ -51,14 +51,14 @@
 		<!-- End Home Slider -->
 	</section>
 
-	<section class="products-specials">	
+	<section class="products-specials">
 
 		<!-- Product Grid -->
 		<?php include('views/partials/home-products.php'); ?>
 		<!-- End Product Grid -->
 
 	</section>
-		
+
 	<section class="featured-section">
 
 		<!-- Featured -->

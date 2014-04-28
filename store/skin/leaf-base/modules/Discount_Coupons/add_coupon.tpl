@@ -6,12 +6,12 @@ vim: set ts=2 sw=2 sts=2 et:
 {capture name=dialog}
 
   <a name='check_coupon'></a>
-  <div class="add-coupon">
+  <div class="add-coupon mtl">
     <form action="cart.php" name="couponform">
       <input type="hidden" name="mode" value="add_coupon" />  
-      <div class="data-name">
+      <div class="black secondary-font semibold primer-text data-name">
         {$lng.lbl_have_coupon_code}
-        <input type="text" class="text default-value" size="32" name="coupon" value="{$lng.lbl_coupon_code}" />
+        <input type="text" class="{*text default-value*}form-input gm-full" size="32" name="coupon" placeholder="{$lng.lbl_coupon_code}" />
       </div>
       {include file="customer/buttons/submit.tpl" type="input"}
     </form>

@@ -15,7 +15,8 @@ vim: set ts=2 sw=2 sts=2 et:
   <div class="ui-tabs-panel ui-widget-content"></div>
 </div>*}
 
-<ul class="account-nav mtn">
+
+<ul class="account-nav mtn mbm">
     <li><a href="/register.php">My Account</a></li>
     <li><a href="/address_book.php">Address Book</a></li>
     {*<li><a href="/orders.php">Order History</a></li>*}

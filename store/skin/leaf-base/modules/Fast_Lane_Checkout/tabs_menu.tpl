@@ -47,7 +47,7 @@ vim: set ts=2 sw=2 sts=2 et:
             {foreach item=step name=checkout_tabs from=$checkout_tabs}
                 {if $step.selected}
                 <a  class="tabbed-nav--item is-current capitalize" href="{$step.link|amp}">
-                    {$step.title}
+                    <span>{$step.title}</span>
                 </a>
                 {else}
 
