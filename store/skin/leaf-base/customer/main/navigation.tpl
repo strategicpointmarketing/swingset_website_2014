@@ -5,7 +5,7 @@ vim: set ts=2 sw=2 sts=2 et:
 {if ($total_pages gt 2) or ($per_page eq "Y" and $total_items gte $per_page_values.0)}
     <ul class="unstyled">
         {assign var="navigation_script" value=$navigation_script|amp}
-        {if $total_pages gt 2}
+        {if $total_pages gt 1}{*2*}
             <li class="gd-three-quarters gt-three-quarters float-left">
 
                 <div class="results-nav">
